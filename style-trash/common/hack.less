@@ -1,0 +1,35 @@
+.@{prefix}{
+	&header, &header-light{
+		 
+
+		.@{prefix}header-dock-left, .@{prefix}header-dock-right{
+			 
+			a, button{
+				*min-width: @header-height - 2*@padding-horizon;				 
+				*display: block;
+			}
+		}
+
+		 
+	}
+
+	&btn, &btn-primary, &btn-warm, &btn-primary-blank, &btn-warm-blank{
+		//*float:left;
+		*display: inline;
+		*overflow:visible ;
+		
+	}
+
+	&input{
+		*padding-top: 0;
+		*padding-bottom: 0;
+		*line-height: @input-height;
+	}
+
+	&input-lg{
+		*padding-top: 0;
+		*padding-bottom: 0;
+		*line-height: @input-height-lg;
+	}
+	 
+}

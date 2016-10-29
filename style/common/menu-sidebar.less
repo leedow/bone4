@@ -1,0 +1,140 @@
+//响应式侧栏，状态可以为隐藏|只显示一个ICON|完整显示
+.@{prefix}{
+	@sidebar-item-height: 50px;
+
+
+
+	&sidebar-menu{
+    background: @sidebar-background;
+
+    .menu-item-icon{
+      padding-left: @sidebar-item-height !important;
+
+      i{
+        position: absolute;
+				width: @sidebar-item-height;
+      	left:0;
+        top:0;
+				text-align: center;
+        line-height: @sidebar-item-height;
+        font-size: 1.5em;
+        color:lighten(@sidebar-background, 60%) !important;
+      }
+    }
+
+		.menu-item{
+			height: @sidebar-item-height;
+			line-height: @sidebar-item-height;
+			position: relative;
+			text-align: left;
+			padding-left: 1em;
+			font-size: 16px;
+			color: #fff;
+			cursor: pointer;
+
+			.tip{
+				display: none;
+				position: absolute;
+				left: 100%;
+				top: 50%;
+				margin-top: 	-0.7*@tip-height;
+				background: 	@color-primary;
+				color: 			@tip-color;
+				padding: 		@tip-padding;
+				padding-right: 	10px;
+				padding-left: 	10px;
+				height: 		1.4*@tip-height;
+				line-height:  	1.4*@tip-height;
+
+				&:before{
+					position: absolute;
+				    content: " ";
+				    width: 0px;
+				    height: 0px;
+				    border-width: 0.4*@tip-height;//5px;
+				    border-style: solid;
+				    border-color: transparent;
+				    border-right-color: @color-primary;//
+					right: 100%;
+					top: 50%;
+					margin-top: -0.4*@tip-height;
+				}
+
+			}
+		}
+
+		.menu-item-current{
+			position: relative;
+			background: lighten(@sidebar-background, 10%);
+	 		color: lighten(@sidebar-background, 80%);
+
+			&:after{
+				position: absolute;
+			    content: " ";
+			    width: 0px;
+			    height: 0px;
+			    border-width: 8px;
+			    border-style: solid;
+			    border-color: transparent;
+			    top:50%;
+			    right:0;
+			    margin-top: -8px;
+			    border-right-color:#fff;
+			}
+			i{
+				color:@color-primary;
+				//left: 16px;
+			}
+		}
+
+		a{
+			height: 100%;
+			width: 100%;
+			display: block;
+			color: lighten(#A7B1C2, 5%);
+
+		}
+	}
+
+	&sidebar-menu-sm{
+    .menu-item{
+      height: 0.7*@sidebar-item-height;
+      line-height: 0.7*@sidebar-item-height;
+    }
+    .menu-item-icon{
+			padding-left: 0.7*@sidebar-item-height !important;
+      i{
+				width: 0.7*@sidebar-item-height;
+				text-align: center;
+        line-height: 0.7*@sidebar-item-height;
+				font-size: 1.2em;
+      }
+    }
+		.menu-item-current{
+
+			&:after{
+					position: absolute;
+			    content: " ";
+			    width: 0px;
+			    height: 0px;
+			    border-width: 6px;
+			    border-style: solid;
+			    border-color: transparent;
+			    top:50%;
+			    right:0;
+			    margin-top: -6px;
+			    border-right-color:#fff;
+			}
+		}
+  }
+
+	&sidebar-menu-curl{
+		width: @sidebar-item-height;
+	}
+
+
+	&sidebar-menu-sm-curl{
+		width: 0.7*@sidebar-item-height;
+	}
+
+}

@@ -1,0 +1,127 @@
+#@{prefix}dialog-layout{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	//background: url(../img/hide-layout.png);
+	//display: none;
+	z-index: 99999;
+	text-align: center;
+	transition: all .3s ease;   
+}
+
+@-webkit-keyframes open {
+	from { -webkit-transform: scale(0.2);}
+	to { -webkit-transform: scale(1);}
+}
+
+@keyframes open {
+	from {transform: scale(0.1);}
+	to { transform: scale(1); }
+}
+
+@-webkit-keyframes close {
+	from { -webkit-transform: scale(1);}
+	to { -webkit-transform: scale(0); display: none;}
+}
+
+@keyframes close {
+	from {transform: scale(1);}
+	to { transform: scale(0); display: none;}
+}
+
+
+.layout-state-open{
+	opacity: 0;
+    
+}
+.layout-state-close{
+	opacity: 0;
+    
+}
+
+.dialog-state-open{
+	-webkit-animation: open 0.3s both ease;
+	animation: open 0.3s both ease;
+}
+.dialog-state-close{
+	-webkit-animation: close 0.3s both ease;
+	animation: close 0.3s both ease;
+}
+
+.@{prefix}{
+
+
+	&dialog, &rdialog{
+		position: relative;
+		border-radius: 4px;
+		overflow: hidden;
+		width: @dialog-width;
+		background: @dialog-background;
+		padding-top: @dialog-header-height;
+		padding-bottom: @dialog-dock-height;
+		border:1px @font-color solid;
+		//margin-top: 100px;
+		margin:0 auto;
+
+	
+		.dialog-title{
+			position: absolute;
+			width: 100%;
+			height: @dialog-header-height;
+			line-height: @dialog-header-height;
+			text-align: center;
+			left:0;
+			top:0;
+			font-size: @font-size-md;
+			margin:0;
+			padding:3px 0 0 0;
+		}
+
+		.dialog-close{
+			position: absolute;			 
+			width:@dialog-header-height;
+			height:@dialog-header-height;
+			line-height: @dialog-header-height;
+			font-size: @font-size-lg;
+			top:0;
+			right:0;
+			cursor: pointer;
+
+			&:hover{
+				color:@color-primary ;
+			}
+		}
+
+		.dialog-content{
+			height: 100%;
+			//width:100%;
+
+			overflow: hidden;
+		}
+
+		.content{
+			height: 100%;
+			padding-bottom:20px;
+			overflow-y: auto;
+		}
+
+		.dialog-buttons{
+			position: absolute;
+			bottom:0;
+			left:0;
+			height: @dialog-dock-height;
+			width: 100%;
+			padding:0 @padding-horizon;		
+			.button{
+				float: right;
+				margin-left: 15px;
+			}
+		}
+	}
+
+ 
+
+}

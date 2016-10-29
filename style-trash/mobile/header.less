@@ -1,0 +1,84 @@
+.@{prefix}{
+	&header, &header-light, &header-tran{
+		width: 100%;
+		height: @header-height;
+		line-height: @header-height;
+		text-align: center;
+		position: relative;
+		font-size: @font-size-md;
+
+		.@{prefix}header-dock-left, .@{prefix}header-dock-right{
+			position: absolute;
+			height: @header-height;
+			line-height: @header-height;
+			a, button{
+				background: none;
+				border: 0;
+				min-width: @header-height;
+				color: lighten(@header-background, 60%);
+				display: inline-block;
+				float: left;
+				height: @header-height;
+				line-height: @header-height;
+				padding: 0 @padding-horizon;
+				&:hover{
+					background: darken(@header-background, 5%)
+				}
+				i{
+					font-size: @font-size-lg;
+				}
+			}
+
+			.tip{
+				content: ' ';
+				position: absolute;
+				right:8px;
+				top:8px;
+				width: 10px;
+				height: 10px;
+				border-radius: 5px;
+				background: @color-highlight;
+			}
+		}
+
+
+
+		.@{prefix}header-dock-left{
+			left:0;
+			top:0;
+		}
+
+		.@{prefix}header-dock-right{
+			right:0;
+			top:0;
+		}
+	}
+
+	&header{
+		background: @header-background;
+		color: #fff;
+	}
+
+	&header-light{
+		background: @header-background-light;
+		color: @header-color-light;
+		border-bottom: 1px @line-color solid;
+		.@{prefix}header-dock-left, .@{prefix}header-dock-right{
+			 
+			a, button{
+				 
+				color: @font-color;
+				 
+				&:hover{
+					background: none;
+					color: @color-primary;
+				}
+			}
+		}
+	}
+
+	&header-tran{
+		background: none;
+		color: #fff;
+	}
+}

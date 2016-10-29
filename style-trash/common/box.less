@@ -1,0 +1,130 @@
+.@{prefix}{
+	&box{
+		text-align: left;
+		background: #fff;
+		//border-top: 1px @line-color-light solid;
+		border-bottom: 1px @line-color solid;
+		&:after{
+			content: '';
+			display: block;
+			clear:both;
+			overflow: hidden;
+			width: 100%;
+			height: 0;
+			line-height: 0;
+		}
+
+		&-tool{
+			border-top:1px @line-color-light solid;
+			padding-top: @padding-vertical;
+			text-align: right;
+		}
+	}
+
+	&box-flex{
+		display: flex;
+		background: #fff;
+		border-bottom: 1px @line-color solid;
+
+		.flex-left{
+			flex:1;
+		}
+
+		.flex-right{
+
+		}
+	}
+
+	&box-dock{
+		border-top:1px @line-color-light solid;
+		display: flex;
+		.flex{
+			display: flex;
+		}
+
+		.pull-right{
+			 
+			text-align: right;
+		 
+			 
+		}
+
+		.pull-left{
+			flex:1;
+			text-align: left;
+		 	display: flex;
+		}
+		
+	}
+
+	&box-title{
+		padding: 0.5*@padding-vertical @padding-horizon;
+		position: relative;
+		font-size: @font-size-sm;
+		text-align: left;
+		font-weight: normal;
+		color:@box-title-color;
+	}
+
+	&box-title3{
+		min-height: @box-title2-height;
+		padding: 0.8em @padding-horizon;
+		//line-height: @box-title2-height;fuck
+		//padding: 0 @padding-horizon;
+		display: flex;
+		border-bottom:1px @line-color-light solid;
+
+		.title{
+			flex: 1;
+			font-weight:normal;
+		}
+
+		.link{
+			color:@font-color-light;
+			line-height:@box-title2-height;
+		}
+	}
+
+	&box-title2{
+		min-height: @box-title2-height;
+		//padding: 0 @padding-horizon;
+		line-height: @box-title2-height;
+		padding: 0 @padding-horizon;
+		display: flex;
+		border-bottom:1px @line-color-light solid;
+
+		.title{
+			flex: 1;
+			font-weight:normal;
+		}
+
+		.link{
+			color:@font-color-light;
+			line-height:@box-title2-height;
+		}
+	}
+
+	&box-title-sm{
+		height: @box-titlesm-height;
+		line-height: @box-titlesm-height;
+		padding: 0 10px;
+		display: flex;
+		border-bottom:1px @line-color-light solid;
+
+		.select{}
+
+		.title{
+			flex: 1;
+			padding-left:10px;
+			font-weight:normal;
+		}
+
+		.link{
+			color:@font-color-light;
+		}
+	}
+
+	&fw{
+		width: 100%;
+	}
+}

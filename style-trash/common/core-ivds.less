@@ -1,0 +1,68 @@
+html,body{
+	height: 100%;
+}
+
+body{
+	font-family: @font-family; 
+	font-size: @font-size;
+	color: @font-color;
+	line-height: @line-height;
+	text-align: center;
+	min-height: 100%;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+ 
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	//transition: all ease-in-out .4s !important;
+}
+
+body, div, h1, h2, h3, h4, h5, h6, form, p, input, select, button, ul, ol, li, header, section, menu, nav, footer, aside, article{
+	margin: 0;
+	padding: 0;
+}
+
+img{
+	border: 0;
+}
+
+article,aside,dialog,footer,header,section,footer,nav,figure,menu{
+	display:block
+}
+
+ul{
+	list-style-type: none;
+}
+
+a{ 
+	color: @font-color;
+	text-decoration: none;
+	transition: all ease-in-out .4s !important;
+}
+
+a:hover{
+	color: @color-primary;
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+input, button, textarea{
+	transition: all ease-in-out .4s !important;
+	//outline:none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+button:hover{
+	color: @color-primary;
+	cursor: pointer;
+}
+
+
+p{
+	padding: 0.8*@font-size 0;
+}
+
+ 

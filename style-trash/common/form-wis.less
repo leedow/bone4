@@ -1,0 +1,110 @@
+/*
+ bone-wis主题增强表单样式，增加了适用于PC端的表单布局 
+*/	
+.form-notice{
+	padding:2px @padding-vertical;
+	background:@color-highlight;
+	text-align: left;
+	color:#fff;
+}
+.@{prefix}{
+
+
+
+	&form-pc {
+
+		 
+
+
+		.form-notice{
+			padding:2px @padding-vertical;
+			background:@color-highlight;
+			text-align: left;
+			color:#fff;
+		}
+
+		.@{prefix}autocomplete{
+			.@{prefix}dropdown-menu{
+				li button{
+					padding-left: @form-blank-text-width;
+					text-align: left;
+				}
+			}
+			 
+		}
+
+		
+
+		.@{prefix}form-item,.@{prefix}form-item-lg{
+			margin-bottom:10px;
+
+			.@{prefix}input-wrong{
+				input{
+					border-bottom:1px @color-highlight solid !important;
+				}
+			}
+	 
+			padding: 0;
+			padding-left: @form-blank-text-width;
+			//border-bottom:1px @line-color solid;
+			position: relative;
+			
+			input,select{
+				border: 0 !important;
+				border-bottom:1px @line-color solid !important;
+				padding: @input-padding-lg;
+				//margin-left: @form-blank-text-width;
+				height: @input-height-lg;
+				font-size: @font-size-md;
+				box-shadow: none !important;
+				width:100%;
+			}
+
+			textarea{
+				border: 0 !important;
+				padding: @input-padding-lg;
+				font-size: @font-size-md;
+				width: 100%;
+				margin:0;
+				border-bottom:1px @line-color solid !important;
+			}
+
+			.input-no-label{
+				padding-left: @padding-vertical;
+			}
+
+			i{
+
+			}
+
+			p{
+				padding-left: @padding-vertical;
+			}
+			
+			.@{prefix}label{
+				width: @form-blank-text-width;
+				position: absolute;
+				left:0;
+				top:0;
+				height: @input-height-lg;
+				line-height: @input-height-lg;
+				text-align: right;
+				z-index: 99;
+				font-size: @font-size-md;
+				padding-right: @padding-vertical;
+			}
+
+
+		}
+
+		.submit-btn{
+			padding-left: @form-blank-text-width+18;
+		}
+
+	 
+		 
+	}
+
+
+
+}

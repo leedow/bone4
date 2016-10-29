@@ -1,0 +1,116 @@
+.@{prefix}{
+	&form{
+		label{
+			font-weight: bold;
+		}
+
+	}
+
+	&label-required{
+		&:after{
+			color: @color-highlight;
+			content: ' * ';
+			font-size: @font-size-md;
+		}
+	}
+
+	&form-item, &form-item-lg{
+		padding: @form-item-padding 0;
+	}
+
+	&form-item:after{
+		content: '';
+		display: block;
+		clear:both;
+		width: 100%;
+		line-height: 0;
+		overflow: hidden;
+	}
+
+	&form-control{
+		width: 100%;
+	}
+
+	&label-control{
+		line-height: @input-height;
+		text-align: right;
+	}
+
+
+	//手机端样式
+	&form-blank {
+
+		.form-notice{
+			padding:2px @padding-vertical;
+			background:@color-highlight;
+			text-align: left;
+			color:#fff;
+		}
+
+		
+
+		.@{prefix}form-item,.@{prefix}form-item-lg{
+	 
+			padding: 0;
+			border-bottom:1px @line-color solid;
+			position: relative;
+			
+			input,select{
+				border: 0 !important;
+				padding: @input-padding-lg;
+				padding-left: @form-blank-text-width;
+				height: @input-height-lg;
+				font-size: @font-size-md;
+				box-shadow: none !important;
+				width:100%;
+			}
+
+			textarea{
+				border: 0 !important;
+				padding: @input-padding-lg;
+				width: 100%;
+				margin:0;
+			}
+
+			.input-no-label{
+				padding-left: @padding-vertical;
+			}
+
+			i{
+
+			}
+
+			p{
+				padding-left: @padding-vertical;
+			}
+			
+			.@{prefix}label{
+				width: @form-blank-text-width;
+				position: absolute;
+				left:0;
+				top:0;
+				height: @input-height-lg;
+				line-height: @input-height-lg;
+				text-align: right;
+				z-index: 99;
+				font-size: @font-size-md;
+				padding-right: @padding-vertical;
+			}
+
+
+		}
+
+		.@{prefix}form-item-lg:last-child{
+			border-bottom: 0;
+		}
+
+		.@{prefix}form-item-noline {
+			border-bottom: 0px !important;
+		}
+
+		 
+	}
+
+
+
+}

@@ -1,0 +1,73 @@
+//时间轴
+.@{prefix}{
+
+	&timeline{
+
+		.timeline-item{
+			position: relative;
+			text-align: left;
+			padding-left: 20px;
+			line-height: 20px;
+			padding-bottom:10px;
+
+			&:last-child{
+				padding-bottom: 0;
+				&:before{
+					display: none;
+				}
+			}
+
+			.timeline-content{
+				position: relative;
+				top: -4px;
+
+				p{
+					padding:0;
+					margin:0;
+				}
+
+				.title{
+					font-weight: bold;
+				}
+
+				.tag{
+					color: @font-color-light;
+				}
+			}
+
+			&:after{
+					content: ' ';
+					position: absolute;
+					left:0;
+					top: 0;
+					width: 12px;
+					height: 12px;
+					border:2px @color-primary solid;
+					background: #fff;
+					border-radius: 6px;
+			}
+
+			&:before{
+				content: ' ';
+				width: 2px;
+				background: @line-color;
+				height: 100%;
+				position: absolute;
+				left:5px;
+				top:0;
+			}
+		}
+
+		.timeline-item-highlight{
+			&:after{
+				border:2px @color-highlight solid;
+			}
+		}
+
+		.timeline-item-comfort{
+			&:after{
+				border:2px @color-comfort solid;
+			}
+		}
+	}
+}
