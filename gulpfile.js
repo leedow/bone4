@@ -11,7 +11,19 @@ var rev				= require('gulp-rev');
 
 gulp.task('css', function(){
 	watch('./style/**/*.less', function(){
-		gulp.src('./style/bone.less')
+		gulp.src('./style/bone-all.less')
+			.pipe(less())
+			.on('error', function(err) {
+				gutil.log('Less Error!', err.message);
+				this.end();
+			})
+			//.pipe(rev())
+			.pipe(autoprefixer())
+			//.pipe(minifyCSS())
+			.pipe(gulp.dest('./build'));
+
+
+		gulp.src('./style/bone-pc.less')
 			.pipe(less())
 			.on('error', function(err) {
 				gutil.log('Less Error!', err.message);
@@ -21,6 +33,17 @@ gulp.task('css', function(){
 			.pipe(autoprefixer())
 			//.pipe(minifyCSS())
 			.pipe(gulp.dest('./build'))
+
+			gulp.src('./style/bone-mobile.less')
+				.pipe(less())
+				.on('error', function(err) {
+					gutil.log('Less Error!', err.message);
+					this.end();
+				})
+				//.pipe(rev())
+				.pipe(autoprefixer())
+				//.pipe(minifyCSS())
+				.pipe(gulp.dest('./build'))
 	});
 });
 

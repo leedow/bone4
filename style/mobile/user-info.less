@@ -1,0 +1,56 @@
+.@{prefix}{
+  &user-box{
+    background: @color-primary;
+	}
+
+  &user-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.8*@padding-vertical 2*@padding-horizon;
+    .user-avatar{
+
+       img{
+         width: 50px;
+         height:50px;
+         border-radius: 25px;
+         vertical-align: bottom;
+       }
+    }
+    .user-name{
+      flex:1;
+  		color:#fff;
+  		font-size: @font-size-md;
+      text-align: left;
+      padding-left: 1.5em;
+  	}
+  	.user-phone{
+  		font-size: @font-size;
+  		font-weight: normal;
+  	}
+  }
+
+	&user-count{
+		display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+		background: rgba(0, 0, 0, 0.1);
+		padding:0.8em 0;
+
+    .user-count-item{
+  		color:#fff;
+  		text-align: center;
+      .user-count-title{
+        font-size: @font-size-sm;
+    	}
+    	.user-count-number{
+    		font-size: @font-size-lg;
+    		line-height: 1em;
+    		display: block;
+    	}
+  	}
+
+	}
+
+}

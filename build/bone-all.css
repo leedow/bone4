@@ -1221,3 +1221,67 @@ textarea {
 .card-comfort {
   border-left: 2px #66CC33 solid;
 }
+.user-box {
+  background: #3492e6;
+}
+.user-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 11.2px 28px;
+}
+.user-info .user-avatar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  vertical-align: bottom;
+}
+.user-info .user-name {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #fff;
+  font-size: 16px;
+  text-align: left;
+  padding-left: 1.5em;
+}
+.user-info .user-phone {
+  font-size: 14px;
+  font-weight: normal;
+}
+.user-count {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0.8em 0;
+}
+.user-count .user-count-item {
+  color: #fff;
+  text-align: center;
+}
+.user-count .user-count-item .user-count-title {
+  font-size: 12px;
+}
+.user-count .user-count-item .user-count-number {
+  font-size: 20px;
+  line-height: 1em;
+  display: block;
+}
