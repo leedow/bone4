@@ -2,8 +2,6 @@
 .@{prefix}{
 	@sidebar-item-height: 50px;
 
-
-
 	&sidebar-menu{
     background: @sidebar-background;
 
@@ -31,40 +29,6 @@
 			font-size: 16px;
 			color: #fff;
 			cursor: pointer;
-
-			.tip{
-				display: none;
-				position: absolute;
-				left: 100%;
-				top: 50%;
-				margin-top: 	-0.7*@tip-height;
-				background: 	@color-primary;
-				color: 			@tip-color;
-				padding: 		@tip-padding;
-				padding-right: 	10px;
-				padding-left: 	10px;
-				height: 		1.4*@tip-height;
-				line-height:  	1.4*@tip-height;
-
-				&:before{
-					position: absolute;
-				    content: " ";
-				    width: 0px;
-				    height: 0px;
-				    border-width: 0.4*@tip-height;//5px;
-				    border-style: solid;
-				    border-color: transparent;
-				    border-right-color: @color-primary;//
-					right: 100%;
-					top: 50%;
-					margin-top: -0.4*@tip-height;
-				}
-
-			}
-
-
-			 
-
 		}
 
 		.menu-item-current{
@@ -131,6 +95,38 @@
 			}
 		}
   }
+
+	&sidebar-menu-white{
+    background: #fff;
+
+    .menu-item-icon{
+      i{
+        color:@font-color-light !important;
+      }
+    }
+
+		.menu-item{
+
+			color: @font-color-light !important;
+
+		}
+
+		.menu-item-current{
+
+			background: @color-secondary;
+	 		color: @font-color-light !important;
+
+			&:after{
+				display: none;
+			}
+			i{
+				color:@color-primary;
+				//left: 16px;
+			}
+		}
+
+
+	}
 
 	&sidebar-menu-curl{
 		width: @sidebar-item-height;

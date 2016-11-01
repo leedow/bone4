@@ -1,0 +1,75 @@
+
+.@{prefix}{
+
+  &card{
+    background: #fff;
+    border-radius: @radius;
+    border: 1px @line-color-light solid;
+    border-radius: 2*@radius;
+
+
+    .card-header{
+      display: flex;
+      justify-content: center;
+      border-bottom:1px @line-color-light solid;
+      align-items:  center;
+
+      .card-title{
+        font-size: @font-size-md;
+        font-weight: normal;
+        padding: 0.6em @padding-vertical;
+        text-align: left;
+        flex: 1;
+      }
+
+      .card-addon{
+        padding-right: @padding-vertical;
+        color: @font-color-light;
+      }
+    }
+
+
+
+    .card-content{
+      padding: 0.5em @padding-vertical;
+      text-align: left;
+    }
+
+    .card-footer{
+      display: flex;
+      justify-content: center;
+      border-top:1px @line-color-light solid;
+      align-items:  baseline;
+      padding: 0.5em @padding-vertical;
+      text-align: left;
+      .card-footer-left{
+        flex:1;
+      }
+      .card-footer-right{
+
+      }
+    }
+  }
+
+
+
+
+
+
+  &card-underline{
+    border:0px;
+    border-bottom: 1px @line-color-light solid;
+  }
+
+  &card-primary{
+    border-left: 2px @color-primary solid;
+  }
+
+  &card-highlight{
+    border-left: 2px @color-highlight solid;
+  }
+
+  &card-comfort{
+    border-left: 2px @color-comfort solid;
+  }
+}

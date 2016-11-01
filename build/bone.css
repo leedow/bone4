@@ -73,10 +73,10 @@ textarea {
   padding: 0;
   margin: 0;
 }
-.timeline .timeline-item .timeline-content .title {
+.timeline .timeline-item .timeline-content .timeline-title {
   font-weight: bold;
 }
-.timeline .timeline-item .timeline-content .tag {
+.timeline .timeline-item .timeline-content .timeline-tag {
   color: #999;
 }
 .timeline .timeline-item:after {
@@ -131,33 +131,6 @@ textarea {
   color: #fff;
   cursor: pointer;
 }
-.sidebar-menu .menu-item .tip {
-  display: none;
-  position: absolute;
-  left: 100%;
-  top: 50%;
-  margin-top: -14px;
-  background: #3492e6;
-  color: #fff;
-  padding: 1px 4px;
-  padding-right: 10px;
-  padding-left: 10px;
-  height: 28px;
-  line-height: 28px;
-}
-.sidebar-menu .menu-item .tip:before {
-  position: absolute;
-  content: " ";
-  width: 0px;
-  height: 0px;
-  border-width: 8px;
-  border-style: solid;
-  border-color: transparent;
-  border-right-color: #3492e6;
-  right: 100%;
-  top: 50%;
-  margin-top: -8px;
-}
 .sidebar-menu .menu-item-current {
   position: relative;
   background: #61aaec;
@@ -210,6 +183,25 @@ textarea {
   right: 0;
   margin-top: -6px;
   border-right-color: #fff;
+}
+.sidebar-menu-white {
+  background: #fff;
+}
+.sidebar-menu-white .menu-item-icon i {
+  color: #999 !important;
+}
+.sidebar-menu-white .menu-item {
+  color: #999 !important;
+}
+.sidebar-menu-white .menu-item-current {
+  background: #f2f2f2;
+  color: #999 !important;
+}
+.sidebar-menu-white .menu-item-current:after {
+  display: none;
+}
+.sidebar-menu-white .menu-item-current i {
+  color: #3492e6;
 }
 .sidebar-menu-curl {
   width: 50px;
@@ -978,6 +970,81 @@ textarea {
     margin-left: 0%;
   }
 }
+.card {
+  background: #fff;
+  border-radius: 2px;
+  border: 1px #eee solid;
+  border-radius: 4px;
+}
+.card .card-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px #eee solid;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card .card-header .card-title {
+  font-size: 16px;
+  font-weight: normal;
+  padding: 0.6em 14px;
+  text-align: left;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.card .card-header .card-addon {
+  padding-right: 14px;
+  color: #999;
+}
+.card .card-content {
+  padding: 0.5em 14px;
+  text-align: left;
+}
+.card .card-footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top: 1px #eee solid;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding: 0.5em 14px;
+  text-align: left;
+}
+.card .card-footer .card-footer-left {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.card-underline {
+  border: 0px;
+  border-bottom: 1px #eee solid;
+}
+.card-primary {
+  border-left: 2px #3492e6 solid;
+}
+.card-highlight {
+  border-left: 2px #FF6633 solid;
+}
+.card-comfort {
+  border-left: 2px #66CC33 solid;
+}
 .p1111 {
   padding: 7px 7px;
 }
@@ -1058,6 +1125,87 @@ textarea {
 }
 .p3333 {
   padding: 28px 28px;
+}
+.m1111 {
+  margin: 7px 7px;
+}
+.m0111 {
+  margin: 0 7px 7px 7px;
+}
+.m1000 {
+  margin-top: 7px;
+}
+.m0010 {
+  margin-bottom: 7px;
+}
+.m0100 {
+  margin-right: 7px;
+}
+.m0001 {
+  margin-left: 7px;
+}
+.m1010 {
+  margin: 7px 0;
+}
+.m0101 {
+  margin: 0 7px;
+}
+.m1101 {
+  margin: 7px 7px 0 7px;
+}
+.m1001 {
+  margin: 7px 0 0 7px;
+}
+.m0110 {
+  margin: 0 7px 7px 0;
+}
+.m2222 {
+  margin: 14px 14px;
+}
+.m0222 {
+  margin: 0 14px 14px 14px;
+}
+.m2000 {
+  margin-top: 14px;
+}
+.m0020 {
+  margin-bottom: 14px;
+}
+.m0200 {
+  margin-right: 14px;
+}
+.m0002 {
+  margin-left: 14px;
+}
+.m2020 {
+  margin: 14px 0;
+}
+.m0202 {
+  margin: 0 14px;
+}
+.m2202 {
+  margin: 14px 14px 0 14px;
+}
+.m2002 {
+  margin: 14px 0 0 14px;
+}
+.m0220 {
+  margin: 0 14px 14px 0;
+}
+.m3000 {
+  margin-top: 28px;
+}
+.m0030 {
+  margin-bottom: 28px;
+}
+.m0300 {
+  margin-right: 28px;
+}
+.m0003 {
+  margin-left: 28px;
+}
+.m3333 {
+  margin: 28px 28px;
 }
 .thin-scroll::-webkit-scrollbar {
   width: 7px;

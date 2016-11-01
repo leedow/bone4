@@ -1,0 +1,92 @@
+//为了改进grid下的margin问题，margin-wis在margin的基础上所有值都*0.5
+.@{prefix}{
+	&m1111{
+		margin: 0.5*@margin-vertical 0.5*@margin-horizon;
+	}
+	&m0111{
+		margin: 0  0.5*@margin-horizon 0.5*@margin-vertical 0.5*@margin-horizon;
+	}
+	&m1000{
+		margin-top: 0.5*@margin-vertical;
+	}
+	&m0010{
+		margin-bottom: 0.5*@margin-vertical;
+	}
+	&m0100{
+		margin-right: 0.5*@margin-horizon;
+	}
+	&m0001{
+		margin-left: 0.5*@margin-horizon;
+	}
+	&m1010{
+		margin: 0.5*@margin-vertical 0;
+	}
+	&m0101{
+		margin: 0 0.5*@margin-horizon;
+	}
+	&m1101{
+		margin: 0.5*@margin-vertical 0.5*@margin-horizon 0 0.5*@margin-vertical;
+	}
+	&m1001{
+		margin: 0.5*@margin-vertical 0 0 0.5*@margin-vertical;
+	}
+	&m0110{
+		margin: 0   0.5*@margin-horizon 0.5*@margin-vertical 0;
+	}
+
+
+
+	&m2222{
+		margin: @margin-vertical @margin-horizon;
+	}
+	&m0222{
+		margin: 0  @margin-horizon @margin-vertical @margin-horizon;
+	}
+	&m2000{
+		margin-top: @margin-vertical;
+	}
+	&m0020{
+		margin-bottom: @margin-vertical;
+	}
+	&m0200{
+		margin-right: @margin-horizon;
+	}
+	&m0002{
+		margin-left: @margin-horizon;
+	}
+	&m2020{
+		margin: @margin-vertical 0;
+	}
+	&m0202{
+		margin: 0 @margin-horizon;
+	}
+	&m2202{
+		margin: @margin-vertical @margin-horizon 0 @margin-vertical;
+	}
+	&m2002{
+		margin: @margin-vertical 0 0 @margin-vertical;
+	}
+	&m0220{
+		margin: 0   @margin-horizon @margin-vertical 0;
+	}
+
+
+
+
+	&m3000{
+		margin-top: 2*@margin-vertical;
+	}
+	&m0030{
+		margin-bottom: 2*@margin-vertical;
+	}
+	&m0300{
+		margin-right: 2*@margin-horizon;
+	}
+	&m0003{
+		margin-left: 2*@margin-horizon;
+	}
+	&m3333{
+		margin: 2*@margin-vertical 2*@margin-horizon;
+	}
+
+}
