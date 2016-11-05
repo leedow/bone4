@@ -168,3 +168,10 @@ body, html{
     line-height: 0;
     height: 0;
   }
+
+
+.flex-center{
+  display: flex;
+  align-items: center;
+  
+}
