@@ -6,8 +6,9 @@ var uglify			= require('gulp-uglify');
 var minifyCSS 		= require('gulp-minify-css');
 var webpack 		= require('gulp-webpack');
 var gutil 			= require('gulp-util');
-var ejs 			= require("gulp-ejs");
 var rev				= require('gulp-rev');
+var browserSync = require('browser-sync').create();
+var reload      = browserSync.reload;
 
 gulp.task('css', function(){
 	watch('./style/**/*.less', function(){
@@ -20,7 +21,8 @@ gulp.task('css', function(){
 			//.pipe(rev())
 			.pipe(autoprefixer())
 			//.pipe(minifyCSS())
-			.pipe(gulp.dest('./build'));
+			.pipe(gulp.dest('./build'))
+			.pipe(reload({stream: true}));
 
 
 		gulp.src('./style/bone-pc.less')
@@ -47,6 +49,19 @@ gulp.task('css', function(){
 	});
 });
 
+gulp.task('html', function(){
+	gulp.watch("demos/**/*.html").on('change', reload);
+})
+
+// 静态服务器
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        server: {
+            baseDir: "./"
+        }
+    });
+});
+
 gulp.task('default', function(){
-	gulp.run(['css']);
+	gulp.run(['browser-sync', 'css', 'html']);
 });

@@ -1048,6 +1048,7 @@ textarea {
 .btn-comfort-blank {
   color: #66CC33;
   border: 1px #66CC33 solid;
+  background: #fff;
 }
 .btn-comfort-blank:hover {
   background: #66CC33;
@@ -1272,7 +1273,7 @@ textarea {
 .textarea,
 .input,
 .select {
-  background: #fff;
+  background: none;
   border: 1px #e0e0e0 solid;
   border-radius: 2px;
   line-height: 1em;
@@ -1296,8 +1297,10 @@ textarea {
 .readonly {
   background: #f9f9f9;
 }
-.textarea {
+.textarea,
+.textarea-underline {
   padding: 9px 10px;
+  font-size: 14px !important;
 }
 .input,
 .select {
@@ -1320,14 +1323,14 @@ textarea {
   padding: 3px 6px;
   height: 27px;
 }
-.input-wrong,
-.input-pass,
-.input-loading {
+.be-wrong,
+.be-pass,
+.be-loading {
   position: relative;
 }
-.input-wrong:after,
-.input-pass:after,
-.input-loading:after {
+.be-wrong:after,
+.be-pass:after,
+.be-loading:after {
   position: absolute;
   right: 0.4em;
   top: 50%;
@@ -1337,107 +1340,77 @@ textarea {
   line-height: 1em;
   margin-top: -0.5em;
 }
-.input-wrong > i,
-.input-pass > i,
-.input-loading > i {
+.be-wrong > i,
+.be-pass > i,
+.be-loading > i {
   display: none;
 }
-.input-wrong:after {
+.be-wrong:after {
   content: '\e62a';
   color: #FF6633;
 }
-.input-wrong > .input {
+.be-wrong > input,
+.be-wrong > select,
+.be-wrong > textarea {
   border: 1px #FF6633 solid;
   box-shadow: 0 0 4px #ff9f80;
 }
-.input-wrong > .input:hover,
-.input-wrong > .input:focus {
+.be-wrong > input:hover,
+.be-wrong > select:hover,
+.be-wrong > textarea:hover,
+.be-wrong > input:focus,
+.be-wrong > select:focus,
+.be-wrong > textarea:focus {
   border: 1px #FF6633 solid;
   box-shadow: 0 0 4px #ff9f80;
 }
-.input-pass:after {
+.be-wrong > .input-underline,
+.be-wrong > .select-underline,
+.be-wrong > .textarea-underline {
+  border-bottom: 1px #FF6633 solid !important;
+  box-shadow: none !important;
+}
+.be-pass:after {
   content: '\e608';
   color: #66CC33;
 }
-.input-pass > .input,
-.input-pass > .input-lg {
+.be-pass > input,
+.be-pass > select,
+.be-pass > textarea {
   border: 1px #66CC33 solid;
   box-shadow: 0 0 4px #94db70;
 }
-.input-pass > .input:hover,
-.input-pass > .input-lg:hover,
-.input-pass > .input:focus,
-.input-pass > .input-lg:focus {
+.be-pass > input:hover,
+.be-pass > select:hover,
+.be-pass > textarea:hover,
+.be-pass > input:focus,
+.be-pass > select:focus,
+.be-pass > textarea:focus {
   border: 1px #66CC33 solid;
   box-shadow: 0 0 4px #94db70;
 }
-.input-notice .tip {
-  background: #FF6633;
+.be-pass > .input-underline,
+.be-pass > .select-underline,
+.be-pass > .textarea-underline {
+  border-bottom: 1px #66CC33 solid !important;
+  box-shadow: none !important;
 }
-.input-notice .tip-top {
-  position: absolute;
-  z-index: 999;
-  right: 14px;
-  top: -12px;
-  line-height: 1.5em;
-}
-.input-notice .tip-top:before {
-  border-top-color: #FF6633;
-}
-.input-notice .tip-right {
-  position: absolute;
-  z-index: 999;
-  left: 100%;
-  top: 50%;
-  margin-top: -10px;
-  white-space: nowrap;
-  line-height: 1.5em;
-}
-.input-notice .tip-right:before {
-  border-right-color: #FF6633;
-}
-.form-item-lg .input-wrong:after,
-.form-item-lg .input-pass:after {
-  right: 14px;
-  height: 46px;
-  line-height: 46px;
-}
-.form-item-lg .input-icon i {
-  right: 14px;
-  height: 46px;
-  line-height: 46px;
-}
-.select-wrong > .select,
-.select-wrong > .select-lg {
-  border: 1px #FF6633 solid;
-  box-shadow: 0 0 4px #ff9f80;
-}
-.select-wrong > .select:hover,
-.select-wrong > .select-lg:hover,
-.select-wrong > .select:focus,
-.select-wrong > .select-lg:focus {
-  border: 1px #FF6633 solid;
-  box-shadow: 0 0 4px #ff9f80;
-}
-.select-wrong > p {
-  color: #FF6633;
-  padding: 7px 0 0 0;
-}
-.input-icon {
+.has-icon {
   position: relative;
 }
-.input-icon i {
+.has-icon i {
   position: absolute;
-  right: 7px;
-  top: 0;
+  right: 0.4em;
+  top: 50%;
   font-family: iconfont;
   font-size: 20px;
-  color: #66CC33;
-  height: 39px;
-  line-height: 39px;
-  color: #999;
+  height: 1em;
+  line-height: 1em;
+  margin-top: -0.5em;
 }
-.input-pass-lg:after {
-  height: 46px;
-  line-height: 46px;
+.input-underline,
+.select-underline,
+.textarea-underline {
+  border: 0px !important;
+  border-bottom: 1px #e0e0e0 solid !important;
 }
