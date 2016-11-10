@@ -55,12 +55,13 @@
              if(index == 0){
                className += ' code-content-current';
              }
-             code += '<div id="' + $(this).data('rel') + '" class="' + className + '">'
-              + $(this).html().replace(/</g, '&lt;').replace(/</g, '&gt;').replace(/\n/g, '<br>').replace(/\s/g, '&nbsp;&nbsp;')
-              + '</div>';
+             code += '<div id="' + $(this).data('rel') + '" class="' + className + '"><pre class="code-scroll"><code class="language-markup">'
+              + $(this).html().replace(/</g, '&lt;').replace(/</g, '&gt;')
+              + '</code></pre></div>';
            })
            $('#' + mode + 'content').html(code);
          }
+         Prism.highlightAll();
 
        }
      })

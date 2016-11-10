@@ -106,7 +106,7 @@ body, html{
 }
 
 .code-content{
-  padding: 4px  20px;
+  padding: 4px  20px 10px 20px;
 }
 
 .code-content-current{
@@ -132,6 +132,8 @@ body, html{
   background-color: #fff;
   border-left: 2px solid transparent;
 }
+
+
 
 .check{
   float:left;
@@ -173,6 +175,6 @@ body, html{
 .flex-center{
   display: flex;
   align-items: center;
-  
-  
+
+
 }
