@@ -1414,6 +1414,48 @@ textarea {
   width: 100%;
   display: block !important;
 }
+.table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+.table th {
+  padding: 11.2px 14px;
+  font-size: 16px;
+  line-height: 1.2em;
+  white-space: nowrap;
+  text-align: left;
+  font-weight: normal;
+}
+.table td {
+  padding: 11.2px 14px;
+  line-height: 1.4em;
+}
+.table-underline th,
+.table-underline td {
+  border-bottom: 1px #eee solid;
+}
+.table-border {
+  border: 1px #eee solid;
+}
+.table-border th {
+  background: #f9f9f9;
+}
+.table-border th,
+.table-border td {
+  border-bottom: 1px #eee solid;
+}
+.table-border-all {
+  border: 1px #eee solid;
+}
+.table-border-all th {
+  background: #f9f9f9;
+}
+.table-border-all th,
+.table-border-all td {
+  border-bottom: 1px #eee solid;
+  border-right: 1px #eee solid;
+}
 .card {
   background: #fff;
   border-radius: 2px;
