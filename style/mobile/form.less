@@ -1,0 +1,59 @@
+.form-item-head{
+  text-align: left;
+  label{
+    padding-left: @padding-horizon;
+    font-weight: normal !important;
+
+  }
+
+  .input, .select, .textarea{
+    border-left: 0 !important;
+    border-right: 0 !important;
+    border-radius: 0 !important;
+  }
+
+}
+
+.form-item-blank{
+  position: relative;
+  label{
+    padding-left: @padding-horizon;
+    font-weight: normal !important;
+    position: absolute;
+    left:0;
+    top:50%;
+    height: 24px;
+    line-height: 24px;
+    margin-top: -12px;
+    z-index: 999;
+  }
+  .input, .select, .textarea{
+    padding-left:100px;
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+}
+
+.@{prefix}{
+
+    &form-head{
+      .form-item{
+        padding-top:5px;
+      }
+      .form-item-head;
+    }
+
+
+
+    &form-blank{
+       .form-item{
+         position: relative;
+
+       }
+
+       .form-item-blank;
+    }
+}

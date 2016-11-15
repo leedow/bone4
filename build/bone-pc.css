@@ -107,6 +107,14 @@ textarea {
 }
 .sidebar-menu {
   background: #3492e6;
+  -webkit-transition: width ease-in-out 0.4s !important;
+  transition: width ease-in-out 0.4s !important;
+}
+.sidebar-menu > li > span {
+  -webkit-transition: all ease-in-out 0.4s !important;
+  transition: all ease-in-out 0.4s !important;
+  display: block;
+  white-space: nowrap;
 }
 .sidebar-menu .menu-item-icon {
   padding-left: 50px !important;
@@ -204,10 +212,18 @@ textarea {
   color: #3492e6;
 }
 .sidebar-menu-curl {
-  width: 50px;
+  width: 50px !important;
+}
+.sidebar-menu-curl > li > span {
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }
 .sidebar-menu-sm-curl {
-  width: 35px;
+  width: 35px !important;
+}
+.sidebar-menu-sm-curl > li > span {
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
@@ -1260,6 +1276,12 @@ textarea {
 .fr {
   float: right;
 }
+.tl {
+  text-align: left;
+}
+.tr {
+  text-align: right;
+}
 .ovf {
   overflow: hidden;
 }
@@ -1267,13 +1289,16 @@ button,
 textarea {
   outline: none;
 }
+.label-lg {
+  font-size: 16px;
+}
 .form-control {
   width: 100%;
 }
 .textarea,
 .input,
 .select {
-  background: none;
+  background: #fff;
   border: 1px #e0e0e0 solid;
   border-radius: 2px;
   line-height: 1em;

@@ -1,5 +1,53 @@
 .@{prefix}{
   &markdown{
-    
+    h2,h3{
+      padding: 1em 0 0.5em 0;
+    }
+    h2{
+      font-size: 16px;
+      font-weight: bold;
+    }
+    h3{
+      font-size: 14px;
+      font-weight: bold;
+    }
+    p{
+      padding: 10px 0;
+      line-height: 1.8em;
+    }
+    table{
+      margin: 5px 0;
+      width: 100%;
+  		text-align: left !important;
+  		border-collapse:collapse;
+
+  		th{
+  			text-align: left;
+  			padding:  0.6*@padding-horizon @padding-vertical;
+  			font-weight: normal;
+        font-size: @font-size;
+        line-height: 1.6em;
+  			white-space: nowrap;
+  			text-align: left;
+  			font-weight: normal;
+  		}
+
+
+  		td{
+  			padding: 0.6*@padding-horizon @padding-vertical;
+  			line-height: 1.6em;
+  		}
+
+      border: 1px @line-color-light solid;
+
+      th{
+        background:@color-light;
+      }
+
+  		th,td{
+  			border-bottom: 1px @line-color-light solid;
+  			border-right: 1px @line-color-light solid;
+  		}
+    }
   }
 }

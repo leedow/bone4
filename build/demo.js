@@ -68,5 +68,5 @@
 
   }
 
-  $('.switch').eq(4).click();
+  $('.switch').eq(3).click();
 })()

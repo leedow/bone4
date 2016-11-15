@@ -4,6 +4,12 @@
 
 	&sidebar-menu{
     background: @sidebar-background;
+		transition: width ease-in-out 0.4s !important;
+		> li >span{
+			transition: all ease-in-out 0.4s !important;
+			display: block;
+			white-space:nowrap;
+		}
 
     .menu-item-icon{
       padding-left: @sidebar-item-height !important;
@@ -129,12 +135,21 @@
 	}
 
 	&sidebar-menu-curl{
-		width: @sidebar-item-height;
+		width: @sidebar-item-height !important;
+		> li >span{
+
+			transform: scale(0);
+			//display: none;
+		}
 	}
 
 
 	&sidebar-menu-sm-curl{
-		width: 0.7*@sidebar-item-height;
+		width: 0.7*@sidebar-item-height !important;
+		> li >span{
+			transform: scale(0);
+			//display: none;
+		}
 	}
 
 }

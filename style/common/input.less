@@ -7,13 +7,17 @@ input[readonly]{
     //background-color: #f9f9f9;
 }
 
+.label-lg{
+	font-size: @font-size-md;
+}
+
 .@{prefix}{
   &form-control{
     width: 100%;
   }
 
 	&textarea, &input, &select{
-		background: none;
+		background: #fff;
 		border: 1px @line-color solid;
 		border-radius: @radius;
 		line-height: 1em;
@@ -22,6 +26,7 @@ input[readonly]{
     appearance:none !important;
   	-moz-appearance:none !important;
 		-webkit-appearance:none !important;
+
 
 		&:focus{
 			outline: none;
