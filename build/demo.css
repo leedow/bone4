@@ -84,6 +84,9 @@ body, html{
 
 }
 
+.code{
+  position: relative;
+}
 .code-current{
   display: block !important;
   position: relative !important;
@@ -95,6 +98,22 @@ body, html{
   position: absolute;
   right:-7px;
   top:-7px;
+  color:#FF6633;
+  font-size: 14px;
+  line-height: 14px;
+  height: 14px;
+  width: 14px;
+  border-radius: 7px;
+  background: #fff;
+  z-index: 999;
+}
+
+.code-current-mobile:before{
+  content: '\e608';
+  font-family: 'iconfont';
+  position: absolute;
+  right:2px;
+  top:2px;
   color:#FF6633;
   font-size: 14px;
   line-height: 14px;

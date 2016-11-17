@@ -3,10 +3,17 @@
 
   $('body').on('click', '.code', function(){
     var aim = $(this).data('rel');
-    $('.code').removeClass('code-current');
-    $(this).addClass('code-current');
+    $('.code').removeClass('code-current').removeClass('code-current-mobile');
+
+    if($(this).parents('.mobile').length > 0){
+        $(this).addClass('code-current-mobile');
+    } else {
+      $(this).addClass('code-current');
+    }
+
     $('.code-content').removeClass('code-content-current');
     $('#' + aim).addClass('code-content-current');
+
   })
 
 
@@ -15,6 +22,8 @@
     var type = $(this).data('type')||'normal';
     var rel = $(this).data('rel')||'';
     switcher(type, rel, '');
+
+
     $(this).addClass('menu-item-current');
 
   })

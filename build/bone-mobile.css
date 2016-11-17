@@ -1174,6 +1174,12 @@ textarea {
 .ovf {
   overflow: hidden;
 }
+.bor-bottom {
+  border-bottom: 1px #e0e0e0 solid;
+}
+.bor-top {
+  border-bottom: 1px #e0e0e0 solid;
+}
 .notice {
   padding: 0.5em 1em;
   position: relative;
@@ -1437,6 +1443,9 @@ textarea {
 .btn i {
   line-height: 1em;
 }
+.btn-block {
+  width: 100%;
+}
 .btn-primary {
   color: #fff;
   background: #3492e6;
@@ -1660,4 +1669,42 @@ textarea {
   font-size: 20px;
   line-height: 1em;
   display: block;
+}
+.tabs-horizon {
+  height: 44px;
+}
+.tabs-horizon .tabs-item {
+  display: inline-block;
+  font-size: 16px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  padding: 0 14px;
+  border: 0;
+  background: none;
+  color: #565a5c;
+}
+.tabs-horizon .tabs-item:hover {
+  cursor: pointer;
+}
+.tabs-horizon .tabs-item-current {
+  border-bottom: 2px #3492e6 solid;
+  color: #3492e6 !important;
+}
+.layout-top,
+.layout-bottom {
+  position: absolute;
+}
+.layout-top {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.layout-bottom {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.layout-fixed {
+  position: fixed;
 }

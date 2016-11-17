@@ -1,0 +1,100 @@
+//global header for mobile
+@header-background: 	@color-primary;
+@header-color:				#fff;
+@header-color-hover:		darken(@color-primary, 10%);
+
+@header-background-light:	#fff;
+@header-color-light:		#444;
+@header-color-hover-light:	darken(@color-primary, 10%);
+
+.@{prefix}{
+	&header{
+		width: 100%;
+		height: @header-height;
+		line-height: @header-height;
+		text-align: center;
+		position: relative;
+		font-size: @font-size-md;
+    display: flex;
+
+    .header-body{
+      flex:1;
+    }
+
+		.header-dock{
+
+			height: @header-height;
+			line-height: @header-height;
+			a, button{
+				background: none;
+				border: 0;
+				min-width: @header-height;
+				color: lighten(@header-background, 60%);
+				display: inline-block;
+				height: @header-height;
+				line-height: @header-height;
+				padding: 0 @padding-horizon;
+				&:hover{
+					background: darken(@header-background, 5%)
+				}
+				i{
+					font-size: @font-size-lg;
+				}
+			}
+
+			.tip{
+				content: ' ';
+				position: absolute;
+				right:8px;
+				top:8px;
+				width: 10px;
+				height: 10px;
+				border-radius: 5px;
+				background: @color-highlight;
+			}
+		}
+
+	}
+
+	&header{
+		background: @header-background;
+		color: #fff;
+	}
+
+	&header-light{
+		background: @header-background-light;
+		color: @header-color-light;
+		border-bottom: 1px @line-color solid;
+		.header-dock{
+
+			a, button{
+
+				color: @font-color;
+
+				&:hover{
+					background: none;
+					color: @color-primary;
+				}
+			}
+		}
+	}
+
+  &header-opacity{
+		background: none;
+		color: #fff;
+		border-bottom: 0;
+		.header-dock{
+
+			a, button{
+
+				color: #fff;
+
+				&:hover{
+					background: none;
+					color: #fff;
+				}
+			}
+		}
+	}
+
+}

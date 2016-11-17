@@ -1,0 +1,26 @@
+.@{prefix}{
+  &tabs-horizon{
+		height: @tabs-horizon-height;
+
+		.tabs-item{
+			display: inline-block;
+			font-size: @font-size-md;
+			height: @tabs-horizon-height;
+			line-height:@tabs-horizon-height;
+			text-align: center;
+      padding: 0 @padding-horizon;
+      border: 0;
+      background: none;
+      color: @font-color;
+
+      &:hover{
+        cursor: pointer;
+      }
+		}
+
+		.@{prefix}tabs-item-current{
+			border-bottom:2px @color-primary solid;
+			color: @color-primary !important;
+		}
+	}
+}
