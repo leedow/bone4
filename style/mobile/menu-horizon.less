@@ -1,0 +1,81 @@
+.@{prefix}{
+
+	&menu-horizon{
+		display: flex;
+		justify-content:space-around;
+		//border-top:1px @line-color solid;
+	}
+
+	&menu-horizon-item{
+		flex:1;
+		cursor: pointer;
+		text-align: center;
+		position: relative;
+	 	background: none;
+		border:0;
+		&>span{
+			display: block;
+		}
+		.menu-pic{
+			margin: 0 auto;
+			text-align: center;
+			width:2em;
+			height:1.2em;
+			line-height: 1.2em;
+			font-size: 1.3*@font-size-lg;
+			display: block;
+		}
+
+		.menu-title{
+			text-align: center;
+			padding:3px 0;
+			font-size: @font-size;
+			display: block;
+		}
+
+		.tip{
+			position: absolute;
+			top:0px;
+			left: 70%;
+			background: @color-highlight;
+			color:#fff;
+			padding:2px 4px;
+			line-height: 1em;
+			border-radius: 8px;
+			font-size: 0.6rem;
+		}
+	}
+
+
+	&menu-horizon-sm{
+		.menu-pic{
+			width:2em;
+			height:1.2em;
+			line-height: 1.2em;
+			font-size: 24px;
+			display: block;
+		}
+
+		.menu-title{
+			padding:1px 0;
+			font-size: @font-size-sm;
+			display: block;
+			line-height: 1em;
+
+		}
+	}
+
+	&menu-horizon-border{
+
+		.menu-horizon-item{
+			padding:10px 0  10px  0;
+			flex:1;
+			border-right: 1px @line-color-light solid;
+		}
+	}
+
+}
+
+.menu-current{
+		color: @color-primary !important;
+}

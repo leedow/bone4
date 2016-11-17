@@ -1292,7 +1292,7 @@ textarea {
   border-bottom: 1px #e0e0e0 solid;
 }
 .bor-top {
-  border-bottom: 1px #e0e0e0 solid;
+  border-top: 1px #e0e0e0 solid;
 }
 button,
 textarea {
