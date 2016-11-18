@@ -16,6 +16,15 @@
 .tl{text-align: left;}
 .tr{text-align: right;}
 
+.ar{
+  right:0;top:0;
+}
+
+.al{
+  left:0;
+  top:0;
+}
+
 .@{prefix}{
   &ovf{
     overflow: hidden;
@@ -23,9 +32,9 @@
 }
 
 .bor-bottom{
-  border-bottom: 1px #e0e0e0 solid;
+  border-bottom: 1px @line-color solid;
 }
 
 .bor-top{
-  border-top: 1px #e0e0e0 solid;
+  border-top: 1px @line-color solid;
 }

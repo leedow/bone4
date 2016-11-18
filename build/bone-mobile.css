@@ -1171,6 +1171,14 @@ textarea {
 .tr {
   text-align: right;
 }
+.ar {
+  right: 0;
+  top: 0;
+}
+.al {
+  left: 0;
+  top: 0;
+}
 .ovf {
   overflow: hidden;
 }
@@ -1198,7 +1206,7 @@ textarea {
   outline: none;
 }
 .label-lg {
-  font-size: 16px;
+  font-size: 17px;
 }
 .form-control {
   width: 100%;
@@ -1244,7 +1252,7 @@ textarea {
 .select-lg {
   padding: 11px 16px;
   height: 46px;
-  font-size: 16px;
+  font-size: 17px;
 }
 .input-sm,
 .select-sm {
@@ -1369,7 +1377,7 @@ textarea {
           align-items: center;
 }
 .card .card-header .card-title {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: normal;
   padding: 0.6em 14px;
   text-align: left;
@@ -1517,7 +1525,7 @@ textarea {
 }
 .btn-lg {
   padding: 10px 16px;
-  font-size: 16px;
+  font-size: 17px;
 }
 .btn-block {
   width: 100%;
@@ -1634,7 +1642,7 @@ textarea {
       -ms-flex: 1;
           flex: 1;
   color: #fff;
-  font-size: 16px;
+  font-size: 17px;
   text-align: left;
   padding-left: 1.5em;
 }
@@ -1675,7 +1683,7 @@ textarea {
 }
 .tabs-horizon .tabs-item {
   display: inline-block;
-  font-size: 16px;
+  font-size: 17px;
   height: 44px;
   line-height: 44px;
   text-align: center;
@@ -1694,6 +1702,7 @@ textarea {
 .layout-top,
 .layout-bottom {
   position: absolute;
+  z-index: 999;
 }
 .layout-top {
   top: 0;
@@ -1707,6 +1716,21 @@ textarea {
 }
 .layout-fixed {
   position: fixed;
+}
+.layout-has-top {
+  padding-top: 58px;
+}
+.layout-has-bottom {
+  padding-top: 58px;
+}
+.layout-opacity {
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
 }
 .menu-horizon {
   display: -webkit-box;
@@ -1776,8 +1800,115 @@ textarea {
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  border-right: 1px #eee solid;
+  border-right: 1px #e0e0e0 solid;
 }
 .menu-current {
   color: #3492e6 !important;
+}
+.list .list-item-arrow {
+  position: relative;
+}
+.list .list-item-arrow:after {
+  content: '\e61c';
+  font-family: iconfont;
+  height: 20px;
+  line-height: 20px;
+  font-size: 20px;
+  color: #e0e0e0;
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  margin-top: -10px;
+}
+.list-box {
+  background: #fff;
+  border-top: 1px #eee solid;
+  border-bottom: 1px #e0e0e0 solid;
+}
+.list-box .list-item {
+  border-bottom: 1px #e0e0e0 solid;
+}
+.list-box .list-item:last-child {
+  border-bottom: 0 !important;
+}
+.menu-vertical-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  min-height: 48.4px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.menu-vertical-item .menu-icon {
+  text-align: center;
+  padding-right: 14px;
+  font-size: 20px;
+  display: block;
+}
+.menu-vertical-item .menu-body {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 11.2px 0;
+  text-align: left;
+  font-size: 18.7px;
+  line-height: 1.1em;
+}
+.menu-vertical-item .menu-dock {
+  padding-right: 14px;
+}
+.dialog {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 2px;
+  width: 80%;
+  max-height: 95%;
+  background: #fff;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.dialog .dialog-content {
+  font-size: 17px;
+  padding: 14px;
+}
+.dialog .dialog-content p {
+  color: #999;
+  font-size: 14px;
+}
+.dialog .dialog-buttons {
+  border-top: 1px #eee solid;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.dialog .dialog-buttons .button-ok,
+.dialog .dialog-buttons .button-no,
+.dialog .dialog-buttons .button {
+  background: none;
+  border: 0;
+  font-size: 17px;
+  padding: 10px 16px;
+}
+.dialog .dialog-buttons .button-ok {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #3492e6;
+}
+.dialog .dialog-buttons .button-no {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-right: 1px #eee solid;
 }

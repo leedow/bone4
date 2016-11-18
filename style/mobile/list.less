@@ -1,0 +1,44 @@
+.@{prefix}{
+  &list{
+      .list-item{
+        //border-bottom: 1px @line-color solid;
+      }
+
+      .list-item-arrow{
+        position: relative;
+
+        &:after{
+          content: '\e61c';
+          font-family:  @font-family-icon;
+          height: 20px;
+          line-height: 20px;
+          font-size: @font-size-lg;
+          color: @line-color;
+          position: absolute;
+          right: @padding-horizon;
+          top: 50%;
+          margin-top: -10px;
+        }
+      }
+  }
+
+
+
+
+  &list-box{
+    background: #fff;
+    border-top:1px @line-color-light solid;
+    border-bottom:1px @line-color solid;
+
+    .list-item{
+      border-bottom:1px @line-color solid;
+    }
+
+    .list-item:last-child{
+      border-bottom: 0 !important;
+    }
+
+  }
+
+
+}

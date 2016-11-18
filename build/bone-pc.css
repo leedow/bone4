@@ -1081,7 +1081,7 @@ textarea {
 }
 .btn-lg {
   padding: 10px 16px;
-  font-size: 16px;
+  font-size: 17px;
 }
 .btn-block {
   width: 100%;
@@ -1285,6 +1285,14 @@ textarea {
 .tr {
   text-align: right;
 }
+.ar {
+  right: 0;
+  top: 0;
+}
+.al {
+  left: 0;
+  top: 0;
+}
 .ovf {
   overflow: hidden;
 }
@@ -1299,7 +1307,7 @@ textarea {
   outline: none;
 }
 .label-lg {
-  font-size: 16px;
+  font-size: 17px;
 }
 .form-control {
   width: 100%;
@@ -1345,7 +1353,7 @@ textarea {
 .select-lg {
   padding: 11px 16px;
   height: 46px;
-  font-size: 16px;
+  font-size: 17px;
 }
 .input-sm,
 .select-sm {
@@ -1453,7 +1461,7 @@ textarea {
 }
 .tabs-horizon .tabs-item {
   display: inline-block;
-  font-size: 16px;
+  font-size: 17px;
   height: 44px;
   line-height: 44px;
   text-align: center;

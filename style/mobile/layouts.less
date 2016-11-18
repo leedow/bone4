@@ -1,6 +1,7 @@
 .@{prefix}{
   &layout-top, &layout-bottom{
     position: absolute;
+    z-index: 999;
   }
 
   &layout-top{
@@ -17,6 +18,29 @@
 
   &layout-fixed{
     position: fixed;
+  }
+
+  &layout-main{
+
+  }
+
+  &layout-has-top{
+    padding-top: @header-height + @padding-vertical;
+  }
+
+  &layout-has-bottom{
+    padding-top: @header-height + @padding-vertical;
+  }
+
+
+  &layout-opacity{
+    background: rgba(0,0,0, 0.6);
+    position: fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    z-index:1000;
   }
 
 }
