@@ -1,50 +1,61 @@
 .@{prefix}{
-	&dialog{
-		position: absolute;
-    left: 50%;
-    top:50%;
-		border-radius: @radius;
-		//overflow: hidden;
-		width: @dialog-width;
-		max-height: 95%;
-		background: #fff;
-    transform: translate(-50%, -50%);
+	&dialog-layout{
+		position: fixed;
+		left:0;
+		top:0;
+		bottom:0;
+		right:0;
+		z-index: 1001;
+		display: flex;
+		align-items: center;
+		justify-content:center;
+
+		.dialog{
 
 
-		.dialog-content{
+			border-radius: @radius;
+			//overflow: hidden;
+			width: @dialog-width;
+			max-height: 95%;
+			background: #fff;
+	    //transform: translate(-50%, -50%);
 
-			font-size: @font-size-md;
-      padding: @padding-vertical;
+			.dialog-content{
 
-      p{
-        color: @font-color-light;
-        font-size: @font-size;
-      }
-		}
-
-		.dialog-buttons{
-
-			border-top: 1px @line-color-light solid;
-			display: flex;
-
-			.button-ok, .button-no, .button{
-				background: none;
-				border: 0;
 				font-size: @font-size-md;
-        padding: @btn-padding-lg;
+	      padding: @padding-vertical;
+
+	      p{
+	        color: @font-color-light;
+	        font-size: @font-size;
+	      }
 			}
 
-			.button-ok{
-				flex:1;
-				color: @color-primary;
+			.dialog-buttons{
 
+				border-top: 1px @line-color-light solid;
+				display: flex;
+
+				.button-ok, .button-no, .button{
+					background: none;
+					border: 0;
+					font-size: @font-size-md;
+	        padding: @btn-padding-lg;
+				}
+
+				.button-ok{
+					flex:1;
+					color: @color-primary;
+
+				}
+				.button-no{
+	        flex:1;
+					border-right:1px @line-color-light solid;
+				}
 			}
-			.button-no{
-        flex:1;
-				border-right:1px @line-color-light solid;
-			}
+
+
 		}
-
 
 	}
 

@@ -1,5 +1,45 @@
 .@{prefix}{
   &list{
+    position: relative;
+    transition: transform 0.4s ease;
+     .up-fresh,.down-fresh{
+       position: absolute;
+
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       overflow: hidden;
+       //transition: height .3s ease;
+
+
+       p{
+         color: #999;
+         i{
+           font-size: 1.4*@font-size-lg;
+           display: block;
+           line-height: 1em;
+         }
+
+         span{
+            font-size: @font-size-sm;
+         }
+
+       }
+
+     }
+
+     .up-fresh{
+       left:0;
+       right:0;
+       bottom:-58px;
+     }
+
+     .down-fresh{
+       left:0;
+       right:0;
+       top:-58px;
+     }
+
       .list-item{
         //border-bottom: 1px @line-color solid;
       }
@@ -8,11 +48,11 @@
         position: relative;
 
         &:after{
-          content: '\e61c';
+          content: '\e660';
           font-family:  @font-family-icon;
           height: 20px;
           line-height: 20px;
-          font-size: @font-size-lg;
+          font-size: @font-size;
           color: @line-color;
           position: absolute;
           right: @padding-horizon;

@@ -3,6 +3,7 @@
 	&menu-horizon{
 		display: flex;
 		justify-content:space-around;
+
 		//border-top:1px @line-color solid;
 	}
 
@@ -24,6 +25,7 @@
 			line-height: 1.2em;
 			font-size: 1.3*@font-size-lg;
 			display: block;
+
 		}
 
 		.menu-title{
@@ -48,12 +50,14 @@
 
 
 	&menu-horizon-sm{
+		padding:2px 0;
 		.menu-pic{
 			width:2em;
 			height:1.2em;
 			line-height: 1.2em;
-			font-size: 24px;
+			font-size: 22px;
 			display: block;
+			color: #999;
 		}
 
 		.menu-title{
@@ -61,7 +65,7 @@
 			font-size: @font-size-sm;
 			display: block;
 			line-height: 1em;
-
+			color: #999;
 		}
 	}
 
@@ -77,5 +81,12 @@
 }
 
 .menu-current{
-		color: @color-primary !important;
+
+		.menu-pic{
+			color: @color-primary !important;
+		}
+
+		.menu-title{
+			color: @color-primary !important;
+		}
 }

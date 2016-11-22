@@ -1388,7 +1388,7 @@ textarea {
   display: none;
 }
 .be-wrong:after {
-  content: '\e62a';
+  content: '\e6e4';
   color: #FF6633;
 }
 .be-wrong > input,
@@ -1413,7 +1413,7 @@ textarea {
   box-shadow: none !important;
 }
 .be-pass:after {
-  content: '\e608';
+  content: '\e656';
   color: #66CC33;
 }
 .be-pass > input,
@@ -1476,4 +1476,75 @@ textarea {
 .tabs-horizon .tabs-item-current {
   border-bottom: 2px #3492e6 solid;
   color: #3492e6 !important;
+}
+.modal-enter-active,
+.modal-leave-active {
+  -webkit-transition: opacity 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  transition: opacity 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+.modal-enter,
+.modal-leave-active {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 0;
+}
+.layout-enter-active,
+.layout-leave-active {
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+.layout-enter,
+.layout-leave-active {
+  opacity: 0;
+}
+.page-enter-active {
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+.page-leave-active {
+  -webkit-transition: -webkit-transform 0s;
+  transition: -webkit-transform 0s;
+  transition: transform 0s;
+  transition: transform 0s, -webkit-transform 0s;
+}
+.page-enter {
+  opacity: 0;
+}
+.page-leave-active {
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+}
+.loading {
+  -webkit-animation: loading 2s linear infinite;
+          animation: loading 2s linear infinite;
+}
+@-webkit-keyframes loading {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.jump {
+  -webkit-animation: jump .6s ease;
+          animation: jump .6s ease;
+}
+@-webkit-keyframes jump {
+  40% {
+    -webkit-transform: translate(0, -40px);
+            transform: translate(0, -40px);
+  }
+  80% {
+    -webkit-transform: translate(0, 8px);
+            transform: translate(0, 8px);
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
 }

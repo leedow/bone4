@@ -1,0 +1,57 @@
+//对话框
+.modal-enter-active, .modal-leave-active {
+//  transform: translate(-50%, -50%) !important;
+  transition: opacity .3s ease-out, transform .3s ease-out;
+
+}
+.modal-enter, .modal-leave-active {
+  transform: scale(1.2);
+  opacity: 0;
+}
+
+//遮罩层
+.layout-enter-active, .layout-leave-active {
+  transition: opacity .2s;
+}
+.layout-enter, .layout-leave-active {
+  opacity: 0;
+}
+
+//移动端整体页面
+.page-enter-active {
+  transition: opacity .3s;
+}
+.page-leave-active {
+  transition: transform 0s;
+}
+.page-enter {
+  opacity: 0;
+}
+.page-leave-active {
+  transform: translate(-100%, 0);
+}
+
+
+
+
+//
+.loading{
+  animation:loading 2s linear infinite;
+}
+//
+@-webkit-keyframes loading{
+　from {transform:rotate(0deg)}
+　to {transform:rotate(360deg)}
+}
+
+//
+.jump{
+  animation:jump .6s ease;
+}
+//
+@-webkit-keyframes jump{
+
+  40% {transform:translate(0, -40px)}
+  80% {transform:translate(0, 8px)}
+　to {transform:translate(0 , 0)}
+}

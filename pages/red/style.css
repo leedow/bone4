@@ -1,0 +1,137 @@
+html, body{
+  height:100%;
+  width: 100%;
+}
+
+body{
+  background:  #CA3F4E ;
+}
+
+.banner{
+  margin-top:40px;
+  height:50%;
+  background: url('./img/bg.png') no-repeat;
+  background-position: center;
+  background-size:contain;
+}
+
+.container{
+  background: #A2323E;
+  width: 80%;
+
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.input{
+  background: #fff;
+  border:0;
+  font-size: 16px;
+  line-height: 1em;
+  padding: 15px 15px;
+  width: 100%;
+
+}
+
+.input:focus{
+  border:0 !important
+}
+
+.button{
+  border:0;
+  margin-top: 20px;
+  width: 100%;
+    position: relative;
+}
+
+.button img{
+  vertical-align: bottom;
+  width: 100%;
+
+}
+
+.button:before{
+  content: '立即领取';
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  margin-top: -16px;
+  margin-left: -50px;
+  font-size: 18px;
+  color: #A2323E;
+}
+
+
+.button-login:before{
+  content: '登陆使用';
+}
+
+
+
+
+#layout-bag{
+  background: rgba(0,0,0, 0.6);
+  position: fixed;
+  left:0;
+  top:0;
+  bottom:0;
+  right:0;
+  z-index:1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+transition: opacity 0.4s ;
+}
+
+.layout-bag-init{
+  opacity: 0;
+}
+
+#layout-bag #bag{
+  width: 290px;
+  height: 360px;
+  background: url('./img/bag.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+  transition: transform 0.4s ;
+
+}
+
+#layout-bag .bag-init{
+  transform: translate(0, -200%);
+  -webkit-transform: translate( 0, -200%);
+}
+
+#layout-bag #bag #cover{
+  position: absolute;
+  width: 290px;
+  height: 124px;
+  left:0;
+  top: -114px;
+  background: url('./img/open.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition: all 0.6s;
+}
+
+#layout-bag #bag #msg{
+  height: 80px;
+  padding:20px;
+  font-size: 16px;
+  color:#fff;
+  position: absolute;
+  top: 50%;
+  margin-top: -40px;
+
+}
+
+
+
+.cover-init {
+    transform:translate(0, 114px) scaleY(-1);
+    -webkit-transform:translate(0, 110px) scaleY(-1);
+}
