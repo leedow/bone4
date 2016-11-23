@@ -30,8 +30,9 @@ body{
   line-height: 1em;
   padding: 15px 15px;
   width: 100%;
-
 }
+
+
 
 .input:focus{
   border:0 !important
@@ -66,7 +67,7 @@ body{
 
 
 .button-login:before{
-  content: '登陆使用';
+  content: '登录使用';
 }
 
 

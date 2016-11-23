@@ -1217,8 +1217,6 @@ textarea {
   background: #fff;
   border: 1px #e0e0e0 solid;
   border-radius: 2px;
-  line-height: 1em;
-  font-family: inherit;
   font-size: 14px;
   appearance: none !important;
   -moz-appearance: none !important;
@@ -1789,7 +1787,7 @@ textarea {
   position: fixed;
 }
 .layout-has-top {
-  padding-top: 58px;
+  padding-top: 44px;
 }
 .layout-has-bottom {
   padding-top: 58px;
@@ -1883,6 +1881,11 @@ textarea {
 }
 .menu-current .menu-title {
   color: #3492e6 !important;
+}
+.list-title {
+  padding: 7px 14px;
+  text-align: left;
+  color: #888d90;
 }
 .list {
   position: relative;
@@ -1986,7 +1989,7 @@ textarea {
           flex: 1;
   padding: 11.2px 0;
   text-align: left;
-  font-size: 18.7px;
+  font-size: 17px;
   line-height: 1.1em;
 }
 .menu-vertical-item .menu-dock {

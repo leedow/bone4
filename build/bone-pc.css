@@ -1318,8 +1318,6 @@ textarea {
   background: #fff;
   border: 1px #e0e0e0 solid;
   border-radius: 2px;
-  line-height: 1em;
-  font-family: inherit;
   font-size: 14px;
   appearance: none !important;
   -moz-appearance: none !important;
