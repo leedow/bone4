@@ -93,7 +93,7 @@ body, html{
 }
 
 .code-current:before{
-  content: '\e608';
+  content: '\e656';
   font-family: 'iconfont';
   position: absolute;
   right:-7px;
@@ -109,7 +109,7 @@ body, html{
 }
 
 .code-current-mobile:before{
-  content: '\e608';
+  content: '\e656';
   font-family: 'iconfont';
   position: absolute;
   right:2px;

@@ -1,5 +1,5 @@
 body {
-  font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
   font-size: 14px;
   color: #565a5c;
   line-height: 1.5;
@@ -988,7 +988,7 @@ textarea {
 }
 .btn {
   -webkit-appearance: none !important;
-  font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
   cursor: pointer;
   padding: 8px 12px;
   border: 0;
@@ -1072,6 +1072,23 @@ textarea {
 .btn-comfort-blank:hover {
   background: #66CC33;
   color: #fff;
+}
+.btn-icon {
+  border: 0;
+  background: none;
+  color: #e0e0e0;
+  font-size: 24px;
+  padding: 0;
+  vertical-align: center;
+}
+.btn-icon:hover {
+  background: none;
+}
+.btn-icon-primary {
+  border: 0;
+  background: none;
+  color: #3492e6;
+  font-size: 24px;
 }
 .btn-tiny {
   padding: 2px 6px;
