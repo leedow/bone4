@@ -1248,7 +1248,7 @@ textarea {
 }
 .input-lg,
 .select-lg {
-  padding: 11px 16px;
+  padding: 11px 10px;
   height: 46px;
   font-size: 17px;
 }
@@ -1259,7 +1259,7 @@ textarea {
 }
 .input-tiny,
 .select-tiny {
-  padding: 3px 6px;
+  padding: 3px 8px;
   height: 27px;
 }
 .has-icon {

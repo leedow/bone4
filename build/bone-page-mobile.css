@@ -1,4 +1,5 @@
 .page-login {
+  background: #f9f9f9;
   position: fixed;
   top: 0;
   left: 0;
@@ -16,4 +17,15 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.page-login .login-box {
+  width: 80%;
+  margin-top: -30px;
+}
+.page-login .login-box h1 {
+  color: #444;
+  padding-bottom: 20px;
+}
+.page-login .login-box .input {
+  background: none !important;
 }
