@@ -1262,6 +1262,20 @@ textarea {
   padding: 3px 6px;
   height: 27px;
 }
+.has-icon {
+  position: relative;
+}
+.has-icon > i {
+  color: #999;
+  position: absolute;
+  right: 0.4em;
+  top: 50%;
+  font-family: iconfont;
+  font-size: 20px;
+  height: 1em;
+  line-height: 1em;
+  margin-top: -0.5em;
+}
 .be-wrong,
 .be-pass,
 .be-loading {
@@ -2082,6 +2096,9 @@ textarea {
 .layout-fixed {
   position: fixed;
 }
+.layout-main {
+  padding-bottom: 52.8px;
+}
 .layout-has-top {
   padding-top: 44px;
 }
@@ -2390,10 +2407,11 @@ textarea {
 }
 .menu-vertical-item .menu-dock {
   padding-right: 14px;
+  line-height: 1em;
 }
 .toast {
   background: rgba(0, 0, 0, 0.7);
-  padding: 14px 14px;
+  padding: 7px 14px;
   border-radius: 6px;
   color: #fff;
   text-align: center;

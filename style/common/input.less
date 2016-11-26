@@ -73,6 +73,21 @@ input[readonly]{
 	}
 
 
+	&has-icon{
+		position: relative;
+		&>i{
+			color: @font-color-light;
+			position: absolute;
+			right: 0.4em;
+			top:50%;
+			font-family: @font-family-icon;
+			font-size: @font-size-lg;
+			height: 1em;
+      line-height: 1em;
+      margin-top: -0.5em;
+		}
+	}
+
 	&be-wrong, &be-pass, &be-loading{
 		position: relative;
 		&:after{
@@ -91,6 +106,8 @@ input[readonly]{
 		}
 
 	}
+
+
 
 
   &be-wrong{

@@ -25,6 +25,19 @@ gulp.task('css', function(){
 			.pipe(reload({stream: true}));
 
 
+		gulp.src('./style/bone-page-mobile.less')
+			.pipe(less())
+			.on('error', function(err) {
+				gutil.log('Less Error!', err.message);
+				this.end();
+			})
+			//.pipe(rev())
+			.pipe(autoprefixer())
+			//.pipe(minifyCSS())
+			.pipe(gulp.dest('./build'))
+			.pipe(reload({stream: true}));
+
+
 		gulp.src('./style/bone-pc.less')
 			.pipe(less())
 			.on('error', function(err) {
