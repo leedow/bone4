@@ -1559,11 +1559,35 @@ textarea {
             transform: rotate(360deg);
   }
 }
+@keyframes loading {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
 .jump {
   -webkit-animation: jump .6s ease;
           animation: jump .6s ease;
 }
 @-webkit-keyframes jump {
+  40% {
+    -webkit-transform: translate(0, -40px);
+            transform: translate(0, -40px);
+  }
+  80% {
+    -webkit-transform: translate(0, 8px);
+            transform: translate(0, 8px);
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+@keyframes jump {
   40% {
     -webkit-transform: translate(0, -40px);
             transform: translate(0, -40px);

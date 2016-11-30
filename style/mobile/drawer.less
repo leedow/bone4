@@ -1,0 +1,46 @@
+.@{prefix}{
+  &drawer{
+    position: fixed;
+    z-index: 1001;
+  }
+
+  &drawer-bottom {
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+
+    .drawer-box{
+      background: #fff;
+    }
+  }
+
+  &drawer-center{
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .drawer-box{
+      width: 80%;
+      background: #fff;
+      border-radius: @radius;
+    }
+  }
+
+  &drawer-left{
+    left:0;
+    top:0;
+    bottom: 0;
+
+    .drawer-box{
+      background: #fff;
+      height: 100%;
+      overflow-y: auto;
+    }
+  }
+}
