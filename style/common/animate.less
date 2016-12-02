@@ -9,6 +9,25 @@
   opacity: 0;
 }
 
+//从左侧进入100%
+.lr-enter-active, .lr-leave-active {
+//  transform: translate(-50%, -50%) !important;
+  transition: transform .3s ease-out;
+
+}
+.lr-enter, .lr-leave-active {
+  transform: translate(-100%, 0);
+}
+
+//从下方进入100%
+.bt-enter-active, .bt-leave-active {
+//  transform: translate(-50%, -50%) !important;
+  transition: transform .3s ease-out;
+}
+.bt-enter, .bt-leave-active {
+  transform: translate(0, 100%);
+}
+
 //遮罩层
 .layout-enter-active, .layout-leave-active {
   transition: opacity .2s;

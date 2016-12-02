@@ -1722,6 +1722,30 @@ textarea {
           transform: scale(1.2);
   opacity: 0;
 }
+.lr-enter-active,
+.lr-leave-active {
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+.lr-enter,
+.lr-leave-active {
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+}
+.bt-enter-active,
+.bt-leave-active {
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+.bt-enter,
+.bt-leave-active {
+  -webkit-transform: translate(0, 100%);
+          transform: translate(0, 100%);
+}
 .layout-enter-active,
 .layout-leave-active {
   -webkit-transition: opacity .2s;
@@ -2490,4 +2514,75 @@ textarea {
   font-size: 40px;
   line-height: 1em;
   display: block;
+}
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+.slider .slider-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.switch {
+  width: 50px;
+  height: 30px;
+  border-radius: 15px;
+  background: #f9f9f9;
+  position: relative;
+  border: 1px #e0e0e0 solid;
+}
+.switch:before {
+  content: ' ';
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+.switch-tag {
+  width: 60px;
+}
+.switch-tag .on {
+  color: #fff;
+  text-align: center;
+  width: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  margin-left: 1px;
+  float: left;
+}
+.switch-tag .off {
+  color: #999;
+  text-align: center;
+  line-height: 30px;
+  font-size: 12px;
+  float: right;
+  width: 30px;
+  margin-right: 1px;
+}
+.switch-on {
+  background: #3492e6;
+  border: 1px #3492e6 solid;
+}
+.switch-on:before {
+  right: 0px;
+  top: 0px;
+}
+.switch-on .off {
+  display: none;
+}
+.switch-off {
+  background: #f9f9f9;
+}
+.switch-off:before {
+  left: 0px;
+  top: 0px;
+}
+.switch-off .on {
+  display: none;
 }

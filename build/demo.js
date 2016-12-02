@@ -14,17 +14,14 @@
     $('.code-content').removeClass('code-content-current');
     $('#' + aim).addClass('code-content-current');
 
-  
-
   })
 
 
-  $('body').on('click', '.switch', function(){
+  $('body').on('click', '.switcher', function(){
 
     var type = $(this).data('type')||'normal';
     var rel = $(this).data('rel')||'';
     switcher(type, rel, '');
-
 
     $(this).addClass('menu-item-current');
 
