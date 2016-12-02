@@ -6,6 +6,7 @@
     background: @color-light;
     position: relative;
     border:1px @line-color solid;
+    transition: background .4s;
 
     &:before{
       content: ' ';
@@ -17,6 +18,7 @@
       border-radius: 14px;
       background: #fff;
       box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+      transition: all .2s;
     }
 
   }
@@ -47,8 +49,7 @@
     background: @color-primary;
     border:1px @color-primary solid;
     &:before{
-      right: 0px;
-      top:0px;
+
     }
     .off{
       display: none
@@ -58,8 +59,17 @@
   &switch-off{
     background: @color-light;
     &:before{
-      left: 0px;
-      top:0px;
+      transform: translateX(-20px);
+    }
+    .on{
+      display: none;
+    }
+  }
+
+  &switch-tag-off{
+    background: @color-light;
+    &:before{
+      transform: translateX(-30px);
     }
     .on{
       display: none;

@@ -2232,6 +2232,8 @@ textarea {
   background: #f9f9f9;
   position: relative;
   border: 1px #e0e0e0 solid;
+  -webkit-transition: background .4s;
+  transition: background .4s;
 }
 .switch:before {
   content: ' ';
@@ -2243,6 +2245,8 @@ textarea {
   border-radius: 14px;
   background: #fff;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 .switch-tag {
   width: 60px;
@@ -2269,10 +2273,6 @@ textarea {
   background: #3492e6;
   border: 1px #3492e6 solid;
 }
-.switch-on:before {
-  right: 0px;
-  top: 0px;
-}
 .switch-on .off {
   display: none;
 }
@@ -2280,9 +2280,19 @@ textarea {
   background: #f9f9f9;
 }
 .switch-off:before {
-  left: 0px;
-  top: 0px;
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
 }
 .switch-off .on {
+  display: none;
+}
+.switch-tag-off {
+  background: #f9f9f9;
+}
+.switch-tag-off:before {
+  -webkit-transform: translateX(-30px);
+          transform: translateX(-30px);
+}
+.switch-tag-off .on {
   display: none;
 }
