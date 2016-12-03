@@ -1746,6 +1746,18 @@ textarea {
   -webkit-transform: translate(0, 100%);
           transform: translate(0, 100%);
 }
+.tb-enter-active,
+.tb-leave-active {
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+.tb-enter,
+.tb-leave-active {
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
+}
 .layout-enter-active,
 .layout-leave-active {
   -webkit-transition: opacity .2s;
@@ -1988,7 +2000,6 @@ textarea {
 }
 .card {
   background: #fff;
-  border-radius: 2px;
   border: 1px #eee solid;
   border-radius: 4px;
 }
@@ -2035,10 +2046,10 @@ textarea {
       -ms-flex-pack: center;
           justify-content: center;
   border-top: 1px #eee solid;
-  -webkit-box-align: baseline;
-  -webkit-align-items: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0.5em 14px;
   text-align: left;
 }
@@ -2060,6 +2071,33 @@ textarea {
 }
 .card-comfort {
   border-left: 2px #66CC33 solid;
+}
+.card-new {
+  border: 1px #eee solid;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  min-height: 100px;
+}
+.card-new .card-content i {
+  font-size: 28px;
+  color: #999;
+}
+.card-new .card-content p {
+  padding: 0;
+  margin: 0;
+  color: #999;
 }
 .user-box {
   background: #3492e6;
@@ -2469,6 +2507,14 @@ textarea {
 .drawer-bottom .drawer-box {
   background: #fff;
 }
+.drawer-top {
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.drawer-top .drawer-box {
+  background: #fff;
+}
 .drawer-center {
   left: 0;
   right: 0;
@@ -2551,23 +2597,24 @@ textarea {
 .switch-tag {
   width: 60px;
 }
+.switch-tag .on,
+.switch-tag .off {
+  text-align: center;
+  width: 32px;
+  line-height: 28px;
+  font-size: 12px;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
 .switch-tag .on {
   color: #fff;
-  text-align: center;
-  width: 30px;
-  line-height: 30px;
-  font-size: 12px;
-  margin-left: 1px;
+  padding-left: 1px;
   float: left;
 }
 .switch-tag .off {
   color: #999;
-  text-align: center;
-  line-height: 30px;
-  font-size: 12px;
   float: right;
-  width: 30px;
-  margin-right: 1px;
+  padding-right: 1px;
 }
 .switch-on {
   background: #3492e6;

@@ -29,3 +29,73 @@
 .page-login .login-box .input {
   background: none !important;
 }
+.account-card .card-footer {
+  border-top: 0;
+}
+.account-card .card-header .card-title {
+  font-size: 15px;
+}
+.account-card .card-footer {
+  font-size: 24px;
+}
+.account-card .card-footer .account-btn {
+  font-size: 28px;
+  padding-left: 10px;
+}
+.account-card .card-footer .account-btn i {
+  font-size: 28px !important;
+}
+.account-card-blue {
+  background: #3492e6;
+  color: #eaf4fc;
+}
+.account-card-blue .card-header {
+  color: #ffffff;
+  border-bottom: 1px #61aaec solid;
+}
+.account-card-blue .card-header .card-title {
+  color: #eaf4fc;
+}
+.account-card-blue .card-addon i {
+  color: #8fc3f1;
+}
+.account-card-blue .account-btn i {
+  font-size: 28px !important;
+  color: #8fc3f1;
+}
+.account-card-green {
+  background: #66CC33;
+  color: #e0f5d6;
+}
+.account-card-green .card-header {
+  color: #ffffff;
+  border-bottom: 1px #85d65c solid;
+}
+.account-card-green .card-header .card-title {
+  color: #e0f5d6;
+}
+.account-card-green .card-addon i {
+  color: #a3e085;
+}
+.account-card-green .account-btn i {
+  font-size: 28px !important;
+  color: #a3e085;
+}
+.account-card-yellow {
+  background: #FF6633;
+  color: #ffffff;
+}
+.account-card-yellow .card-header {
+  color: #ffffff;
+  border-bottom: 1px #ff8c66 solid;
+}
+.account-card-yellow .card-header .card-title {
+  color: #ffffff;
+}
+.account-card-yellow .card-addon i {
+  color: #ffb399;
+}
+.account-card-yellow .account-btn i {
+  font-size: 28px !important;
+  color: #ffb399;
+}

@@ -1,8 +1,13 @@
+@switch-width-tag:   60px;
+@switch-width:       50px;
+@switch-height:      30px;
+@switch-btn-size:    28px;
+
 .@{prefix}{
   &switch{
     width: 50px;
-    height: 30px;
-    border-radius:  15px;
+    height: @switch-height;
+    border-radius: 0.5*@switch-height;
     background: @color-light;
     position: relative;
     border:1px @line-color solid;
@@ -13,35 +18,33 @@
       position: absolute;
       right: 0px;
       top: 0px;
-      width: 28px;
-      height: 28px;
-      border-radius: 14px;
+      width: @switch-btn-size;
+      height: @switch-btn-size;
+      border-radius: 0.5*@switch-btn-size;
       background: #fff;
       box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
       transition: all .2s;
     }
-
   }
 
   &switch-tag{
-    width: 60px;
+    width: @switch-width-tag;
+    .on, .off{
+      text-align: center;
+      width: @switch-width-tag - @switch-btn-size;
+      line-height: @switch-btn-size;
+      font-size: @font-size-sm;
+      transition: opacity 0.2s;
+    }
     .on{
       color:#fff;
-      text-align: center;
-      width: 30px;
-      line-height: 30px;
-      font-size: @font-size-sm;
-      margin-left: 1px;
+      padding-left: 1px;
       float:left;
     }
     .off{
       color: @font-color-light;
-      text-align: center;
-      line-height: 30px;
-      font-size: @font-size-sm;
       float: right;
-      width: 30px;
-      margin-right: 1px;
+      padding-right: 1px;
     }
   }
 
@@ -52,7 +55,7 @@
 
     }
     .off{
-      display: none
+      display: none;
     }
   }
 
@@ -74,7 +77,8 @@
     .on{
       display: none;
     }
+    .off{
+
+    }
   }
-
-
 }

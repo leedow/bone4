@@ -1543,6 +1543,18 @@ textarea {
   -webkit-transform: translate(0, 100%);
           transform: translate(0, 100%);
 }
+.tb-enter-active,
+.tb-leave-active {
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+.tb-enter,
+.tb-leave-active {
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
+}
 .layout-enter-active,
 .layout-leave-active {
   -webkit-transition: opacity .2s;

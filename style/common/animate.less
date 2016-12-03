@@ -28,6 +28,15 @@
   transform: translate(0, 100%);
 }
 
+//从上方进入100%
+.tb-enter-active, .tb-leave-active {
+//  transform: translate(-50%, -50%) !important;
+  transition: transform .3s ease-out;
+}
+.tb-enter, .tb-leave-active {
+  transform: translate(0, -100%);
+}
+
 //遮罩层
 .layout-enter-active, .layout-leave-active {
   transition: opacity .2s;

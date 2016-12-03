@@ -3,7 +3,6 @@
 
   &card{
     background: #fff;
-    border-radius: @radius;
     border: 1px @line-color-light solid;
     border-radius: 2*@radius;
 
@@ -39,7 +38,7 @@
       display: flex;
       justify-content: center;
       border-top:1px @line-color-light solid;
-      align-items:  baseline;
+      align-items:  center;
       padding: 0.5em @padding-vertical;
       text-align: left;
       .card-footer-left{
@@ -67,5 +66,27 @@
 
   &card-comfort{
     border-left: 2px @color-comfort solid;
+  }
+
+  &card-new{
+    border: 1px @line-color-light solid;
+    border-radius: 2*@radius;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    min-height: 100px;
+
+    .card-content{
+      i{
+        font-size: 28px;
+        color: @font-color-light;
+      }
+      p{
+        padding: 0;
+        margin:0;
+        color: @font-color-light;
+      }
+    }
   }
 }
