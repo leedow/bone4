@@ -1,6 +1,6 @@
 body {
   font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
-  font-size: 14px;
+  font-size: 28px;
   color: #565a5c;
   line-height: 1.5;
   text-align: center;
@@ -987,171 +987,171 @@ textarea {
   }
 }
 .p1111 {
-  padding: 7px 7px;
-}
-.p0111 {
-  padding: 0 7px 7px 7px;
-}
-.p1000 {
-  padding-top: 7px;
-}
-.p0010 {
-  padding-bottom: 7px;
-}
-.p0100 {
-  padding-right: 7px;
-}
-.p0001 {
-  padding-left: 7px;
-}
-.p1010 {
-  padding: 7px 0;
-}
-.p0101 {
-  padding: 0 7px;
-}
-.p1101 {
-  padding: 7px 7px 0 7px;
-}
-.p1001 {
-  padding: 7px 0 0 7px;
-}
-.p0110 {
-  padding: 0 7px 7px 0;
-}
-.p2222 {
   padding: 14px 14px;
 }
-.p0222 {
+.p0111 {
   padding: 0 14px 14px 14px;
 }
-.p2000 {
+.p1000 {
   padding-top: 14px;
 }
-.p0020 {
+.p0010 {
   padding-bottom: 14px;
 }
-.p0200 {
+.p0100 {
   padding-right: 14px;
 }
-.p0002 {
+.p0001 {
   padding-left: 14px;
 }
-.p2020 {
+.p1010 {
   padding: 14px 0;
 }
-.p0202 {
+.p0101 {
   padding: 0 14px;
 }
-.p2202 {
+.p1101 {
   padding: 14px 14px 0 14px;
 }
-.p2002 {
+.p1001 {
   padding: 14px 0 0 14px;
 }
-.p0220 {
+.p0110 {
   padding: 0 14px 14px 0;
 }
-.p3000 {
-  padding-top: 28px;
-}
-.p0030 {
-  padding-bottom: 28px;
-}
-.p0300 {
-  padding-right: 28px;
-}
-.p0003 {
-  padding-left: 28px;
-}
-.p3333 {
+.p2222 {
   padding: 28px 28px;
 }
+.p0222 {
+  padding: 0 28px 28px 28px;
+}
+.p2000 {
+  padding-top: 28px;
+}
+.p0020 {
+  padding-bottom: 28px;
+}
+.p0200 {
+  padding-right: 28px;
+}
+.p0002 {
+  padding-left: 28px;
+}
+.p2020 {
+  padding: 28px 0;
+}
+.p0202 {
+  padding: 0 28px;
+}
+.p2202 {
+  padding: 28px 28px 0 28px;
+}
+.p2002 {
+  padding: 28px 0 0 28px;
+}
+.p0220 {
+  padding: 0 28px 28px 0;
+}
+.p3000 {
+  padding-top: 56px;
+}
+.p0030 {
+  padding-bottom: 56px;
+}
+.p0300 {
+  padding-right: 56px;
+}
+.p0003 {
+  padding-left: 56px;
+}
+.p3333 {
+  padding: 56px 56px;
+}
 .m1111 {
-  margin: 7px 7px;
-}
-.m0111 {
-  margin: 0 7px 7px 7px;
-}
-.m1000 {
-  margin-top: 7px;
-}
-.m0010 {
-  margin-bottom: 7px;
-}
-.m0100 {
-  margin-right: 7px;
-}
-.m0001 {
-  margin-left: 7px;
-}
-.m1010 {
-  margin: 7px 0;
-}
-.m0101 {
-  margin: 0 7px;
-}
-.m1101 {
-  margin: 7px 7px 0 7px;
-}
-.m1001 {
-  margin: 7px 0 0 7px;
-}
-.m0110 {
-  margin: 0 7px 7px 0;
-}
-.m2222 {
   margin: 14px 14px;
 }
-.m0222 {
+.m0111 {
   margin: 0 14px 14px 14px;
 }
-.m2000 {
+.m1000 {
   margin-top: 14px;
 }
-.m0020 {
+.m0010 {
   margin-bottom: 14px;
 }
-.m0200 {
+.m0100 {
   margin-right: 14px;
 }
-.m0002 {
+.m0001 {
   margin-left: 14px;
 }
-.m2020 {
+.m1010 {
   margin: 14px 0;
 }
-.m0202 {
+.m0101 {
   margin: 0 14px;
 }
-.m2202 {
+.m1101 {
   margin: 14px 14px 0 14px;
 }
-.m2002 {
+.m1001 {
   margin: 14px 0 0 14px;
 }
-.m0220 {
+.m0110 {
   margin: 0 14px 14px 0;
 }
-.m3000 {
+.m2222 {
+  margin: 28px 28px;
+}
+.m0222 {
+  margin: 0 28px 28px 28px;
+}
+.m2000 {
   margin-top: 28px;
 }
-.m0030 {
+.m0020 {
   margin-bottom: 28px;
 }
-.m0300 {
+.m0200 {
   margin-right: 28px;
 }
-.m0003 {
+.m0002 {
   margin-left: 28px;
 }
+.m2020 {
+  margin: 28px 0;
+}
+.m0202 {
+  margin: 0 28px;
+}
+.m2202 {
+  margin: 28px 28px 0 28px;
+}
+.m2002 {
+  margin: 28px 0 0 28px;
+}
+.m0220 {
+  margin: 0 28px 28px 0;
+}
+.m3000 {
+  margin-top: 56px;
+}
+.m0030 {
+  margin-bottom: 56px;
+}
+.m0300 {
+  margin-right: 56px;
+}
+.m0003 {
+  margin-left: 56px;
+}
 .m3333 {
-  margin: 28px 28px;
+  margin: 56px 56px;
 }
 .notice {
   padding: 0.5em 1em;
   position: relative;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 .notice .notice-close {
   position: absolute;
@@ -1206,7 +1206,7 @@ textarea {
   outline: none;
 }
 .label-lg {
-  font-size: 17px;
+  font-size: 34px;
 }
 .form-control {
   width: 100%;
@@ -1216,8 +1216,8 @@ textarea {
 .select {
   background: #fff;
   border: 1px #e0e0e0 solid;
-  border-radius: 2px;
-  font-size: 14px;
+  border-radius: 4px;
+  font-size: 28px;
   appearance: none !important;
   -moz-appearance: none !important;
   -webkit-appearance: none !important;
@@ -1238,29 +1238,29 @@ textarea {
 }
 .textarea,
 .textarea-underline {
-  padding: 9px 10px;
-  font-size: 14px !important;
+  padding: 18px 20px;
+  font-size: 28px !important;
 }
 .input,
 .select {
-  padding: 9px 10px;
-  height: 39px;
+  padding: 18px 20px;
+  height: 78px;
 }
 .input-lg,
 .select-lg {
-  padding: 11px 10px;
-  height: 46px;
-  font-size: 17px;
+  padding: 22px 20px;
+  height: 92px;
+  font-size: 34px;
 }
 .input-sm,
 .select-sm {
-  padding: 6px 10px;
-  height: 33px;
+  padding: 12px 20px;
+  height: 66px;
 }
 .input-tiny,
 .select-tiny {
-  padding: 3px 8px;
-  height: 27px;
+  padding: 6px 16px;
+  height: 54px;
 }
 .has-icon {
   position: relative;
@@ -1271,7 +1271,7 @@ textarea {
   right: 0.4em;
   top: 50%;
   font-family: iconfont;
-  font-size: 20px;
+  font-size: 40px;
   height: 1em;
   line-height: 1em;
   margin-top: -0.5em;
@@ -1288,7 +1288,7 @@ textarea {
   right: 0.4em;
   top: 50%;
   font-family: iconfont;
-  font-size: 20px;
+  font-size: 40px;
   height: 1em;
   line-height: 1em;
   margin-top: -0.5em;
@@ -1356,7 +1356,7 @@ textarea {
   right: 0.4em;
   top: 50%;
   font-family: iconfont;
-  font-size: 20px;
+  font-size: 40px;
   height: 1em;
   line-height: 1em;
   margin-top: -0.5em;
@@ -1371,11 +1371,11 @@ textarea {
   -webkit-appearance: none !important;
   font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
   cursor: pointer;
-  padding: 8px 12px;
+  padding: 16px 24px;
   border: 0;
-  border-radius: 2px;
+  border-radius: 4px;
   line-height: 1em;
-  font-size: 14px;
+  font-size: 28px;
   text-align: center;
   margin: 0;
   color: #565a5c;
@@ -1458,7 +1458,7 @@ textarea {
   border: 0;
   background: none;
   color: #e0e0e0;
-  font-size: 24px;
+  font-size: 48px;
   padding: 0;
   vertical-align: center;
 }
@@ -1469,17 +1469,17 @@ textarea {
   border: 0;
   background: none;
   color: #3492e6;
-  font-size: 24px;
+  font-size: 48px;
 }
 .btn-tiny {
-  padding: 2px 6px;
+  padding: 4px 12px;
 }
 .btn-sm {
-  padding: 5px 10px;
+  padding: 10px 20px;
 }
 .btn-lg {
-  padding: 10px 16px;
-  font-size: 17px;
+  padding: 20px 32px;
+  font-size: 34px;
 }
 .btn-block {
   width: 100%;
@@ -1491,15 +1491,15 @@ textarea {
   border-collapse: collapse;
 }
 .table th {
-  padding: 8.4px 14px;
-  font-size: 14px;
+  padding: 16.8px 28px;
+  font-size: 28px;
   line-height: 1.6em;
   white-space: nowrap;
   text-align: left;
   font-weight: normal;
 }
 .table td {
-  padding: 8.4px 14px;
+  padding: 16.8px 28px;
   line-height: 1.6em;
 }
 .table-underline th,
@@ -1551,15 +1551,15 @@ textarea {
   border: 1px #eee solid;
 }
 .markdown table th {
-  padding: 8.4px 14px;
-  font-size: 14px;
+  padding: 16.8px 28px;
+  font-size: 28px;
   line-height: 1.6em;
   white-space: nowrap;
   text-align: left;
   font-weight: normal;
 }
 .markdown table td {
-  padding: 8.4px 14px;
+  padding: 16.8px 28px;
   line-height: 1.6em;
 }
 .markdown table th {
@@ -1681,23 +1681,23 @@ textarea {
 }
 .form-lg .input,
 .form-lg .select {
-  padding: 11px 10px;
-  height: 46px;
-  font-size: 17px;
+  padding: 22px 20px;
+  height: 92px;
+  font-size: 34px;
 }
 .form-lg label {
-  font-size: 17px;
+  font-size: 34px;
 }
 .tabs-horizon {
-  height: 44px;
+  height: 88px;
 }
 .tabs-horizon .tabs-item {
   display: inline-block;
-  font-size: 17px;
-  height: 44px;
-  line-height: 44px;
+  font-size: 34px;
+  height: 88px;
+  line-height: 88px;
   text-align: center;
-  padding: 0 14px;
+  padding: 0 28px;
   border: 0;
   background: none;
   color: #565a5c;
@@ -1862,7 +1862,7 @@ textarea {
   text-align: left;
 }
 .form-item-head label {
-  padding-left: 14px;
+  padding-left: 28px;
   font-weight: normal !important;
 }
 .form-item-head .input,
@@ -1876,20 +1876,20 @@ textarea {
   position: relative;
 }
 .form-item-blank label {
-  padding-left: 14px;
+  padding-left: 28px;
   font-weight: normal !important;
   position: absolute;
   left: 0;
   top: 50%;
-  height: 24px;
-  line-height: 24px;
-  margin-top: -12px;
+  height: 48px;
+  line-height: 48px;
+  margin-top: -24px;
   z-index: 999;
 }
 .form-item-blank .input,
 .form-item-blank .select,
 .form-item-blank .textarea {
-  padding-left: 100px;
+  padding-left: 200px;
   border-top: 0 !important;
   border-left: 0 !important;
   border-right: 0 !important;
@@ -1900,10 +1900,10 @@ textarea {
   text-align: left;
 }
 .form-head .form-item {
-  padding-top: 5px;
+  padding-top: 10px;
 }
 .form-head label {
-  padding-left: 14px;
+  padding-left: 28px;
   font-weight: normal !important;
 }
 .form-head .input,
@@ -1920,20 +1920,20 @@ textarea {
   position: relative;
 }
 .form-blank label {
-  padding-left: 14px;
+  padding-left: 28px;
   font-weight: normal !important;
   position: absolute;
   left: 0;
   top: 50%;
-  height: 24px;
-  line-height: 24px;
-  margin-top: -12px;
+  height: 48px;
+  line-height: 48px;
+  margin-top: -24px;
   z-index: 999;
 }
 .form-blank .input,
 .form-blank .select,
 .form-blank .textarea {
-  padding-left: 100px;
+  padding-left: 200px;
   border-top: 0 !important;
   border-left: 0 !important;
   border-right: 0 !important;
@@ -1961,18 +1961,18 @@ textarea {
           justify-content: center;
 }
 .dialog-layout .dialog {
-  border-radius: 2px;
+  border-radius: 4px;
   width: 80%;
   max-height: 95%;
   background: #fff;
 }
 .dialog-layout .dialog .dialog-content {
-  font-size: 17px;
-  padding: 14px;
+  font-size: 34px;
+  padding: 28px;
 }
 .dialog-layout .dialog .dialog-content p {
   color: #999;
-  font-size: 14px;
+  font-size: 28px;
 }
 .dialog-layout .dialog .dialog-buttons {
   border-top: 1px #eee solid;
@@ -1986,8 +1986,8 @@ textarea {
 .dialog-layout .dialog .dialog-buttons .button {
   background: none;
   border: 0;
-  font-size: 17px;
-  padding: 10px 16px;
+  font-size: 34px;
+  padding: 20px 32px;
 }
 .dialog-layout .dialog .dialog-buttons .button-ok {
   -webkit-box-flex: 1;
@@ -2006,7 +2006,7 @@ textarea {
 .card {
   background: #fff;
   border: 1px #eee solid;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 .card .card-header {
   display: -webkit-box;
@@ -2024,9 +2024,9 @@ textarea {
           align-items: center;
 }
 .card .card-header .card-title {
-  font-size: 17px;
+  font-size: 34px;
   font-weight: normal;
-  padding: 0.6em 14px;
+  padding: 0.6em 28px;
   text-align: left;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -2034,11 +2034,11 @@ textarea {
           flex: 1;
 }
 .card .card-header .card-addon {
-  padding-right: 14px;
+  padding-right: 28px;
   color: #999;
 }
 .card .card-content {
-  padding: 0.5em 14px;
+  padding: 0.5em 28px;
   text-align: left;
 }
 .card .card-footer {
@@ -2055,7 +2055,7 @@ textarea {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0.5em 14px;
+  padding: 0.5em 28px;
   text-align: left;
 }
 .card .card-footer .card-footer-left {
@@ -2079,7 +2079,7 @@ textarea {
 }
 .card-new {
   border: 1px #eee solid;
-  border-radius: 4px;
+  border-radius: 8px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2119,7 +2119,7 @@ textarea {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 11.2px 28px;
+  padding: 22.4px 56px;
 }
 .user-info .user-avatar img {
   width: 50px;
@@ -2133,12 +2133,12 @@ textarea {
       -ms-flex: 1;
           flex: 1;
   color: #fff;
-  font-size: 17px;
+  font-size: 34px;
   text-align: left;
   padding-left: 1.5em;
 }
 .user-info .user-phone {
-  font-size: 14px;
+  font-size: 28px;
   font-weight: normal;
   display: block;
 }
@@ -2166,10 +2166,10 @@ textarea {
   text-align: center;
 }
 .user-count .user-count-item .user-count-title {
-  font-size: 12px;
+  font-size: 24px;
 }
 .user-count .user-count-item .user-count-number {
-  font-size: 20px;
+  font-size: 40px;
   line-height: 1em;
   display: block;
 }
@@ -2192,13 +2192,13 @@ textarea {
   position: fixed;
 }
 .layout-main {
-  padding-bottom: 52.8px;
+  padding-bottom: 105.6px;
 }
 .layout-has-top {
-  padding-top: 44px;
+  padding-top: 88px;
 }
 .layout-has-bottom {
-  padding-top: 58px;
+  padding-top: 116px;
 }
 .layout-opacity,
 .layout-none {
@@ -2227,11 +2227,11 @@ textarea {
 }
 .header {
   width: 100%;
-  height: 44px;
-  line-height: 44px;
+  height: 88px;
+  line-height: 88px;
   text-align: center;
   position: relative;
-  font-size: 17px;
+  font-size: 34px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2245,19 +2245,19 @@ textarea {
 }
 .header .header-dock {
   position: absolute;
-  height: 44px;
-  line-height: 44px;
+  height: 88px;
+  line-height: 88px;
 }
 .header .header-dock a,
 .header .header-dock button {
   background: none;
   border: 0;
-  min-width: 44px;
+  min-width: 88px;
   color: #ffffff;
   display: inline-block;
-  height: 44px;
-  line-height: 44px;
-  padding: 0 14px;
+  height: 88px;
+  line-height: 88px;
+  padding: 0 28px;
 }
 .header .header-dock a:hover,
 .header .header-dock button:hover {
@@ -2265,7 +2265,7 @@ textarea {
 }
 .header .header-dock a i,
 .header .header-dock button i {
-  font-size: 20px;
+  font-size: 40px;
 }
 .header .header-dock .tip {
   content: ' ';
@@ -2338,13 +2338,13 @@ textarea {
   width: 2em;
   height: 1.2em;
   line-height: 1.2em;
-  font-size: 26px;
+  font-size: 52px;
   display: block;
 }
 .menu-horizon-item .menu-title {
   text-align: center;
-  padding: 3px 0;
-  font-size: 14px;
+  padding: 6px 0;
+  font-size: 28px;
   display: block;
 }
 .menu-horizon-item .tip {
@@ -2353,9 +2353,9 @@ textarea {
   left: 70%;
   background: #FF6633;
   color: #fff;
-  padding: 2px 4px;
+  padding: 4px 8px;
   line-height: 1em;
-  border-radius: 8px;
+  border-radius: 16px;
   font-size: 0.6rem;
 }
 .menu-horizon-sm {
@@ -2365,19 +2365,19 @@ textarea {
   width: 2em;
   height: 1.2em;
   line-height: 1.2em;
-  font-size: 22px;
+  font-size: 44px;
   display: block;
   color: #999;
 }
 .menu-horizon-sm .menu-title {
-  padding: 1px 0;
-  font-size: 12px;
+  padding: 2px 0;
+  font-size: 24px;
   display: block;
   line-height: 1em;
   color: #999;
 }
 .menu-horizon-border .menu-horizon-item {
-  padding: 10px 0 10px 0;
+  padding: 20px 0 20px 0;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
@@ -2391,7 +2391,7 @@ textarea {
   color: #3492e6 !important;
 }
 .list-title {
-  padding: 7px 14px;
+  padding: 14px 28px;
   text-align: left;
   color: #888d90;
 }
@@ -2425,23 +2425,23 @@ textarea {
 }
 .list .up-fresh p i,
 .list .down-fresh p i {
-  font-size: 28px;
+  font-size: 56px;
   display: block;
   line-height: 1em;
 }
 .list .up-fresh p span,
 .list .down-fresh p span {
-  font-size: 12px;
+  font-size: 24px;
 }
 .list .up-fresh {
   left: 0;
   right: 0;
-  bottom: -58px;
+  bottom: -116px;
 }
 .list .down-fresh {
   left: 0;
   right: 0;
-  top: -58px;
+  top: -116px;
 }
 .list .list-item-arrow {
   position: relative;
@@ -2449,14 +2449,14 @@ textarea {
 .list .list-item-arrow:after {
   content: '\e660';
   font-family: iconfont;
-  height: 20px;
-  line-height: 20px;
-  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 28px;
   color: #e0e0e0;
   position: absolute;
-  right: 14px;
+  right: 28px;
   top: 50%;
-  margin-top: -10px;
+  margin-top: -20px;
 }
 .list-box {
   background: #fff;
@@ -2477,7 +2477,7 @@ textarea {
   cursor: pointer;
   background: none;
   border: 0;
-  min-height: 48.4px;
+  min-height: 96.8px;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -2485,9 +2485,9 @@ textarea {
 }
 .menu-vertical-item .menu-icon {
   text-align: center;
-  padding-right: 14px;
+  padding-right: 28px;
   color: #3492e6;
-  font-size: 20px;
+  font-size: 40px;
   line-height: 1em;
 }
 .menu-vertical-item .menu-body {
@@ -2495,13 +2495,13 @@ textarea {
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 11.2px 0;
+  padding: 22.4px 0;
   text-align: left;
-  font-size: 17px;
+  font-size: 34px;
   line-height: 1.1em;
 }
 .menu-vertical-item .menu-dock {
-  padding-right: 14px;
+  padding-right: 28px;
   line-height: 1em;
 }
 .page {
@@ -2549,7 +2549,7 @@ textarea {
 .drawer-center .drawer-box {
   width: 80%;
   background: #fff;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 .drawer-left {
   left: 0;
@@ -2563,13 +2563,13 @@ textarea {
 }
 .toast {
   background: rgba(0, 0, 0, 0.7);
-  padding: 7px 14px;
-  border-radius: 6px;
+  padding: 14px 28px;
+  border-radius: 12px;
   color: #fff;
   text-align: center;
 }
 .toast i {
-  font-size: 40px;
+  font-size: 80px;
   line-height: 1em;
   display: block;
 }
@@ -2584,9 +2584,9 @@ textarea {
   width: 100%;
 }
 .switch {
-  width: 50px;
-  height: 30px;
-  border-radius: 15px;
+  width: 100px;
+  height: 60px;
+  border-radius: 30px;
   background: #f9f9f9;
   position: relative;
   border: 1px #e0e0e0 solid;
@@ -2598,23 +2598,23 @@ textarea {
   position: absolute;
   right: 0px;
   top: 0px;
-  width: 28px;
-  height: 28px;
-  border-radius: 14px;
+  width: 58px;
+  height: 58px;
+  border-radius: 29px;
   background: #fff;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   -webkit-transition: all .2s;
   transition: all .2s;
 }
 .switch-tag {
-  width: 60px;
+  width: 120px;
 }
 .switch-tag .on,
 .switch-tag .off {
   text-align: center;
-  width: 32px;
-  line-height: 28px;
-  font-size: 12px;
+  width: 62px;
+  line-height: 58px;
+  font-size: 24px;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
@@ -2639,8 +2639,8 @@ textarea {
   background: #f9f9f9;
 }
 .switch-off:before {
-  -webkit-transform: translateX(-20px);
-          transform: translateX(-20px);
+  -webkit-transform: translateX(-40px);
+          transform: translateX(-40px);
 }
 .switch-off .on {
   display: none;
@@ -2649,8 +2649,8 @@ textarea {
   background: #f9f9f9;
 }
 .switch-tag-off:before {
-  -webkit-transform: translateX(-30px);
-          transform: translateX(-30px);
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
 }
 .switch-tag-off .on {
   display: none;

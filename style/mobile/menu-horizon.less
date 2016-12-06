@@ -3,7 +3,6 @@
 	&menu-horizon{
 		display: flex;
 		justify-content:space-around;
-
 		//border-top:1px @line-color solid;
 	}
 
@@ -30,7 +29,7 @@
 
 		.menu-title{
 			text-align: center;
-			padding:3px 0;
+			padding:@r*3px 0;
 			font-size: @font-size;
 			display: block;
 		}
@@ -41,9 +40,9 @@
 			left: 70%;
 			background: @color-highlight;
 			color:#fff;
-			padding:2px 4px;
+			padding:@r*2px @r*4px;
 			line-height: 1em;
-			border-radius: 8px;
+			border-radius: @r*8px;
 			font-size: 0.6rem;
 		}
 	}
@@ -55,13 +54,13 @@
 			width:2em;
 			height:1.2em;
 			line-height: 1.2em;
-			font-size: 22px;
+			font-size: 1.1*@font-size-lg;
 			display: block;
 			color: #999;
 		}
 
 		.menu-title{
-			padding:1px 0;
+			padding:@r*1px 0;
 			font-size: @font-size-sm;
 			display: block;
 			line-height: 1em;
@@ -70,9 +69,8 @@
 	}
 
 	&menu-horizon-border{
-
 		.menu-horizon-item{
-			padding:10px 0  10px  0;
+			padding:@r*10px 0  @r*10px  0;
 			flex:1;
 			border-right: 1px @line-color solid;
 		}

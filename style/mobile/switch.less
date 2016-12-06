@@ -1,11 +1,8 @@
-@switch-width-tag:   60px;
-@switch-width:       50px;
-@switch-height:      30px;
-@switch-btn-size:    28px;
 
+@switch-btn-size: -2px+@switch-height;
 .@{prefix}{
   &switch{
-    width: 50px;
+    width: @switch-width;
     height: @switch-height;
     border-radius: 0.5*@switch-height;
     background: @color-light;
@@ -18,11 +15,11 @@
       position: absolute;
       right: 0px;
       top: 0px;
-      width: @switch-btn-size;
-      height: @switch-btn-size;
-      border-radius: 0.5*@switch-btn-size;
+      width: -2px+@switch-height;
+      height: -2px+@switch-height;
+      border-radius: 0.5*(-2px+@switch-height);
       background: #fff;
-      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+      box-shadow: @r*1px @r*1px @r*2px rgba(0, 0, 0, 0.4);
       transition: all .2s;
     }
   }
@@ -62,7 +59,7 @@
   &switch-off{
     background: @color-light;
     &:before{
-      transform: translateX(-20px);
+      transform: translateX(-@r*20px);
     }
     .on{
       display: none;
@@ -72,7 +69,7 @@
   &switch-tag-off{
     background: @color-light;
     &:before{
-      transform: translateX(-30px);
+      transform: translateX(-@r*30px);
     }
     .on{
       display: none;

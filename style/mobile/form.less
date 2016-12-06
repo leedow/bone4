@@ -22,13 +22,13 @@
     position: absolute;
     left:0;
     top:50%;
-    height: 24px;
-    line-height: 24px;
-    margin-top: -12px;
+    height: @r*24px;
+    line-height: @r*24px;
+    margin-top: -@r*12px;
     z-index: 999;
   }
   .input, .select, .textarea{
-    padding-left:100px;
+    padding-left:@r*100px;
     border-top: 0 !important;
     border-left: 0 !important;
     border-right: 0 !important;
@@ -41,7 +41,7 @@
 
     &form-head{
       .form-item{
-        padding-top:5px;
+        padding-top:@r*5px;
       }
       .form-item-head;
     }

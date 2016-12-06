@@ -1528,8 +1528,8 @@ textarea {
 }
 .lr-enter,
 .lr-leave-active {
-  -webkit-transform: translate(-100%, 0);
-          transform: translate(-100%, 0);
+  -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0);
 }
 .bt-enter-active,
 .bt-leave-active {
@@ -1540,8 +1540,8 @@ textarea {
 }
 .bt-enter,
 .bt-leave-active {
-  -webkit-transform: translate(0, 100%);
-          transform: translate(0, 100%);
+  -webkit-transform: translate3d(0, 100%, 0);
+          transform: translate3d(0, 100%, 0);
 }
 .tb-enter-active,
 .tb-leave-active {
@@ -1552,8 +1552,8 @@ textarea {
 }
 .tb-enter,
 .tb-leave-active {
-  -webkit-transform: translate(0, -100%);
-          transform: translate(0, -100%);
+  -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
 }
 .layout-enter-active,
 .layout-leave-active {
@@ -1564,22 +1564,27 @@ textarea {
 .layout-leave-active {
   opacity: 0;
 }
-.page-enter-active {
-  -webkit-transition: opacity .3s;
-  transition: opacity .3s;
+.pagein-enter-active,
+.pagein-leave-active {
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
 }
-.page-leave-active {
-  -webkit-transition: -webkit-transform 0s;
-  transition: -webkit-transform 0s;
-  transition: transform 0s;
-  transition: transform 0s, -webkit-transform 0s;
+.pagein-leave,
+.pagein-enter,
+.pagein-leave-active {
+  position: absolute;
+  left: 0;
+  width: 100%;
 }
-.page-enter {
-  opacity: 0;
+.pagein-enter {
+  -webkit-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
 }
-.page-leave-active {
-  -webkit-transform: translate(-100%, 0);
-          transform: translate(-100%, 0);
+.pagein-leave-active {
+  -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0);
 }
 .loading {
   -webkit-animation: loading 2s linear infinite;
@@ -1636,4 +1641,39 @@ textarea {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
+}
+.counter {
+  padding: 0.8em 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  width: 100%;
+  text-align: center;
+}
+.counter .counter-item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  line-height: 1.2em !important;
+}
+.counter .counter-item .counter-title {
+  display: block;
+  font-size: 12px;
+  line-height: 1.2em;
+  color: #999;
+}
+.counter .counter-item .counter-number {
+  font-size: 20px;
+  line-height: 1.1em;
+  display: block;
 }

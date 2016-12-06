@@ -38,13 +38,13 @@
      .up-fresh{
        left:0;
        right:0;
-       bottom:-58px;
+       bottom:-@r*58px;
      }
 
      .down-fresh{
        left:0;
        right:0;
-       top:-58px;
+       top:-@r*58px;
      }
 
       .list-item{
@@ -57,14 +57,14 @@
         &:after{
           content: '\e660';
           font-family:  @font-family-icon;
-          height: 20px;
-          line-height: 20px;
+          height: @r*20px;
+          line-height: @r*20px;
           font-size: @font-size;
           color: @line-color;
           position: absolute;
           right: @padding-horizon;
           top: 50%;
-          margin-top: -10px;
+          margin-top: -@r*10px;
         }
       }
   }
