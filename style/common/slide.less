@@ -12,7 +12,7 @@
     }
 
     .slide-item{
-
+      float:left;
     }
 
     .slide-btns{
@@ -33,7 +33,11 @@
         background: #fff;
         margin: 0 5px;
         border:0;
+        transition: width .2s;
+      }
 
+      .slide-btn-current{
+        width: @r*20px;
       }
     }
   }

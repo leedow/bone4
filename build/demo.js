@@ -73,8 +73,6 @@
 
        }
      })
-
   }
-
-  $('.switch').eq(3).click();
+  $('.switch').eq(13).click();
 })()

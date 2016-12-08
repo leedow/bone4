@@ -61,27 +61,39 @@ gulp.task('css', function(){
 			//.pipe(minifyCSS())
 			.pipe(gulp.dest('./build'))
 
-			gulp.src('./style/bone-mobile.less')
-				.pipe(less())
-				.on('error', function(err) {
-					gutil.log('Less Error!', err.message);
-					this.end();
-				})
-				//.pipe(rev())
-				.pipe(autoprefixer())
-				//.pipe(minifyCSS())
-				.pipe(gulp.dest('./build'))
+		gulp.src('./style/bone-mobile.less')
+			.pipe(less())
+			.on('error', function(err) {
+				gutil.log('Less Error!', err.message);
+				this.end();
+			})
+			//.pipe(rev())
+			.pipe(autoprefixer())
+			//.pipe(minifyCSS())
+			.pipe(gulp.dest('./build'))
 
-			gulp.src('./style/bone-mobile-x2.less')
-				.pipe(less())
-				.on('error', function(err) {
-					gutil.log('Less Error!', err.message);
-					this.end();
-				})
-				//.pipe(rev())
-				.pipe(autoprefixer())
-				//.pipe(minifyCSS())
-				.pipe(gulp.dest('./build'))
+
+		gulp.src('./style/bone-mobile-red.less')
+			.pipe(less())
+			.on('error', function(err) {
+				gutil.log('Less Error!', err.message);
+				this.end();
+			})
+			//.pipe(rev())
+			.pipe(autoprefixer())
+			//.pipe(minifyCSS())
+			.pipe(gulp.dest('./build'))
+
+		gulp.src('./style/bone-mobile-x2.less')
+			.pipe(less())
+			.on('error', function(err) {
+				gutil.log('Less Error!', err.message);
+				this.end();
+			})
+			//.pipe(rev())
+			.pipe(autoprefixer())
+			//.pipe(minifyCSS())
+			.pipe(gulp.dest('./build'))
 
 
 

@@ -1319,6 +1319,39 @@ textarea {
 .bor-top {
   border-top: 1px #d4d4d4 solid;
 }
+.bb {
+  border-bottom: 1px #d4d4d4 solid;
+}
+.bb-light {
+  border-bottom: 1px #eee solid;
+}
+.bt {
+  border-top: 1px #d4d4d4 solid;
+}
+.bt-light {
+  border-top: 1px #eee solid;
+}
+.f-default {
+  font-size: 14px !important;
+}
+.f-lg {
+  font-size: 20px !important;
+}
+.f-md {
+  font-size: 17px !important;
+}
+.f-sm {
+  font-size: 12px !important;
+}
+.f-light {
+  color: #999 !important;
+}
+.f-highlight {
+  color: #FF6633 !important;
+}
+.va {
+  vertical-align: bottom;
+}
 button,
 textarea {
   outline: none;
