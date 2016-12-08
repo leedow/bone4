@@ -93,7 +93,7 @@ textarea {
 .timeline .timeline-item:before {
   content: ' ';
   width: 2px;
-  background: #e0e0e0;
+  background: #d4d4d4;
   height: 100%;
   position: absolute;
   left: 5px;
@@ -1039,7 +1039,7 @@ textarea {
 }
 .btn-blank {
   color: #565a5c;
-  border: 1px #e0e0e0 solid;
+  border: 1px #d4d4d4 solid;
   background: none;
 }
 .btn-blank:hover {
@@ -1076,7 +1076,7 @@ textarea {
 .btn-icon {
   border: 0;
   background: none;
-  color: #e0e0e0;
+  color: #d4d4d4;
   font-size: 24px;
   padding: 0;
   vertical-align: center;
@@ -1314,10 +1314,10 @@ textarea {
   overflow: hidden;
 }
 .bor-bottom {
-  border-bottom: 1px #e0e0e0 solid;
+  border-bottom: 1px #d4d4d4 solid;
 }
 .bor-top {
-  border-top: 1px #e0e0e0 solid;
+  border-top: 1px #d4d4d4 solid;
 }
 button,
 textarea {
@@ -1333,7 +1333,7 @@ textarea {
 .input,
 .select {
   background: #fff;
-  border: 1px #e0e0e0 solid;
+  border: 1px #d4d4d4 solid;
   border-radius: 2px;
   font-size: 14px;
   appearance: none !important;
@@ -1483,7 +1483,7 @@ textarea {
 .select-underline,
 .textarea-underline {
   border: 0px !important;
-  border-bottom: 1px #e0e0e0 solid !important;
+  border-bottom: 1px #d4d4d4 solid !important;
 }
 .tabs-horizon {
   height: 44px;
@@ -1494,7 +1494,7 @@ textarea {
   height: 44px;
   line-height: 44px;
   text-align: center;
-  padding: 0 14px;
+  padding: 0 5.6px;
   border: 0;
   background: none;
   color: #565a5c;

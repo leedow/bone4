@@ -20,11 +20,11 @@
 }
 .page-login .login-box {
   width: 80%;
-  margin-top: -30px;
+  margin-top: -60px;
 }
 .page-login .login-box h1 {
   color: #444;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 .page-login .login-box .input {
   background: none !important;
@@ -33,17 +33,17 @@
   border-top: 0;
 }
 .account-card .card-header .card-title {
-  font-size: 15px;
+  font-size: 30px;
 }
 .account-card .card-footer {
-  font-size: 24px;
+  font-size: 48px;
 }
 .account-card .card-footer .account-btn {
-  font-size: 28px;
-  padding-left: 10px;
+  font-size: 56px;
+  padding-left: 20px;
 }
 .account-card .card-footer .account-btn i {
-  font-size: 28px !important;
+  font-size: 56px !important;
 }
 .account-card-blue {
   background: #6EAADE;
@@ -60,7 +60,7 @@
   color: #c1dbf1;
 }
 .account-card-blue .account-btn i {
-  font-size: 28px !important;
+  font-size: 56px !important;
   color: #c1dbf1;
 }
 .account-card-green {
@@ -78,7 +78,7 @@
   color: #b2dcb5;
 }
 .account-card-green .account-btn i {
-  font-size: 28px !important;
+  font-size: 56px !important;
   color: #b2dcb5;
 }
 .account-card-yellow {
@@ -96,6 +96,6 @@
   color: #f3c8c4;
 }
 .account-card-yellow .account-btn i {
-  font-size: 28px !important;
+  font-size: 56px !important;
   color: #f3c8c4;
 }

@@ -48,13 +48,14 @@
      }
 
       .list-item{
+        position: relative;
         //border-bottom: 1px @line-color solid;
       }
 
       .list-item-arrow{
         position: relative;
 
-        &:after{
+        &:before{
           content: '\e660';
           font-family:  @font-family-icon;
           height: @r*20px;
@@ -83,6 +84,7 @@
 
     .list-item:last-child{
       border-bottom: 0 !important;
+
     }
 
   }

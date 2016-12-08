@@ -93,7 +93,7 @@ textarea {
 .timeline .timeline-item:before {
   content: ' ';
   width: 2px;
-  background: #e0e0e0;
+  background: #d4d4d4;
   height: 100%;
   position: absolute;
   left: 5px;
@@ -1196,10 +1196,10 @@ textarea {
   overflow: hidden;
 }
 .bor-bottom {
-  border-bottom: 1px #e0e0e0 solid;
+  border-bottom: 1px #d4d4d4 solid;
 }
 .bor-top {
-  border-top: 1px #e0e0e0 solid;
+  border-top: 1px #d4d4d4 solid;
 }
 button,
 textarea {
@@ -1215,7 +1215,7 @@ textarea {
 .input,
 .select {
   background: #fff;
-  border: 1px #e0e0e0 solid;
+  border: 1px #d4d4d4 solid;
   border-radius: 2px;
   font-size: 14px;
   appearance: none !important;
@@ -1365,7 +1365,7 @@ textarea {
 .select-underline,
 .textarea-underline {
   border: 0px !important;
-  border-bottom: 1px #e0e0e0 solid !important;
+  border-bottom: 1px #d4d4d4 solid !important;
 }
 .btn {
   -webkit-appearance: none !important;
@@ -1420,7 +1420,7 @@ textarea {
 }
 .btn-blank {
   color: #565a5c;
-  border: 1px #e0e0e0 solid;
+  border: 1px #d4d4d4 solid;
   background: none;
 }
 .btn-blank:hover {
@@ -1457,7 +1457,7 @@ textarea {
 .btn-icon {
   border: 0;
   background: none;
-  color: #e0e0e0;
+  color: #d4d4d4;
   font-size: 24px;
   padding: 0;
   vertical-align: center;
@@ -1697,7 +1697,7 @@ textarea {
   height: 44px;
   line-height: 44px;
   text-align: center;
-  padding: 0 14px;
+  padding: 0 5.6px;
   border: 0;
   background: none;
   color: #565a5c;
@@ -1856,7 +1856,7 @@ textarea {
   background: #fff;
 }
 .tabs-horizon-flex .tabs-item-current {
-  border-bottom: 3px #3492e6 solid;
+  border-bottom: 4px #3492e6 solid;
 }
 .form-item-head {
   text-align: left;
@@ -1884,7 +1884,7 @@ textarea {
   height: 24px;
   line-height: 24px;
   margin-top: -12px;
-  z-index: 999;
+  z-index: 998;
 }
 .form-item-blank .input,
 .form-item-blank .select,
@@ -1928,7 +1928,7 @@ textarea {
   height: 24px;
   line-height: 24px;
   margin-top: -12px;
-  z-index: 999;
+  z-index: 998;
 }
 .form-blank .input,
 .form-blank .select,
@@ -2009,6 +2009,7 @@ textarea {
   border-radius: 4px;
 }
 .card .card-header {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2069,13 +2070,13 @@ textarea {
   border-bottom: 1px #eee solid;
 }
 .card-primary {
-  border-left: 2px #3492e6 solid;
+  border-left: 4px #3492e6 solid;
 }
 .card-highlight {
-  border-left: 2px #FF6633 solid;
+  border-left: 4px #FF6633 solid;
 }
 .card-comfort {
-  border-left: 2px #66CC33 solid;
+  border-left: 4px #66CC33 solid;
 }
 .card-new {
   border: 1px #eee solid;
@@ -2176,7 +2177,7 @@ textarea {
 .layout-top,
 .layout-bottom {
   position: fixed;
-  z-index: 999;
+  z-index: 1000;
 }
 .layout-top {
   top: 0;
@@ -2284,7 +2285,7 @@ textarea {
 .header-light {
   background: #fff;
   color: #444;
-  border-bottom: 1px #e0e0e0 solid;
+  border-bottom: 1px #d4d4d4 solid;
 }
 .header-light .header-dock a,
 .header-light .header-dock button {
@@ -2382,7 +2383,7 @@ textarea {
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  border-right: 1px #e0e0e0 solid;
+  border-right: 1px #d4d4d4 solid;
 }
 .menu-current .menu-pic {
   color: #3492e6 !important;
@@ -2443,16 +2444,19 @@ textarea {
   right: 0;
   top: -58px;
 }
+.list .list-item {
+  position: relative;
+}
 .list .list-item-arrow {
   position: relative;
 }
-.list .list-item-arrow:after {
+.list .list-item-arrow:before {
   content: '\e660';
   font-family: iconfont;
   height: 20px;
   line-height: 20px;
   font-size: 14px;
-  color: #e0e0e0;
+  color: #d4d4d4;
   position: absolute;
   right: 14px;
   top: 50%;
@@ -2461,10 +2465,10 @@ textarea {
 .list-box {
   background: #fff;
   border-top: 1px #eee solid;
-  border-bottom: 1px #e0e0e0 solid;
+  border-bottom: 1px #d4d4d4 solid;
 }
 .list-box .list-item {
-  border-bottom: 1px #e0e0e0 solid;
+  border-bottom: 1px #d4d4d4 solid;
 }
 .list-box .list-item:last-child {
   border-bottom: 0 !important;
@@ -2506,6 +2510,48 @@ textarea {
 }
 .page {
   position: absolute;
+}
+.slide {
+  overflow: hidden;
+  position: relative;
+}
+.slide .slide-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+.slide .slide-btns {
+  position: absolute;
+  width: 200px;
+  left: 50%;
+  bottom: 20px;
+  margin-left: -100px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.slide .slide-btns .slide-btn {
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: #fff;
+  margin: 0 5px;
+  border: 0;
 }
 .drawer {
   position: fixed;
@@ -2589,7 +2635,7 @@ textarea {
   border-radius: 15px;
   background: #f9f9f9;
   position: relative;
-  border: 1px #e0e0e0 solid;
+  border: 1px #d4d4d4 solid;
   -webkit-transition: background .4s;
   transition: background .4s;
 }
@@ -2603,8 +2649,10 @@ textarea {
   border-radius: 14px;
   background: #fff;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
 }
 .switch-tag {
   width: 60px;

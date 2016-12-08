@@ -8,6 +8,7 @@
 
 
     .card-header{
+      position: relative;
       display: flex;
       justify-content: center;
       border-bottom:1px @line-color-light solid;
@@ -57,15 +58,15 @@
   }
 
   &card-primary{
-    border-left: 2px @color-primary solid;
+    border-left: @r*4px @color-primary solid;
   }
 
   &card-highlight{
-    border-left: 2px @color-highlight solid;
+    border-left: @r*4px @color-highlight solid;
   }
 
   &card-comfort{
-    border-left: 2px @color-comfort solid;
+    border-left: @r*4px @color-comfort solid;
   }
 
   &card-new{
@@ -75,11 +76,11 @@
     justify-content: center;
     align-items: center;
     background: #fff;
-    min-height: 100px;
+    min-height: @r*100px;
 
     .card-content{
       i{
-        font-size: 28px;
+        font-size: @r*28px;
         color: @font-color-light;
       }
       p{

@@ -6,31 +6,31 @@
   .card-header{
     .card-title{
 
-      font-size: 15px;
+      font-size: @r*15px;
     }
   }
 
   .card-footer{
-    font-size: 24px;
+    font-size: @r*24px;
 
     .account-btn{
-      font-size: 28px;
-      padding-left: 10px;
+      font-size: @r*28px;
+      padding-left: @r*10px;
       i{
-        font-size: 28px !important;
+        font-size: @r*28px !important;
       }
     }
   }
 }
 
-@blue: #3492e6;
+@blue: #6EAADE;
 .account-card-blue{
   background: @blue;
-  color: lighten(@blue, 40%);
+  color: lighten(@blue, 30%);
 
   .card-header{
     .card-title{
-      color: lighten(@blue, 40%);
+      color: lighten(@blue,20%);
     }
     color: lighten(@blue, 50%);
     border-bottom: 1px lighten(@blue, 10%) solid;
@@ -42,20 +42,20 @@
 
   .account-btn{
     i{
-      font-size: 28px !important;
+      font-size: @r*28px !important;
       color: lighten(@blue, 20%);
     }
   }
 }
 
-@green: #66CC33;
+@green: #6BBD71;
 .account-card-green{
   background: @green;
-  color: lighten(@green, 40%);
+  color: lighten(@green, 30%);
 
   .card-header{
     .card-title{
-      color: lighten(@green, 40%);
+      color: lighten(@green, 20%);
     }
     color: lighten(@green, 50%);
     border-bottom: 1px lighten(@green, 10%) solid;
@@ -67,7 +67,7 @@
 
   .account-btn{
     i{
-      font-size: 28px !important;
+      font-size: @r*28px !important;
       color: lighten(@green, 20%);
     }
   }
@@ -75,14 +75,14 @@
 
 
 
-@yellow: #FF6633;
+@yellow: #E17970;
 .account-card-yellow{
   background: @yellow;
-  color: lighten(@yellow, 40%);
+  color: lighten(@yellow, 30%);
 
   .card-header{
     .card-title{
-      color: lighten(@yellow, 40%);
+      color: lighten(@yellow, 20%);
     }
     color: lighten(@yellow, 50%);
     border-bottom: 1px lighten(@yellow, 10%) solid;
@@ -94,7 +94,7 @@
 
   .account-btn{
     i{
-      font-size: 28px !important;
+      font-size: @r*28px !important;
       color: lighten(@yellow, 20%);
     }
   }
