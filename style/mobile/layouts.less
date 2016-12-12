@@ -1,7 +1,7 @@
 .@{prefix}{
   &layout-top, &layout-bottom{
     position: fixed;
-    z-index: 1000;
+    z-index: 999;
   }
 
   &layout-top{
@@ -28,6 +28,10 @@
     padding-top: @header-height;
   }
 
+  &layout-has-header-tabs{
+    padding-top: 2*@header-height;
+  }
+
   &layout-has-bottom{
     padding-top: @header-height + @padding-vertical;
   }
@@ -41,6 +45,10 @@
     bottom:0;
     right:0;
     z-index:1000;
+  }
+
+  &layout-header{
+    z-index: 998;
   }
 
 

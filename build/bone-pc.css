@@ -1520,6 +1520,7 @@ textarea {
 }
 .tabs-horizon {
   height: 44px;
+  background: #fff;
 }
 .tabs-horizon .tabs-item {
   display: inline-block;
@@ -1536,8 +1537,18 @@ textarea {
   cursor: pointer;
 }
 .tabs-horizon .tabs-item-current {
-  border-bottom: 2px #3492e6 solid;
+  border-bottom: 4px #3492e6 solid;
   color: #3492e6 !important;
+}
+.tabs-horizon-dark {
+  background: #3492e6 !important;
+}
+.tabs-horizon-dark .tabs-item {
+  color: #fff;
+}
+.tabs-horizon-dark .tabs-item-current {
+  border-bottom: 4px #8fc3f1 solid;
+  color: #fff !important;
 }
 .modal-enter-active,
 .modal-leave-active {

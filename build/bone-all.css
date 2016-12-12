@@ -1723,6 +1723,7 @@ textarea {
 }
 .tabs-horizon {
   height: 44px;
+  background: #fff;
 }
 .tabs-horizon .tabs-item {
   display: inline-block;
@@ -1739,8 +1740,18 @@ textarea {
   cursor: pointer;
 }
 .tabs-horizon .tabs-item-current {
-  border-bottom: 2px #3492e6 solid;
+  border-bottom: 4px #3492e6 solid;
   color: #3492e6 !important;
+}
+.tabs-horizon-dark {
+  background: #3492e6 !important;
+}
+.tabs-horizon-dark .tabs-item {
+  color: #fff;
+}
+.tabs-horizon-dark .tabs-item-current {
+  border-bottom: 4px #8fc3f1 solid;
+  color: #fff !important;
 }
 .modal-enter-active,
 .modal-leave-active {
@@ -1886,10 +1897,6 @@ textarea {
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-  background: #fff;
-}
-.tabs-horizon-flex .tabs-item-current {
-  border-bottom: 4px #3492e6 solid;
 }
 .form-item-head {
   text-align: left;
@@ -2215,7 +2222,7 @@ textarea {
 .layout-top,
 .layout-bottom {
   position: fixed;
-  z-index: 1000;
+  z-index: 999;
 }
 .layout-top {
   top: 0;
@@ -2236,6 +2243,9 @@ textarea {
 .layout-has-top {
   padding-top: 44px;
 }
+.layout-has-header-tabs {
+  padding-top: 88px;
+}
 .layout-has-bottom {
   padding-top: 58px;
 }
@@ -2248,6 +2258,9 @@ textarea {
   bottom: 0;
   right: 0;
   z-index: 1000;
+}
+.layout-header {
+  z-index: 998;
 }
 .layout-none {
   background: none;
@@ -2267,7 +2280,6 @@ textarea {
 .header {
   width: 100%;
   height: 44px;
-  line-height: 44px;
   text-align: center;
   position: relative;
   font-size: 17px;
@@ -2275,6 +2287,10 @@ textarea {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .header .header-body {
   -webkit-box-flex: 1;
@@ -2297,6 +2313,7 @@ textarea {
   height: 44px;
   line-height: 44px;
   padding: 0 14px;
+  font-size: 17px;
 }
 .header .header-dock a:hover,
 .header .header-dock button:hover {
@@ -2347,6 +2364,9 @@ textarea {
 .header-opacity .header-dock button:hover {
   background: none;
   color: #fff;
+}
+.header-search {
+  padding: 0 6px;
 }
 .menu-horizon {
   display: -webkit-box;
@@ -2422,6 +2442,18 @@ textarea {
       -ms-flex: 1;
           flex: 1;
   border-right: 1px #d4d4d4 solid;
+}
+.menu-horizon-circle .menu-horizon-item .menu-pic {
+  width: 1.6em;
+  height: 1.6em;
+  border-radius: 0.8em;
+  background: #3492e6;
+  line-height: 1.6em;
+  font-size: 30px;
+  display: block;
+}
+.menu-horizon-circle .menu-horizon-item .menu-pic i {
+  color: #fff;
 }
 .menu-current .menu-pic {
   color: #3492e6 !important;
@@ -2570,6 +2602,15 @@ textarea {
 .drawer-top .drawer-box {
   background: #fff;
 }
+.drawer-top-header {
+  top: 44px;
+  left: 0;
+  right: 0;
+  z-index: 998;
+}
+.drawer-top-header .drawer-box {
+  background: #fff;
+}
 .drawer-center {
   left: 0;
   right: 0;
@@ -2612,7 +2653,6 @@ textarea {
   position: absolute;
   left: 0;
   top: 0;
-  height: 100%;
   -webkit-transition: -webkit-transform .2s;
   transition: -webkit-transform .2s;
   transition: transform .2s;
@@ -2620,6 +2660,10 @@ textarea {
 }
 .slide .slide-item {
   float: left;
+}
+.slide .slide-item img {
+  width: 100%;
+  vertical-align: bottom;
 }
 .slide .slide-btns {
   position: absolute;
@@ -2639,6 +2683,7 @@ textarea {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  opacity: 0.6;
 }
 .slide .slide-btns .slide-btn {
   padding: 0;

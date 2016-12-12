@@ -1,6 +1,7 @@
 .@{prefix}{
   &tabs-horizon{
 		height: @tabs-horizon-height;
+    background: #fff;
 
 		.tabs-item{
 			display: inline-block;
@@ -18,9 +19,22 @@
       }
 		}
 
-		.@{prefix}tabs-item-current{
-			border-bottom:2px @color-primary solid;
+		.tabs-item-current{
+			border-bottom:@r*4px @color-primary solid;
 			color: @color-primary !important;
 		}
 	}
+
+  &tabs-horizon-dark{
+    background: @color-primary !important;
+
+    .tabs-item{
+      color: #fff;
+    }
+
+    .tabs-item-current{
+			border-bottom:@r*4px lighten(@color-primary, 20%) solid ;
+			color: #fff !important;
+		}
+  }
 }
