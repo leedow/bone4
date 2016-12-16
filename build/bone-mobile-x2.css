@@ -2240,6 +2240,19 @@ textarea {
 .layout-main {
   padding-bottom: 105.6px;
 }
+.layout-main-fixed {
+  position: fixed;
+}
+.layout-main-absolute {
+  position: absolute;
+}
+.layout-main-fixed,
+.layout-main-absolute {
+  top: 176px;
+  left: 0;
+  right: 0;
+  bottom: 211.2px;
+}
 .layout-has-top {
   padding-top: 88px;
 }
