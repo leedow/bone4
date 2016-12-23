@@ -1,7 +1,7 @@
 body {
   font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
   font-size: 14px;
-  color: #565a5c;
+  color: #444;
   line-height: 1.5;
   text-align: center;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -15,6 +15,8 @@ body {
   -o-box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 img {
   border: 0;
@@ -35,7 +37,7 @@ ul {
   list-style-type: none;
 }
 a {
-  color: #565a5c;
+  color: #444;
   text-decoration: none;
   -webkit-transition: all ease-in-out 0.4s !important;
   transition: all ease-in-out 0.4s !important;
@@ -1411,7 +1413,7 @@ textarea {
   font-size: 14px;
   text-align: center;
   margin: 0;
-  color: #565a5c;
+  color: #444;
   background: #f2f2f2;
   border: 1px #f2f2f2 solid;
 }
@@ -1452,13 +1454,13 @@ textarea {
   color: #fff;
 }
 .btn-blank {
-  color: #565a5c;
+  color: #444;
   border: 1px #d4d4d4 solid;
   background: none;
 }
 .btn-blank:hover {
   background: #f2f2f2;
-  color: #565a5c;
+  color: #444;
 }
 .btn-primary-blank {
   color: #3492e6;
@@ -1510,9 +1512,15 @@ textarea {
 .btn-sm {
   padding: 5px 10px;
 }
+.btn-sm-icon {
+  font-size: 17px;
+}
 .btn-lg {
   padding: 10px 16px;
   font-size: 17px;
+}
+.btn-lg-icon {
+  font-size: 20px;
 }
 .btn-block {
   width: 100%;
@@ -1734,7 +1742,7 @@ textarea {
   padding: 0 5.6px;
   border: 0;
   background: none;
-  color: #565a5c;
+  color: #444;
 }
 .tabs-horizon .tabs-item:hover {
   cursor: pointer;
@@ -1752,6 +1760,13 @@ textarea {
 .tabs-horizon-dark .tabs-item-current {
   border-bottom: 4px #8fc3f1 solid;
   color: #fff !important;
+}
+.animate-hack {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
 }
 .modal-enter-active,
 .modal-leave-active {
@@ -1888,6 +1903,27 @@ textarea {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
+}
+.font-primary {
+  color: #3492e6;
+}
+.font-light {
+  color: #f9f9f9;
+}
+.font-highlight {
+  color: #FF6633;
+}
+.font-comfort {
+  color: #66CC33;
+}
+.font-lg {
+  font-size: 20px;
+}
+.font-sm {
+  font-size: 12px;
+}
+.font-md {
+  font-size: 17px;
 }
 .tabs-horizon-flex {
   display: -webkit-box;
@@ -2357,7 +2393,7 @@ textarea {
 }
 .header-light .header-dock a,
 .header-light .header-dock button {
-  color: #565a5c;
+  color: #444;
 }
 .header-light .header-dock a:hover,
 .header-light .header-dock button:hover {
@@ -2477,7 +2513,7 @@ textarea {
 .list-title {
   padding: 7px 14px;
   text-align: left;
-  color: #888d90;
+  color: #777777;
 }
 .list {
   position: relative;
@@ -2713,11 +2749,16 @@ textarea {
   overflow-y: auto;
 }
 .toast {
+  position: fixed;
+  top: 50%;
+  left: 50%;
   background: rgba(0, 0, 0, 0.7);
   padding: 7px 14px;
   border-radius: 6px;
   color: #fff;
   text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .toast i {
   font-size: 40px;

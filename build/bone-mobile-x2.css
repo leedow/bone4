@@ -15,6 +15,8 @@ body {
   -o-box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 img {
   border: 0;
@@ -1510,9 +1512,15 @@ textarea {
 .btn-sm {
   padding: 10px 20px;
 }
+.btn-sm-icon {
+  font-size: 34px;
+}
 .btn-lg {
   padding: 20px 32px;
   font-size: 34px;
+}
+.btn-lg-icon {
+  font-size: 40px;
 }
 .btn-block {
   width: 100%;
@@ -1753,6 +1761,13 @@ textarea {
   border-bottom: 8px #8fc3f1 solid;
   color: #fff !important;
 }
+.animate-hack {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
+}
 .modal-enter-active,
 .modal-leave-active {
   -webkit-transition: opacity 0.3s ease-out, -webkit-transform 0.3s ease-out;
@@ -1979,6 +1994,27 @@ textarea {
   border-right: 0 !important;
   border-radius: 0 !important;
   box-shadow: none !important;
+}
+.font-primary {
+  color: #3492e6;
+}
+.font-light {
+  color: #f9f9f9;
+}
+.font-highlight {
+  color: #FF6633;
+}
+.font-comfort {
+  color: #66CC33;
+}
+.font-lg {
+  font-size: 40px;
+}
+.font-sm {
+  font-size: 24px;
+}
+.font-md {
+  font-size: 34px;
 }
 .dialog-layout {
   position: fixed;
@@ -2713,11 +2749,16 @@ textarea {
   width: 40px;
 }
 .toast {
+  position: fixed;
+  top: 50%;
+  left: 50%;
   background: rgba(0, 0, 0, 0.7);
   padding: 14px 28px;
   border-radius: 12px;
   color: #fff;
   text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .toast i {
   font-size: 80px;

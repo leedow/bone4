@@ -6,7 +6,6 @@ body, html{
 }
 
 #left, #mid, #right,#child-left, #child-mid, #child-right{
-
   position: absolute;;
   height: 100%;
   overflow-y: auto;

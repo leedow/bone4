@@ -1,0 +1,89 @@
+.@{prefix}{
+	//带侧栏的栅格,系统管理布局for PC
+	&ad-container{
+		width: 100%;
+		height: 100%;
+    background: #f2f2f2;
+	}
+
+	&container-mini{
+		.@{prefix}logo-mini{
+			display: block;
+		}
+
+		.@{prefix}logo {
+			display: none;
+		}
+
+		.@{prefix}ad-layout-sidebar{
+			//width: @sidebar-mini-width;
+
+			.hidden{display: none !important;}
+		}
+
+		.@{prefix}ad-layout-content{
+
+			//left: @sidebar-mini-width;
+
+		}
+
+		.@{prefix}ad-layout-header{
+
+			//padding-left: @sidebar-mini-width;
+
+		}
+
+		.menu-item:hover{
+			.tip{
+				display: block;
+			}
+		}
+
+	}
+
+	&logo-mini{
+		display: none;
+	}
+
+	&logo {
+		display: block;
+	}
+
+	&ad-layout-header{
+		width: 100%;
+		padding-left: @ad-sidebar-width;
+		height: @ad-header-height;
+		background: #fff;
+		color: #fff;
+
+	}
+
+	&ad-header-fixed{
+		position: absolute;
+		left:@ad-sidebar-width;
+		top:0;
+	}
+
+	&ad-layout-sidebar{
+		width: @ad-sidebar-width;
+		color: #fff;
+    background: @color-primary;
+	}
+
+	&ad-sidebar-fixed{
+		position: absolute;
+		left:0;
+		top: 0;//@ad-header-height;
+		bottom:0;
+	}
+
+	&ad-layout-content{
+		overflow-x: hidden;
+		position: absolute;
+		right:0;
+		left: @ad-sidebar-width;
+		top: @ad-header-height;
+		bottom:0;
+		overflow-y: auto;
+	}
+}

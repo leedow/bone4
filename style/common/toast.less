@@ -1,10 +1,14 @@
 .@{prefix}{
   &toast{
+    position: fixed;
+    top:50%;
+    left:50%;
     background: rgba(0, 0, 0, 0.7);
     padding: 0.5*@padding-vertical @padding-horizon;
     border-radius: 3*@radius;
     color:#fff;
     text-align: center;
+    transform: translate(-50%, -50%);
 
     i{
       font-size: 2*@font-size-lg;
