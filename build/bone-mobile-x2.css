@@ -2632,6 +2632,10 @@ textarea {
   font-size: 40px;
   line-height: 1em;
 }
+.menu-vertical-item .menu-icon img {
+  width: 60px;
+  vertical-align: bottom;
+}
 .menu-vertical-item .menu-body {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
