@@ -2186,6 +2186,24 @@ textarea {
   border-right: 0;
   border-left: 0;
 }
+.redbag .card-content {
+  background: #ee5f4f;
+  color: #fff;
+}
+.redbag .card-content .card-icon {
+  width: 40px;
+  height: 40px;
+}
+.redbag .card-content .card-icon img {
+  width: 100%;
+}
+.redbag .card-content .redbag-content {
+  font-size: 16px;
+  padding: 8px 15px;
+}
+.redbag .card-footer {
+  color: #999;
+}
 .user-box {
   background: #3492e6;
 }
