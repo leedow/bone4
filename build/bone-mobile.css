@@ -2653,6 +2653,82 @@ textarea {
   background: url(../img/arrow-bg.png) repeat-y #e0e0e0;
   color: #444;
 }
+.comment-avatar,
+.comment-avatar-left,
+.comment-avatar-right {
+  position: relative;
+  text-align: left;
+}
+.comment-avatar-left .avatar {
+  position: absolute;
+  left: 10px;
+  top: 7px;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background: #f9f9f9;
+  line-height: 30px;
+  text-align: center;
+}
+.comment-avatar-left .avatar img {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+.comment-avatar-left .content {
+  margin-left: 50px;
+}
+.comment-avatar-left .content .name {
+  padding-top: 10px;
+  font-size: 15px;
+}
+.comment-avatar-left .content .article {
+  padding: 5px 0;
+}
+.comment-avatar-left .content .time {
+  padding-bottom: 10px;
+  font-size: 11px;
+  color: #999;
+}
+.comment-avatar-left .content .reply {
+  color: #999;
+  padding: 0 0 5px 0;
+}
+.stars {
+  height: 25px;
+  line-height: 25px;
+}
+.stars .star,
+.stars .star-check {
+  float: left;
+  border: 0;
+  background: 0;
+  font-size: 20px;
+  margin-right: 10px;
+  color: #ddd;
+  padding: 0;
+}
+.stars .star:hover,
+.stars .star-check:hover {
+  color: #FF6633;
+}
+.stars .star-check {
+  color: #FF6633;
+}
+.stars .score {
+  line-height: 25px;
+  float: left;
+  font-size: 17px;
+}
+.stars-sm {
+  height: 20px;
+  line-height: 20px;
+}
+.stars-sm .star,
+.stars-sm .star-check {
+  margin-right: 5px;
+  font-size: 14px;
+}
 .slide {
   overflow: hidden;
   position: relative;
