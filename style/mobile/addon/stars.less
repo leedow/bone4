@@ -1,0 +1,39 @@
+.stars{
+	height: @r*25px;
+	line-height: @r*25px;
+
+	.star, .star-check{
+		float:left;
+		border:0;
+		background: 0;
+		font-size: @font-size-lg;
+		margin-right: @r*10px;
+		color: #ddd;
+
+		padding:0;
+
+		&:hover{
+			color: @color-highlight;
+		}
+	}
+
+	.star-check{
+		color: @color-highlight;
+	}
+
+	.score{
+		line-height: @r*25px;
+		float: left;
+		font-size: @font-size-md;
+
+	}
+}
+
+.stars-sm{
+  height: @r*20px;
+	line-height: @r*20px;
+	.star, .star-check{
+	 	margin-right: @r*5px;
+		font-size: @font-size ;
+	}
+}

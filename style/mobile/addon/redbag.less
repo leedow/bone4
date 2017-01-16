@@ -1,14 +1,21 @@
 //require mobile/card.less style
+@redbag-background: #ee5f4f;
+
 .redbag{
   .card-content{
-    background: #ee5f4f;
+    background: @redbag-background;
+
     color:#fff;
 
     .card-icon{
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: @r*40px;
       height:  @r*40px;
+
         img{
-          width: 100%;
+          width: 30px;
         }
     }
 
@@ -20,5 +27,36 @@
 
   .card-footer{
     color:#999;
+  }
+}
+
+.redbag-free{
+  .card-icon{
+    font-size: 28px;
+    color: @redbag-background;
+    .unit{
+      font-size: 13px;
+      color: @redbag-background;
+    }
+  }
+  .redbag-content{
+    color: #444;
+  }
+  .card-content{
+    background: none;
+  }
+  .dock{
+    background:url(../img/arrow-bg.png) repeat-y @redbag-background;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.redbag-off{
+  .dock{
+    background:url(../img/arrow-bg.png) repeat-y #e0e0e0;
+    color: #444;
   }
 }

@@ -1,0 +1,57 @@
+//带头像的评论
+.comments-avatar-list{
+
+}
+
+.comment-avatar,.comment-avatar-left, .comment-avatar-right{
+	position: relative;
+
+  text-align: left;
+}
+
+.comment-avatar-left{
+	.avatar {
+		position: absolute;
+		left:@r*10px;
+		top:@r*7px;
+    width: @r*30px;
+    height: @r*30px;
+    border-radius: @r*15px;
+    background: #f9f9f9;
+    line-height: 30px;
+    text-align: center;
+
+		img{
+			width: @r*30px;
+			height: @r*30px;
+			border-radius: @r*15px;
+		}
+	}
+
+	.content{
+		margin-left: @r*50px;
+		.name{
+			padding-top: @r*10px;
+			font-size: 15px;
+		}
+    .score{
+
+    }
+		.article{
+      padding: 5px 0;
+		}
+		.time{
+      padding-bottom:@r*10px;
+      font-size: 11px;
+			color:#999;
+		}
+    .reply{
+      color: #999;
+      padding:0 0 5px 0;
+    }
+	}
+}
+
+.comment-avatar-right{
+
+}
