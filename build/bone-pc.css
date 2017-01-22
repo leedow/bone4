@@ -1722,6 +1722,27 @@ textarea {
 .font-md {
   font-size: 17px;
 }
+.statistics {
+  padding: 0.8em 0;
+  width: 100%;
+}
+.statistics .statistics-item {
+  display: inline-block;
+  line-height: 1.2em !important;
+  padding: 0 14px;
+  border-right: 1px #eee solid;
+}
+.statistics .statistics-item .statistics-title {
+  display: block;
+  font-size: 12px;
+  line-height: 1.2em;
+  color: #999;
+}
+.statistics .statistics-item .statistics-number {
+  font-size: 20px;
+  line-height: 1em;
+  display: block;
+}
 .ad-container {
   width: 100%;
   height: 100%;
