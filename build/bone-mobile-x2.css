@@ -1904,6 +1904,15 @@ textarea {
             transform: translate(0, 0);
   }
 }
+.color-primary {
+  color: #3492e6;
+}
+.color-highlight {
+  color: #FF6633;
+}
+.color-comfort {
+  color: #66CC33;
+}
 .tabs-horizon-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3029,4 +3038,15 @@ textarea {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+}
+.result-box .result-icon {
+  font-size: 60px;
+}
+.result-box .result-title {
+  font-size: 40px;
+}
+.result-box .result-content {
+  padding-top: 0.2em;
+  font-size: 28px;
+  color: #999;
 }

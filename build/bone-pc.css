@@ -1743,6 +1743,15 @@ textarea {
   line-height: 1em;
   display: block;
 }
+.color-primary {
+  color: #333744;
+}
+.color-highlight {
+  color: #FF6633;
+}
+.color-comfort {
+  color: #66CC33;
+}
 .ad-container {
   width: 100%;
   height: 100%;
