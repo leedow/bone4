@@ -1761,6 +1761,23 @@ textarea {
   border-bottom: 8px #8fc3f1 solid;
   color: #fff !important;
 }
+.tabs-group {
+  display: inline-block;
+  border: 1px #3492e6 solid;
+  border-radius: 8px;
+}
+.tabs-group .tabs-item {
+  display: inline-block;
+  border: 0px !important;
+  border-radius: 0 !important;
+}
+.tabs-group .tabs-item-current {
+  background: #3492e6;
+  color: #fff;
+}
+.tabs-group-dark {
+  border: 1px #fff solid;
+}
 .animate-hack {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -2493,28 +2510,45 @@ textarea {
 .menu-horizon-item .tip {
   position: absolute;
   top: 0px;
-  left: 70%;
+  left: 50%;
+  margin-left: 10px;
   background: #FF6633;
   color: #fff;
-  padding: 4px 8px;
-  line-height: 1em;
-  border-radius: 16px;
-  font-size: 0.6rem;
+  padding: 0 8px;
+  line-height: 36px;
+  height: 36px;
+  min-width: 36px;
+  border-radius: 18px;
+  font-size: 21.6px;
+}
+.menu-horizon-item .tip-point {
+  position: absolute;
+  top: 3px;
+  left: 50%;
+  margin-left: 6px;
+  background: #FF6633;
+  color: #fff;
+  text-align: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  display: block;
 }
 .menu-horizon-sm {
   padding: 2px 0;
+  height: 108px;
 }
 .menu-horizon-sm .menu-pic {
   width: 2em;
   height: 1.2em;
   line-height: 1.2em;
-  font-size: 44px;
+  font-size: 48px;
   display: block;
   color: #999;
 }
 .menu-horizon-sm .menu-title {
   padding: 2px 0;
-  font-size: 24px;
+  font-size: 20px;
   display: block;
   line-height: 1em;
   color: #999;

@@ -1558,6 +1558,23 @@ textarea {
   border-bottom: 4px #5f667e solid;
   color: #fff !important;
 }
+.tabs-group {
+  display: inline-block;
+  border: 1px #333744 solid;
+  border-radius: 2px;
+}
+.tabs-group .tabs-item {
+  display: inline-block;
+  border: 0px !important;
+  border-radius: 0 !important;
+}
+.tabs-group .tabs-item-current {
+  background: #333744;
+  color: #fff;
+}
+.tabs-group-dark {
+  border: 1px #fff solid;
+}
 .animate-hack {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
