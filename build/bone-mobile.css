@@ -1222,7 +1222,7 @@ textarea {
   font-size: 20px !important;
 }
 .f-md {
-  font-size: 17px !important;
+  font-size: 18px !important;
 }
 .f-sm {
   font-size: 12px !important;
@@ -1241,7 +1241,7 @@ textarea {
   outline: none;
 }
 .label-lg {
-  font-size: 17px;
+  font-size: 18px;
 }
 .form-control {
   width: 100%;
@@ -1285,7 +1285,7 @@ textarea {
 .select-lg {
   padding: 11px 10px;
   height: 46px;
-  font-size: 17px;
+  font-size: 18px;
 }
 .input-sm,
 .select-sm {
@@ -1513,11 +1513,11 @@ textarea {
   padding: 5px 10px;
 }
 .btn-sm-icon {
-  font-size: 17px;
+  font-size: 18px;
 }
 .btn-lg {
-  padding: 10px 16px;
-  font-size: 17px;
+  padding: 11px 16px;
+  font-size: 18px;
 }
 .btn-lg-icon {
   font-size: 20px;
@@ -1724,10 +1724,10 @@ textarea {
 .form-lg .select {
   padding: 11px 10px;
   height: 46px;
-  font-size: 17px;
+  font-size: 18px;
 }
 .form-lg label {
-  font-size: 17px;
+  font-size: 18px;
 }
 .tabs-horizon {
   height: 44px;
@@ -1735,7 +1735,7 @@ textarea {
 }
 .tabs-horizon .tabs-item {
   display: inline-block;
-  font-size: 17px;
+  font-size: 18px;
   height: 44px;
   line-height: 44px;
   text-align: center;
@@ -1940,7 +1940,7 @@ textarea {
   font-size: 12px;
 }
 .font-md {
-  font-size: 17px;
+  font-size: 18px;
 }
 .color-primary {
   color: #3492e6;
@@ -2040,6 +2040,19 @@ textarea {
   border-radius: 0 !important;
   box-shadow: none !important;
 }
+.form-code {
+  position: relative;
+}
+.form-code .form-code-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.form-code .form-code-btn button {
+  color: #3492e6;
+  background: none;
+  border: 0;
+}
 .dialog-layout {
   position: fixed;
   left: 0;
@@ -2064,7 +2077,7 @@ textarea {
   background: #fff;
 }
 .dialog-layout .dialog .dialog-content {
-  font-size: 17px;
+  font-size: 18px;
   padding: 14px;
 }
 .dialog-layout .dialog .dialog-content p {
@@ -2082,8 +2095,8 @@ textarea {
 .dialog-layout .dialog .dialog-buttons .button {
   background: none;
   border: 0;
-  font-size: 17px;
-  padding: 10px 16px;
+  font-size: 18px;
+  padding: 11px 16px;
 }
 .dialog-layout .dialog .dialog-buttons .button-ok {
   -webkit-box-flex: 1;
@@ -2116,7 +2129,7 @@ textarea {
           align-items: center;
 }
 .card .card-header .card-title {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: normal;
   padding: 0.6em 14px;
   text-align: left;
@@ -2218,7 +2231,7 @@ textarea {
       -ms-flex: 1;
           flex: 1;
   color: #fff;
-  font-size: 17px;
+  font-size: 18px;
   text-align: left;
   padding-left: 1.5em;
 }
@@ -2327,7 +2340,7 @@ textarea {
   height: 44px;
   text-align: center;
   position: relative;
-  font-size: 17px;
+  font-size: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2339,6 +2352,8 @@ textarea {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  height: 44px;
+  line-height: 44px;
 }
 .header .header-dock {
   position: absolute;
@@ -2355,7 +2370,7 @@ textarea {
   height: 44px;
   line-height: 44px;
   padding: 0 14px;
-  font-size: 17px;
+  font-size: 18px;
 }
 .header .header-dock a:hover,
 .header .header-dock button:hover {
@@ -2628,7 +2643,7 @@ textarea {
           flex: 1;
   padding: 11.2px 0;
   text-align: left;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.1em;
 }
 .menu-vertical-item .menu-dock {
@@ -2761,7 +2776,7 @@ textarea {
 .stars .score {
   line-height: 25px;
   float: left;
-  font-size: 17px;
+  font-size: 18px;
 }
 .stars-sm {
   height: 20px;

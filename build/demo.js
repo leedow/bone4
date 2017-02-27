@@ -13,12 +13,10 @@
 
     $('.code-content').removeClass('code-content-current');
     $('#' + aim).addClass('code-content-current');
-
   })
 
 
   $('body').on('click', '.switcher', function(){
-
     var type = $(this).data('type')||'normal';
     var rel = $(this).data('rel')||'';
     switcher(type, rel, '');
@@ -37,8 +35,8 @@
   })
 
   function switcher(type, rel , mode){
-
     $('.' + mode + 'switch').removeClass('menu-item-current');
+    $('.' + mode + 'switcher').removeClass('menu-item-current');
     var path = BASE_URL + 'demos/' + rel + '.html'
      $.ajax({
        url: path,

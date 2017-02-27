@@ -2019,6 +2019,19 @@ textarea {
   border-radius: 0 !important;
   box-shadow: none !important;
 }
+.form-code {
+  position: relative;
+}
+.form-code .form-code-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.form-code .form-code-btn button {
+  color: #3492e6;
+  background: none;
+  border: 0;
+}
 .font-primary {
   color: #3492e6;
 }
@@ -2397,6 +2410,8 @@ textarea {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  height: 88px;
+  line-height: 88px;
 }
 .header .header-dock {
   position: absolute;

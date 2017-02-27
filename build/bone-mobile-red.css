@@ -2040,6 +2040,19 @@ textarea {
   border-radius: 0 !important;
   box-shadow: none !important;
 }
+.form-code {
+  position: relative;
+}
+.form-code .form-code-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.form-code .form-code-btn button {
+  color: #B61D1D;
+  background: none;
+  border: 0;
+}
 .dialog-layout {
   position: fixed;
   left: 0;
@@ -2397,6 +2410,8 @@ textarea {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  height: 44px;
+  line-height: 44px;
 }
 .header .header-dock {
   position: absolute;
