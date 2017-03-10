@@ -1426,6 +1426,9 @@ textarea {
 .btn-block {
   width: 100%;
 }
+.btn-square {
+  border-radius: 0 !important;
+}
 .btn-primary {
   color: #fff;
   background: #3492e6;
@@ -1933,23 +1936,32 @@ textarea {
 .font-comfort {
   color: #66CC33;
 }
+.font-normal {
+  font-size: 14px !important;
+}
 .font-lg {
-  font-size: 20px;
+  font-size: 20px !important;
 }
 .font-sm {
-  font-size: 12px;
+  font-size: 12px !important;
 }
 .font-md {
-  font-size: 18px;
+  font-size: 18px !important;
 }
 .color-primary {
   color: #3492e6;
+}
+.color-primary-light {
+  color: #8fc3f1;
 }
 .color-highlight {
   color: #FF6633;
 }
 .color-comfort {
   color: #66CC33;
+}
+.color-light {
+  color: #999;
 }
 .statistics {
   padding: 0.8em 0;
@@ -2620,10 +2632,6 @@ textarea {
 }
 .list {
   position: relative;
-  -webkit-transition: -webkit-transform 0.4s ease;
-  transition: -webkit-transform 0.4s ease;
-  transition: transform 0.4s ease;
-  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
 }
 .list .up-fresh,
 .list .down-fresh {

@@ -1012,6 +1012,9 @@ textarea {
 .btn-block {
   width: 100%;
 }
+.btn-square {
+  border-radius: 0 !important;
+}
 .btn-primary {
   color: #fff;
   background: #333744;
@@ -1730,14 +1733,17 @@ textarea {
 .font-comfort {
   color: #66CC33;
 }
+.font-normal {
+  font-size: 14px !important;
+}
 .font-lg {
-  font-size: 20px;
+  font-size: 20px !important;
 }
 .font-sm {
-  font-size: 12px;
+  font-size: 12px !important;
 }
 .font-md {
-  font-size: 17px;
+  font-size: 17px !important;
 }
 .statistics {
   padding: 0.8em 0;
@@ -1763,11 +1769,17 @@ textarea {
 .color-primary {
   color: #333744;
 }
+.color-primary-light {
+  color: #5f667e;
+}
 .color-highlight {
   color: #FF6633;
 }
 .color-comfort {
   color: #66CC33;
+}
+.color-light {
+  color: #999;
 }
 .ad-container {
   width: 100%;

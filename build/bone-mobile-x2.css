@@ -1426,6 +1426,9 @@ textarea {
 .btn-block {
   width: 100%;
 }
+.btn-square {
+  border-radius: 0 !important;
+}
 .btn-primary {
   color: #fff;
   background: #3492e6;
@@ -1924,11 +1927,17 @@ textarea {
 .color-primary {
   color: #3492e6;
 }
+.color-primary-light {
+  color: #8fc3f1;
+}
 .color-highlight {
   color: #FF6633;
 }
 .color-comfort {
   color: #66CC33;
+}
+.color-light {
+  color: #999;
 }
 .tabs-horizon-flex {
   display: -webkit-box;
@@ -2044,14 +2053,17 @@ textarea {
 .font-comfort {
   color: #66CC33;
 }
+.font-normal {
+  font-size: 28px !important;
+}
 .font-lg {
-  font-size: 40px;
+  font-size: 40px !important;
 }
 .font-sm {
-  font-size: 24px;
+  font-size: 24px !important;
 }
 .font-md {
-  font-size: 34px;
+  font-size: 34px !important;
 }
 .dialog-layout {
   position: fixed;
@@ -2599,10 +2611,6 @@ textarea {
 }
 .list {
   position: relative;
-  -webkit-transition: -webkit-transform 0.4s ease;
-  transition: -webkit-transform 0.4s ease;
-  transition: transform 0.4s ease;
-  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
 }
 .list .up-fresh,
 .list .down-fresh {

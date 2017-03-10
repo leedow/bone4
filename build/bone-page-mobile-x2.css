@@ -24,7 +24,12 @@
   padding-bottom: 40px;
 }
 .page-login .login-box .input {
-  background: none !important;
+  border-bottom: 0px !important;
+  background-repeat: repeat-x;
+  background-size: 100% 1px;
+  background-position: bottom;
+  background-color: #f9f9f9;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
 }
 .account-card .card-footer {
   border-top: 0;
@@ -95,4 +100,27 @@
 .account-card-yellow .account-btn i {
   font-size: 56px !important;
   color: #f3c8c4;
+}
+.question-content {
+  text-align: left;
+  font-size: 28px;
+  line-height: 1.4em;
+  background: #fff;
+  padding: 28px;
+}
+.question-list {
+  border-top: 0;
+  border-bottom: 0;
+}
+.question-btn {
+  position: relative;
+}
+.question-btn .question-counter {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  margin-top: -20px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
 }

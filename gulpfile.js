@@ -107,6 +107,18 @@ gulp.task('css', function(){
 				.pipe(autoprefixer())
 				//.pipe(minifyCSS())
 				.pipe(gulp.dest('./build'))
+
+
+			gulp.src('./style/bone-all-darkblue.less')
+				.pipe(less())
+				.on('error', function(err) {
+					gutil.log('Less Error!', err.message);
+					this.end();
+				})
+				//.pipe(rev())
+				.pipe(autoprefixer())
+				//.pipe(minifyCSS())
+				.pipe(gulp.dest('./build'))
 	});
 });
 
