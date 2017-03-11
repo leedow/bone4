@@ -1758,13 +1758,19 @@ textarea {
 .statistics .statistics-item .statistics-title {
   display: block;
   font-size: 12px;
-  line-height: 1.2em;
+  line-height: 1.4em;
   color: #999;
 }
 .statistics .statistics-item .statistics-number {
   font-size: 20px;
   line-height: 1em;
   display: block;
+}
+.statistics-full {
+  padding: 0;
+}
+.statistics-full .statistics-item {
+  padding: 0.8em 14px;
 }
 .color-primary {
   color: #333744;
