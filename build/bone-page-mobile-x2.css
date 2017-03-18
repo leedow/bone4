@@ -124,3 +124,20 @@
   line-height: 40px;
   color: #fff;
 }
+.article-body {
+  background: #fff;
+  padding: 30px;
+  text-align: left;
+}
+.article-body .article-title {
+  font-size: 80px;
+}
+.article-body .article-info {
+  color: #999;
+  font-size: 56px;
+}
+.article-body p {
+  padding: 8px 0;
+  font-size: 32px;
+  line-height: 1.5em;
+}
