@@ -1314,10 +1314,12 @@ textarea {
   text-align: right;
 }
 .ar {
+  position: absolute;
   right: 0;
   top: 0;
 }
 .al {
+  position: absolute;
   left: 0;
   top: 0;
 }
@@ -1461,7 +1463,7 @@ textarea {
   display: none;
 }
 .be-wrong:after {
-  content: '\e6e4';
+  content: '\e72a';
   color: #FF6633;
 }
 .be-wrong > input,
@@ -1486,7 +1488,7 @@ textarea {
   box-shadow: none !important;
 }
 .be-pass:after {
-  content: '\e656';
+  content: '\e730';
   color: #66CC33;
 }
 .be-pass > input,

@@ -9,7 +9,7 @@
   &list{
     position: relative;
 
-    //transition: transform 0.4s ease;
+    transition: transform 0.4s ease;
      .up-fresh,.down-fresh{
        position: absolute;
        display: flex;
@@ -54,7 +54,7 @@
         position: relative;
 
         &:before{
-          content: '\e660';
+          content: @font-list-arrow;
           font-family:  @font-family-icon;
           height: @r*20px;
           line-height: @r*20px;

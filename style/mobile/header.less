@@ -14,7 +14,7 @@
 		//line-height: @header-height;
 		text-align: center;
 		position: relative;
-		font-size: @font-size-md;
+		font-size: 1.05*@font-size-md;
     display: flex;
 		align-items: center;
 
@@ -24,20 +24,26 @@
 			line-height: @header-height;
     }
 
+		.header-body-left{
+			flex: 1;
+      text-align: left;
+			padding-left: @padding-horizon;
+    }
+
 		.header-dock{
-			position: absolute;
+			//position: absolute;
 			height: @header-height;
 			line-height: @header-height;
 			a, button{
 				background: none;
 				border: 0;
 				min-width: @header-height;
-				color: lighten(@header-background, 60%);
+				color: lighten(@header-background, 90%);
 				display: inline-block;
 				height: @header-height;
 				line-height: @header-height;
 				padding: 0 @padding-horizon;
-				font-size: @font-size-md;
+				font-size: 1.1*@font-size-md;
 				&:hover{
 					background: darken(@header-background, 5%)
 				}

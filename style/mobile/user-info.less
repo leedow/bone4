@@ -7,13 +7,13 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0.8*@padding-vertical 2*@padding-horizon;
+    padding: @padding-vertical @padding-horizon;
     .user-avatar{
 
        img{
-         width: 50px;
-         height:50px;
-         border-radius: 25px;
+         width: @r*60px;
+         height:@r*60px;
+         border-radius: 30px;
          vertical-align: bottom;
        }
     }
@@ -22,7 +22,7 @@
   		color:#fff;
   		font-size: @font-size-md;
       text-align: left;
-      padding-left: 1.5em;
+      padding-left: 1.1em;
   	}
   	.user-phone{
   		font-size: @font-size;

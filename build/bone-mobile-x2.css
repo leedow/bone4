@@ -1187,10 +1187,12 @@ textarea {
   text-align: right;
 }
 .ar {
+  position: absolute;
   right: 0;
   top: 0;
 }
 .al {
+  position: absolute;
   left: 0;
   top: 0;
 }
@@ -1334,7 +1336,7 @@ textarea {
   display: none;
 }
 .be-wrong:after {
-  content: '\e6e4';
+  content: '\e72a';
   color: #FF6633;
 }
 .be-wrong > input,
@@ -1359,7 +1361,7 @@ textarea {
   box-shadow: none !important;
 }
 .be-pass:after {
-  content: '\e656';
+  content: '\e730';
   color: #66CC33;
 }
 .be-pass > input,
@@ -1924,6 +1926,30 @@ textarea {
             transform: translate(0, 0);
   }
 }
+.font-primary {
+  color: #3492e6;
+}
+.font-light {
+  color: #f9f9f9;
+}
+.font-highlight {
+  color: #FF6633;
+}
+.font-comfort {
+  color: #66CC33;
+}
+.font-normal {
+  font-size: 28px !important;
+}
+.font-lg {
+  font-size: 40px !important;
+}
+.font-sm {
+  font-size: 24px !important;
+}
+.font-md {
+  font-size: 34px !important;
+}
 .color-primary {
   color: #3492e6;
 }
@@ -1938,6 +1964,33 @@ textarea {
 }
 .color-light {
   color: #999;
+}
+.statistics {
+  padding: 0.8em 0;
+  width: 100%;
+}
+.statistics .statistics-item {
+  display: inline-block;
+  line-height: 1.2em !important;
+  padding: 0 56px;
+  border-right: 1px #eee solid;
+}
+.statistics .statistics-item .statistics-title {
+  display: block;
+  font-size: 24px;
+  line-height: 1.4em;
+  color: #999;
+}
+.statistics .statistics-item .statistics-number {
+  font-size: 40px;
+  line-height: 1em;
+  display: block;
+}
+.statistics-full {
+  padding: 0;
+}
+.statistics-full .statistics-item {
+  padding: 0.8em 56px;
 }
 .tabs-horizon-flex {
   display: -webkit-box;
@@ -2041,30 +2094,6 @@ textarea {
   background: none;
   border: 0;
 }
-.font-primary {
-  color: #3492e6;
-}
-.font-light {
-  color: #f9f9f9;
-}
-.font-highlight {
-  color: #FF6633;
-}
-.font-comfort {
-  color: #66CC33;
-}
-.font-normal {
-  font-size: 28px !important;
-}
-.font-lg {
-  font-size: 40px !important;
-}
-.font-sm {
-  font-size: 24px !important;
-}
-.font-md {
-  font-size: 34px !important;
-}
 .dialog-layout {
   position: fixed;
   left: 0;
@@ -2121,64 +2150,6 @@ textarea {
       -ms-flex: 1;
           flex: 1;
   border-right: 1px #eee solid;
-}
-.redbag .card-content {
-  background: #ee5f4f;
-  color: #fff;
-}
-.redbag .card-content .card-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 80px;
-  height: 80px;
-}
-.redbag .card-content .card-icon img {
-  width: 30px;
-}
-.redbag .card-content .redbag-content {
-  font-size: 32px;
-  padding: 16px 30px;
-}
-.redbag .card-footer {
-  color: #999;
-}
-.redbag-free .card-icon {
-  font-size: 28px;
-  color: #ee5f4f;
-}
-.redbag-free .card-icon .unit {
-  font-size: 13px;
-  color: #ee5f4f;
-}
-.redbag-free .redbag-content {
-  color: #444;
-}
-.redbag-free .card-content {
-  background: none;
-}
-.redbag-free .dock {
-  background: url(../img/arrow-bg.png) repeat-y #ee5f4f;
-  color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.redbag-off .dock {
-  background: url(../img/arrow-bg.png) repeat-y #e0e0e0;
-  color: #444;
 }
 .card {
   background: #fff;
@@ -2276,6 +2247,64 @@ textarea {
   border-right: 0;
   border-left: 0;
 }
+.redbag .card-content {
+  background: #ee5f4f;
+  color: #fff;
+}
+.redbag .card-content .card-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80px;
+  height: 80px;
+}
+.redbag .card-content .card-icon img {
+  width: 30px;
+}
+.redbag .card-content .redbag-content {
+  font-size: 32px;
+  padding: 16px 30px;
+}
+.redbag .card-footer {
+  color: #999;
+}
+.redbag-free .card-icon {
+  font-size: 28px;
+  color: #ee5f4f;
+}
+.redbag-free .card-icon .unit {
+  font-size: 13px;
+  color: #ee5f4f;
+}
+.redbag-free .redbag-content {
+  color: #444;
+}
+.redbag-free .card-content {
+  background: none;
+}
+.redbag-free .dock {
+  background: url(../img/arrow-bg.png) repeat-y #ee5f4f;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.redbag-off .dock {
+  background: url(../img/arrow-bg.png) repeat-y #e0e0e0;
+  color: #444;
+}
 .user-box {
   background: #3492e6;
 }
@@ -2288,12 +2317,12 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 22.4px 56px;
+  padding: 28px 28px;
 }
 .user-info .user-avatar img {
-  width: 50px;
-  height: 50px;
-  border-radius: 25px;
+  width: 120px;
+  height: 120px;
+  border-radius: 30px;
   vertical-align: bottom;
 }
 .user-info .user-name {
@@ -2303,7 +2332,7 @@ textarea {
   color: #fff;
   font-size: 34px;
   text-align: left;
-  padding-left: 1.5em;
+  padding-left: 1.1em;
 }
 .user-info .user-phone {
   font-size: 28px;
@@ -2410,7 +2439,7 @@ textarea {
   height: 88px;
   text-align: center;
   position: relative;
-  font-size: 34px;
+  font-size: 35.7px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2425,8 +2454,14 @@ textarea {
   height: 88px;
   line-height: 88px;
 }
+.header .header-body-left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: left;
+  padding-left: 28px;
+}
 .header .header-dock {
-  position: absolute;
   height: 88px;
   line-height: 88px;
 }
@@ -2440,7 +2475,7 @@ textarea {
   height: 88px;
   line-height: 88px;
   padding: 0 28px;
-  font-size: 34px;
+  font-size: 37.4px;
 }
 .header .header-dock a:hover,
 .header .header-dock button:hover {
@@ -2592,11 +2627,12 @@ textarea {
   height: 1.6em;
   border-radius: 0.8em;
   line-height: 1.6em;
-  font-size: 60px;
+  font-size: 56px;
   display: block;
 }
 .menu-horizon-circle .menu-horizon-item .menu-pic i {
   color: #fff;
+  font-size: 56px;
 }
 .menu-current .menu-pic {
   color: #3492e6 !important;
@@ -2611,6 +2647,10 @@ textarea {
 }
 .list {
   position: relative;
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
 }
 .list .up-fresh,
 .list .down-fresh {
@@ -2695,9 +2735,13 @@ textarea {
 .menu-vertical-item .menu-icon {
   text-align: center;
   padding-right: 28px;
+  padding-left: 11.2px;
   color: #3492e6;
   font-size: 40px;
   line-height: 1em;
+}
+.menu-vertical-item .menu-icon i {
+  font-size: 40px;
 }
 .menu-vertical-item .menu-icon img {
   width: 60px;
@@ -2766,11 +2810,11 @@ textarea {
 }
 .stars .star,
 .stars .star-check {
-  float: left;
+  display: inline-block;
   border: 0;
   background: 0;
   font-size: 40px;
-  margin-right: 20px;
+  margin: 0 10px;
   color: #ddd;
   padding: 0;
 }
@@ -3105,5 +3149,50 @@ textarea {
 .result-box .result-content {
   padding-top: 0.2em;
   font-size: 28px;
+  color: #999;
+}
+/*数字选择*/
+.number .number-input {
+  border: 0;
+  background: none;
+  width: 80px;
+  padding: 6px 16px;
+  height: 54px;
+  text-align: center;
+  font-size: 34px;
+}
+.number button {
+  cursor: pointer;
+}
+/*日期选择*/
+.calendar table {
+  width: 100%;
+}
+.calendar .weekday {
+  font-weight: bold;
+  height: 64px;
+}
+.calendar .day {
+  height: 64px;
+  text-align: center;
+  width: 14.28%;
+}
+.calendar .active,
+.calendar .unactive {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  border-radius: 1em;
+  line-height: 2em;
+}
+.calendar .active {
+  background: #3492e6;
+  color: #fff;
+}
+.calendar .unactive {
+  background: #f2f2f2;
+  color: #444;
+}
+.calendar .disable {
   color: #999;
 }

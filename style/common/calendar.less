@@ -1,0 +1,43 @@
+/*日期选择*/
+@import '../common/core.less';
+
+.@{prefix}{
+  &calendar{
+    table{
+      width:100%;
+    }
+
+    .weekday{
+      font-weight: bold;
+      height: @r*32px;
+    }
+
+    .day{
+      height: @r*32px;
+      text-align: center;
+      width: 14.28%;
+    }
+
+    .active, .unactive{
+      display: inline-block;
+      width:2em;
+      height: 2em;
+      border-radius: 1em;
+      line-height: 2em;
+    }
+
+    .active{
+      background: @color-primary;
+      color: #fff;
+    }
+
+    .unactive{
+      background: @color-secondary;
+      color: #444;
+    }
+
+    .disable{
+      color: @font-color-light;
+    }
+  }
+}

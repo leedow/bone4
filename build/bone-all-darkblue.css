@@ -1187,10 +1187,12 @@ textarea {
   text-align: right;
 }
 .ar {
+  position: absolute;
   right: 0;
   top: 0;
 }
 .al {
+  position: absolute;
   left: 0;
   top: 0;
 }
@@ -1219,10 +1221,10 @@ textarea {
   font-size: 14px !important;
 }
 .f-lg {
-  font-size: 20px !important;
+  font-size: 22px !important;
 }
 .f-md {
-  font-size: 18px !important;
+  font-size: 16px !important;
 }
 .f-sm {
   font-size: 12px !important;
@@ -1241,7 +1243,7 @@ textarea {
   outline: none;
 }
 .label-lg {
-  font-size: 18px;
+  font-size: 16px;
 }
 .form-control {
   width: 100%;
@@ -1285,7 +1287,7 @@ textarea {
 .select-lg {
   padding: 11px 10px;
   height: 46px;
-  font-size: 18px;
+  font-size: 16px;
 }
 .input-sm,
 .select-sm {
@@ -1306,7 +1308,7 @@ textarea {
   right: 0.4em;
   top: 50%;
   font-family: iconfont;
-  font-size: 20px;
+  font-size: 22px;
   height: 1em;
   line-height: 1em;
   margin-top: -0.5em;
@@ -1323,7 +1325,7 @@ textarea {
   right: 0.4em;
   top: 50%;
   font-family: iconfont;
-  font-size: 20px;
+  font-size: 22px;
   height: 1em;
   line-height: 1em;
   margin-top: -0.5em;
@@ -1334,7 +1336,7 @@ textarea {
   display: none;
 }
 .be-wrong:after {
-  content: '\e6e4';
+  content: '\e72a';
   color: #CC3300;
 }
 .be-wrong > input,
@@ -1359,7 +1361,7 @@ textarea {
   box-shadow: none !important;
 }
 .be-pass:after {
-  content: '\e656';
+  content: '\e730';
   color: #669900;
 }
 .be-pass > input,
@@ -1391,7 +1393,7 @@ textarea {
   right: 0.4em;
   top: 50%;
   font-family: iconfont;
-  font-size: 20px;
+  font-size: 22px;
   height: 1em;
   line-height: 1em;
   margin-top: -0.5em;
@@ -1496,7 +1498,7 @@ textarea {
   border: 0;
   background: none;
   color: #d4d4d4;
-  font-size: 24px;
+  font-size: 26.4px;
   padding: 0;
   vertical-align: center;
 }
@@ -1507,7 +1509,7 @@ textarea {
   border: 0;
   background: none;
   color: #004080;
-  font-size: 24px;
+  font-size: 26.4px;
 }
 .btn-tiny {
   padding: 2px 6px;
@@ -1516,14 +1518,14 @@ textarea {
   padding: 5px 10px;
 }
 .btn-sm-icon {
-  font-size: 18px;
+  font-size: 16px;
 }
 .btn-lg {
   padding: 11px 16px;
-  font-size: 18px;
+  font-size: 16px;
 }
 .btn-lg-icon {
-  font-size: 20px;
+  font-size: 22px;
 }
 .btn-block {
   width: 100%;
@@ -1727,10 +1729,10 @@ textarea {
 .form-lg .select {
   padding: 11px 10px;
   height: 46px;
-  font-size: 18px;
+  font-size: 16px;
 }
 .form-lg label {
-  font-size: 18px;
+  font-size: 16px;
 }
 .tabs-horizon {
   height: 44px;
@@ -1738,7 +1740,7 @@ textarea {
 }
 .tabs-horizon .tabs-item {
   display: inline-block;
-  font-size: 18px;
+  font-size: 16px;
   height: 44px;
   line-height: 44px;
   text-align: center;
@@ -1940,13 +1942,13 @@ textarea {
   font-size: 14px !important;
 }
 .font-lg {
-  font-size: 20px !important;
+  font-size: 22px !important;
 }
 .font-sm {
   font-size: 12px !important;
 }
 .font-md {
-  font-size: 18px !important;
+  font-size: 16px !important;
 }
 .color-primary {
   color: #004080;
@@ -2116,7 +2118,7 @@ textarea {
   background: #fff;
 }
 .dialog-layout .dialog .dialog-content {
-  font-size: 18px;
+  font-size: 16px;
   padding: 14px;
 }
 .dialog-layout .dialog .dialog-content p {
@@ -2134,7 +2136,7 @@ textarea {
 .dialog-layout .dialog .dialog-buttons .button {
   background: none;
   border: 0;
-  font-size: 18px;
+  font-size: 16px;
   padding: 11px 16px;
 }
 .dialog-layout .dialog .dialog-buttons .button-ok {
@@ -2168,7 +2170,7 @@ textarea {
           align-items: center;
 }
 .card .card-header .card-title {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
   padding: 0.6em 14px;
   text-align: left;
@@ -2315,12 +2317,12 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 11.2px 28px;
+  padding: 14px 14px;
 }
 .user-info .user-avatar img {
-  width: 50px;
-  height: 50px;
-  border-radius: 25px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
   vertical-align: bottom;
 }
 .user-info .user-name {
@@ -2328,9 +2330,9 @@ textarea {
       -ms-flex: 1;
           flex: 1;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   text-align: left;
-  padding-left: 1.5em;
+  padding-left: 1.1em;
 }
 .user-info .user-phone {
   font-size: 14px;
@@ -2360,7 +2362,7 @@ textarea {
   font-size: 12px;
 }
 .user-count .user-count-item .user-count-number {
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1em;
   display: block;
 }
@@ -2437,7 +2439,7 @@ textarea {
   height: 44px;
   text-align: center;
   position: relative;
-  font-size: 18px;
+  font-size: 16.8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2452,8 +2454,14 @@ textarea {
   height: 44px;
   line-height: 44px;
 }
+.header .header-body-left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: left;
+  padding-left: 14px;
+}
 .header .header-dock {
-  position: absolute;
   height: 44px;
   line-height: 44px;
 }
@@ -2462,12 +2470,12 @@ textarea {
   background: none;
   border: 0;
   min-width: 44px;
-  color: #b3d9ff;
+  color: #ffffff;
   display: inline-block;
   height: 44px;
   line-height: 44px;
   padding: 0 14px;
-  font-size: 18px;
+  font-size: 17.6px;
 }
 .header .header-dock a:hover,
 .header .header-dock button:hover {
@@ -2475,7 +2483,7 @@ textarea {
 }
 .header .header-dock a i,
 .header .header-dock button i {
-  font-size: 20px;
+  font-size: 22px;
 }
 .header .header-dock .tip {
   content: ' ';
@@ -2547,7 +2555,7 @@ textarea {
   text-align: center;
   width: 2em;
   line-height: 1.2em;
-  font-size: 26px;
+  font-size: 28.6px;
   display: block;
 }
 .menu-horizon-item .menu-pic img {
@@ -2596,7 +2604,7 @@ textarea {
   width: 2em;
   height: 1.2em;
   line-height: 1.2em;
-  font-size: 24px;
+  font-size: 26.4px;
   display: block;
   color: #999;
 }
@@ -2619,11 +2627,12 @@ textarea {
   height: 1.6em;
   border-radius: 0.8em;
   line-height: 1.6em;
-  font-size: 30px;
+  font-size: 30.8px;
   display: block;
 }
 .menu-horizon-circle .menu-horizon-item .menu-pic i {
   color: #fff;
+  font-size: 30.8px;
 }
 .menu-current .menu-pic {
   color: #004080 !important;
@@ -2638,6 +2647,10 @@ textarea {
 }
 .list {
   position: relative;
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
 }
 .list .up-fresh,
 .list .down-fresh {
@@ -2659,7 +2672,7 @@ textarea {
 }
 .list .up-fresh p i,
 .list .down-fresh p i {
-  font-size: 28px;
+  font-size: 30.8px;
   display: block;
   line-height: 1em;
 }
@@ -2684,7 +2697,7 @@ textarea {
   position: relative;
 }
 .list .list-item-arrow:before {
-  content: '\e660';
+  content: '\e775';
   font-family: iconfont;
   height: 20px;
   line-height: 20px;
@@ -2722,9 +2735,13 @@ textarea {
 .menu-vertical-item .menu-icon {
   text-align: center;
   padding-right: 14px;
+  padding-left: 5.6px;
   color: #004080;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1em;
+}
+.menu-vertical-item .menu-icon i {
+  font-size: 22px;
 }
 .menu-vertical-item .menu-icon img {
   width: 30px;
@@ -2736,7 +2753,7 @@ textarea {
           flex: 1;
   padding: 11.2px 0;
   text-align: left;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.1em;
 }
 .menu-vertical-item .menu-dock {
@@ -2793,11 +2810,11 @@ textarea {
 }
 .stars .star,
 .stars .star-check {
-  float: left;
+  display: inline-block;
   border: 0;
   background: 0;
-  font-size: 20px;
-  margin-right: 10px;
+  font-size: 22px;
+  margin: 0 5px;
   color: #ddd;
   padding: 0;
 }
@@ -2811,7 +2828,7 @@ textarea {
 .stars .score {
   line-height: 25px;
   float: left;
-  font-size: 18px;
+  font-size: 16px;
 }
 .stars-sm {
   height: 20px;
@@ -2946,7 +2963,7 @@ textarea {
           transform: translate(-50%, -50%);
 }
 .toast i {
-  font-size: 40px;
+  font-size: 44px;
   line-height: 1em;
   display: block;
 }
@@ -3127,10 +3144,55 @@ textarea {
   font-size: 60px;
 }
 .result-box .result-title {
-  font-size: 20px;
+  font-size: 22px;
 }
 .result-box .result-content {
   padding-top: 0.2em;
   font-size: 14px;
+  color: #999;
+}
+/*数字选择*/
+.number .number-input {
+  border: 0;
+  background: none;
+  width: 40px;
+  padding: 3px 8px;
+  height: 27px;
+  text-align: center;
+  font-size: 16px;
+}
+.number button {
+  cursor: pointer;
+}
+/*日期选择*/
+.calendar table {
+  width: 100%;
+}
+.calendar .weekday {
+  font-weight: bold;
+  height: 32px;
+}
+.calendar .day {
+  height: 32px;
+  text-align: center;
+  width: 14.28%;
+}
+.calendar .active,
+.calendar .unactive {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  border-radius: 1em;
+  line-height: 2em;
+}
+.calendar .active {
+  background: #004080;
+  color: #fff;
+}
+.calendar .unactive {
+  background: #f2f2f2;
+  color: #444;
+}
+.calendar .disable {
   color: #999;
 }
