@@ -1208,6 +1208,18 @@ textarea {
 .bb {
   border-bottom: 1px #e0e0e0 solid;
 }
+.bl {
+  border-left: 1px #e0e0e0 solid;
+}
+.br {
+  border-right: 1px #e0e0e0 solid;
+}
+.bl-light {
+  border-left: 1px #eee solid;
+}
+.br-light {
+  border-right: 1px #eee solid;
+}
 .bb-light {
   border-bottom: 1px #eee solid;
 }
@@ -1965,6 +1977,19 @@ textarea {
 .color-light {
   color: #999;
 }
+.bg-primary {
+  background: #3492e6;
+}
+.bg-highlight {
+  background: #FF6633;
+}
+.bg-comfort {
+  background: #66CC33;
+}
+.bg-primary-gradient {
+  background: -webkit-linear-gradient(top left, bottom right, #fff, #333);
+  background: linear-gradient(top left, bottom right, #fff, #333);
+}
 .statistics {
   padding: 0.8em 0;
   width: 100%;
@@ -2639,6 +2664,30 @@ textarea {
 }
 .menu-current .menu-title {
   color: #3492e6 !important;
+}
+.menu-card {
+  text-align: left;
+}
+.menu-card .menu-icon {
+  text-align: center;
+  padding-right: 22.4px;
+}
+.menu-card .menu-icon i {
+  font-size: 60px;
+}
+.menu-card .menu-icon img {
+  width: 46px;
+  height: 46px;
+  border-radius: 23px;
+  vertical-align: bottom;
+}
+.menu-card .menu-icon-title {
+  font-size: 34px;
+  font-weight: normal;
+}
+.menu-card .menu-icon-note {
+  color: #999;
+  line-height: 1.2em;
 }
 .list-title {
   padding: 14px 28px;

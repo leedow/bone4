@@ -1335,6 +1335,18 @@ textarea {
 .bb {
   border-bottom: 1px #d4d4d4 solid;
 }
+.bl {
+  border-left: 1px #d4d4d4 solid;
+}
+.br {
+  border-right: 1px #d4d4d4 solid;
+}
+.bl-light {
+  border-left: 1px #eee solid;
+}
+.br-light {
+  border-right: 1px #eee solid;
+}
 .bb-light {
   border-bottom: 1px #eee solid;
 }
@@ -1788,6 +1800,19 @@ textarea {
 }
 .color-light {
   color: #999;
+}
+.bg-primary {
+  background: #333744;
+}
+.bg-highlight {
+  background: #FF6633;
+}
+.bg-comfort {
+  background: #66CC33;
+}
+.bg-primary-gradient {
+  background: -webkit-linear-gradient(top left, bottom right, #fff, #333);
+  background: linear-gradient(top left, bottom right, #fff, #333);
 }
 .ad-container {
   width: 100%;

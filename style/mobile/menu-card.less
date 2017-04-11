@@ -1,0 +1,36 @@
+@import "./flex-box";
+
+.@{prefix}{
+  &menu-card{
+    text-align: left;
+
+    .menu-icon{
+      text-align: center;
+      padding-right: 0.8*@padding-horizon;
+
+      i{
+
+        font-size: 1.5*@font-size-lg;
+
+      }
+
+      img{
+        width: 46px;
+        height: 46px;
+        border-radius: 23px;
+        vertical-align: bottom;
+      }
+    }
+
+    .menu-icon-title{
+      font-size: @font-size-md;
+      font-weight: normal;
+    }
+
+    .menu-icon-note{
+      color: @font-color-light;
+      line-height: 1.2em;
+    }
+
+  }
+}
