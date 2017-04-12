@@ -2467,6 +2467,18 @@ textarea {
 .layout-header {
   z-index: 998;
 }
+.layout-left {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+.layout-right {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
 .layout-none {
   background: none;
   display: -webkit-box;
