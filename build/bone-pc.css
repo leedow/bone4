@@ -213,6 +213,26 @@ textarea {
 .sidebar-menu-white .menu-item-current i {
   color: #333744;
 }
+.sidebar-menu-light {
+  background: none;
+}
+.sidebar-menu-light .menu-item-icon i {
+  color: #999 !important;
+}
+.sidebar-menu-light .menu-item {
+  color: #999 !important;
+}
+.sidebar-menu-light .menu-item-current {
+  border-left: 2px #333744 solid;
+  background: #fff;
+  color: #333744 !important;
+}
+.sidebar-menu-light .menu-item-current:after {
+  display: none;
+}
+.sidebar-menu-light .menu-item-current i {
+  color: #333744 !important;
+}
 .sidebar-menu-curl {
   width: 50px !important;
 }
@@ -1739,7 +1759,7 @@ textarea {
   color: #333744;
 }
 .font-light {
-  color: #f9f9f9;
+  color: #999;
 }
 .font-highlight {
   color: #FF6633;

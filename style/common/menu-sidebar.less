@@ -130,9 +130,39 @@
 				//left: 16px;
 			}
 		}
-
-
 	}
+
+	//选中为白色的侧栏
+	&sidebar-menu-light{
+    background: none;
+
+    .menu-item-icon{
+      i{
+        color:@font-color-light !important;
+      }
+    }
+
+		.menu-item{
+			color: @font-color-light !important;
+
+		}
+
+		.menu-item-current{
+			border-left: 2px @color-primary solid;
+			background: #fff;
+	 		color: @color-primary !important;
+
+			&:after{
+				display: none;
+			}
+			i{
+				color:@color-primary !important;
+				//left: 16px;
+			}
+		}
+	}
+
+
 
 	&sidebar-menu-curl{
 		width: @sidebar-item-height !important;
