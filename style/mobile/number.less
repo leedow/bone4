@@ -9,7 +9,7 @@
     .number-input{
       border:0;
       background: none;
-      width: @r*40px;
+      width: @r*30px;
       padding: @input-padding-tiny;
   		height: @input-height-tiny;
       text-align: center;
@@ -18,6 +18,24 @@
 
     button{
       cursor: pointer;
+      line-height: @input-height-tiny;
+      color: @color-primary;
+
+       i{
+         line-height: @input-height-tiny;
+       }
+    }
+
+    .number-btn-active{
+      color: @color-primary;
+    }
+
+    .number-btn-hidden{
+      visibility: hidden;
+    }
+
+    .number-btn-disable{
+      color: @line-color;
     }
   }
 

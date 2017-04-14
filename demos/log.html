@@ -1,0 +1,25 @@
+
+<div class="">
+  <ul class="timeline" id="log">
+
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var log = [{
+    title: '2017-4-14',
+    content: '增加去购物车底部组件'
+  },{
+    title: '2017-4-12',
+    content: '改进商品组件，增加左侧层，增加图集组件，增加新闻列表'
+  }]
+  var listtmp = '<li class="timeline-item"><div class="timeline-content">'
+      +' <p class="timeline-title">{{title}}</p><p>{{content}}</p></div></li>'
+  var list = ''
+
+  for(var key in log){
+    list += listtmp.replace('{{title}}', log[key].title).replace('{{content}}', log[key].content)
+  }
+
+  $("#log").html(list)
+</script>

@@ -2703,9 +2703,11 @@ textarea {
 .menu-card .menu-icon {
   text-align: center;
   padding-right: 11.2px;
+  line-height: 1em;
 }
 .menu-card .menu-icon i {
   font-size: 33px;
+  line-height: 1em;
 }
 .menu-card .menu-icon img {
   width: 46px;
@@ -3236,7 +3238,7 @@ textarea {
 .number .number-input {
   border: 0;
   background: none;
-  width: 40px;
+  width: 30px;
   padding: 3px 8px;
   height: 27px;
   text-align: center;
@@ -3244,6 +3246,20 @@ textarea {
 }
 .number button {
   cursor: pointer;
+  line-height: 27px;
+  color: #3492e6;
+}
+.number button i {
+  line-height: 27px;
+}
+.number .number-btn-active {
+  color: #3492e6;
+}
+.number .number-btn-hidden {
+  visibility: hidden;
+}
+.number .number-btn-disable {
+  color: #d4d4d4;
 }
 /*日期选择*/
 .calendar table {
@@ -3276,4 +3292,29 @@ textarea {
 }
 .calendar .disable {
   color: #999;
+}
+.shopping-bar {
+  padding-left: 70px;
+}
+.shopping-bar .shopping-info {
+  padding-top: 4px;
+}
+.shopping-bar .icon {
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  line-height: 50px;
+  color: #fff;
+  border: 2px #fff solid;
+  text-align: center;
+  font-size: 22px;
+  background: #3492e6;
+}
+.shopping-bar .btn {
+  border-radius: 0 !important;
+  font-size: 18.7px;
+  padding: 0.8em 1em;
 }
