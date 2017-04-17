@@ -11,6 +11,8 @@
       background: none;
       width: @r*30px;
       padding: @input-padding-tiny;
+      padding-left:0;
+      padding-right: 0;
   		height: @input-height-tiny;
       text-align: center;
       font-size: @font-size-md;
@@ -30,12 +32,21 @@
       color: @color-primary;
     }
 
-    .number-btn-hidden{
+    .number-btn-hidden,.number-input-hidden{
       visibility: hidden;
     }
 
     .number-btn-disable{
       color: @line-color;
+    }
+  }
+
+  &number-max{
+    .btn-sub{
+
+    }
+    .btn-plus{
+
     }
   }
 

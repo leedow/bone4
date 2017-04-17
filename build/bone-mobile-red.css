@@ -1065,6 +1065,9 @@ textarea {
 .p0202 {
   padding: 0 14px;
 }
+.p0202 {
+  padding: 0 14px;
+}
 .p2202 {
   padding: 14px 14px 0 14px;
 }
@@ -2031,6 +2034,23 @@ textarea {
   line-height: 1em;
   display: block;
 }
+.statistics .statistics-item-link {
+  position: relative;
+  padding: 0.6em 0 0.4em 0;
+}
+.statistics .statistics-item-link:after {
+  position: absolute;
+  content: " ";
+  width: 0px;
+  height: 0px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: transparent;
+  bottom: 0;
+  right: 0;
+  border-right-color: #f63333;
+  border-bottom-color: #f63333;
+}
 .statistics-full {
   padding: 0;
 }
@@ -2383,6 +2403,38 @@ textarea {
   font-size: 14px;
   font-weight: normal;
   display: block;
+}
+.user-info2 {
+  position: relative;
+  padding-bottom: 40px;
+}
+.user-info2 .user-avatar img {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  vertical-align: bottom;
+}
+.user-info2 .user-name {
+  text-align: center;
+  color: #fff;
+  font-size: 17px;
+}
+.user-info2 .user-phone {
+  text-align: center;
+  font-size: 14px;
+  font-weight: normal;
+  display: block;
+  color: #fff;
+}
+.user-info2 .user-count {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: -30px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 2px;
+  background: #fff;
 }
 .user-count {
   display: -webkit-box;
@@ -3240,6 +3292,8 @@ textarea {
   background: none;
   width: 30px;
   padding: 3px 8px;
+  padding-left: 0;
+  padding-right: 0;
   height: 27px;
   text-align: center;
   font-size: 17px;
@@ -3255,7 +3309,8 @@ textarea {
 .number .number-btn-active {
   color: #f63333;
 }
-.number .number-btn-hidden {
+.number .number-btn-hidden,
+.number .number-input-hidden {
   visibility: hidden;
 }
 .number .number-btn-disable {

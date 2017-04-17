@@ -31,6 +31,46 @@
   	}
   }
 
+
+  &user-info2{
+    position: relative;
+     
+    padding-bottom: @r*40px;
+    .user-avatar{
+
+       img{
+         width: @r*60px;
+         height:@r*60px;
+         border-radius: 30px;
+         vertical-align: bottom;
+       }
+    }
+    .user-name{
+      text-align: center;
+  		color:#fff;
+  		font-size: @font-size-md;
+  	}
+  	.user-phone{
+      text-align: center;
+  		font-size: @font-size;
+  		font-weight: normal;
+      display: block;
+      color: #fff;
+  	}
+
+    .user-count{
+      position: absolute;
+      left: @padding-horizon;
+      right: @padding-horizon;
+      bottom: -30px;
+      height: 60px;
+      line-height: 60px;
+      border-radius: @radius;
+      background: #fff;
+
+    }
+  }
+
 	&user-count{
 		display: flex;
     justify-content: space-around;

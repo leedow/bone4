@@ -1192,6 +1192,9 @@ textarea {
 .p0202 {
   padding: 0 14px;
 }
+.p0202 {
+  padding: 0 14px;
+}
 .p2202 {
   padding: 14px 14px 0 14px;
 }
@@ -1799,6 +1802,23 @@ textarea {
   font-size: 20px;
   line-height: 1em;
   display: block;
+}
+.statistics .statistics-item-link {
+  position: relative;
+  padding: 0.6em 0 0.4em 0;
+}
+.statistics .statistics-item-link:after {
+  position: absolute;
+  content: " ";
+  width: 0px;
+  height: 0px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: transparent;
+  bottom: 0;
+  right: 0;
+  border-right-color: #FF6633;
+  border-bottom-color: #FF6633;
 }
 .statistics-full {
   padding: 0;
