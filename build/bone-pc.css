@@ -1142,16 +1142,16 @@ textarea {
   padding: 0 7px 7px 7px;
 }
 .p1000 {
-  padding-top: 7px;
+  padding-top: 7px !important;
 }
 .p0010 {
-  padding-bottom: 7px;
+  padding-bottom: 7px !important;
 }
 .p0100 {
-  padding-right: 7px;
+  padding-right: 7px !important;
 }
 .p0001 {
-  padding-left: 7px;
+  padding-left: 7px !important;
 }
 .p1010 {
   padding: 7px 0;
@@ -1175,16 +1175,16 @@ textarea {
   padding: 0 14px 14px 14px;
 }
 .p2000 {
-  padding-top: 14px;
+  padding-top: 14px !important;
 }
 .p0020 {
-  padding-bottom: 14px;
+  padding-bottom: 14px !important;
 }
 .p0200 {
-  padding-right: 14px;
+  padding-right: 14px !important;
 }
 .p0002 {
-  padding-left: 14px;
+  padding-left: 14px !important;
 }
 .p2020 {
   padding: 14px 0;
@@ -1205,16 +1205,16 @@ textarea {
   padding: 0 14px 14px 0;
 }
 .p3000 {
-  padding-top: 28px;
+  padding-top: 28px !important;
 }
 .p0030 {
-  padding-bottom: 28px;
+  padding-bottom: 28px !important;
 }
 .p0300 {
-  padding-right: 28px;
+  padding-right: 28px !important;
 }
 .p0003 {
-  padding-left: 28px;
+  padding-left: 28px !important;
 }
 .p3333 {
   padding: 28px 28px;
