@@ -2717,6 +2717,11 @@ textarea {
   display: block;
   color: #999;
 }
+.menu-horizon-sm .menu-pic img {
+  width: 30px;
+  height: 30px;
+  border-radius: .8em;
+}
 .menu-horizon-sm .menu-title {
   padding: 1px 0;
   font-size: 10px;
