@@ -151,8 +151,6 @@ body, html{
   border-left: 2px solid transparent;
 }
 
-
-
 .check{
   float:left;
   margin-right: 10px;
@@ -188,11 +186,12 @@ body, html{
     line-height: 0;
     height: 0;
   }
-
-
+å
 .flex-center{
   display: flex;
   align-items: center;
-
-
+}
+å
+.mobile{
+  margin: 0 auto;
 }

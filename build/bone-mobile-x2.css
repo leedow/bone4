@@ -2670,7 +2670,6 @@ textarea {
 .menu-horizon-item .menu-pic img {
   width: 1.6em;
   height: 1.6em;
-  border-radius: .8em;
 }
 .menu-horizon-item .menu-title {
   text-align: center;
@@ -2720,7 +2719,6 @@ textarea {
 .menu-horizon-sm .menu-pic img {
   width: 60px;
   height: 60px;
-  border-radius: .8em;
 }
 .menu-horizon-sm .menu-title {
   padding: 2px 0;
@@ -2734,7 +2732,7 @@ textarea {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  border-right: 1px #e0e0e0 solid;
+  border-right: 1px #eee solid;
 }
 .menu-horizon-circle .menu-horizon-item .menu-pic {
   width: 1.6em;

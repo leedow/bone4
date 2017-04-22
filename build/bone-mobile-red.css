@@ -1256,10 +1256,10 @@ textarea {
   font-size: 14px !important;
 }
 .f-lg {
-  font-size: 20px !important;
+  font-size: 22px !important;
 }
 .f-md {
-  font-size: 17px !important;
+  font-size: 16px !important;
 }
 .f-sm {
   font-size: 12px !important;
@@ -1278,7 +1278,7 @@ textarea {
   outline: none;
 }
 .label-lg {
-  font-size: 17px;
+  font-size: 16px;
 }
 .form-control {
   width: 100%;
@@ -1322,7 +1322,7 @@ textarea {
 .select-lg {
   padding: 11px 10px;
   height: 46px;
-  font-size: 17px;
+  font-size: 16px;
 }
 .input-sm,
 .select-sm {
@@ -1343,7 +1343,7 @@ textarea {
   right: 0.4em;
   top: 50%;
   font-family: iconfont;
-  font-size: 20px;
+  font-size: 22px;
   height: 1em;
   line-height: 1em;
   margin-top: -0.5em;
@@ -1360,7 +1360,7 @@ textarea {
   right: 0.4em;
   top: 50%;
   font-family: iconfont;
-  font-size: 20px;
+  font-size: 22px;
   height: 1em;
   line-height: 1em;
   margin-top: -0.5em;
@@ -1428,7 +1428,7 @@ textarea {
   right: 0.4em;
   top: 50%;
   font-family: iconfont;
-  font-size: 20px;
+  font-size: 22px;
   height: 1em;
   line-height: 1em;
   margin-top: -0.5em;
@@ -1533,7 +1533,7 @@ textarea {
   border: 0;
   background: none;
   color: #d4d4d4;
-  font-size: 24px;
+  font-size: 26.4px;
   padding: 0;
   vertical-align: center;
 }
@@ -1544,7 +1544,7 @@ textarea {
   border: 0;
   background: none;
   color: #f63333;
-  font-size: 24px;
+  font-size: 26.4px;
 }
 .btn-tiny {
   padding: 2px 6px;
@@ -1553,14 +1553,14 @@ textarea {
   padding: 5px 10px;
 }
 .btn-sm-icon {
-  font-size: 17px;
+  font-size: 16px;
 }
 .btn-lg {
   padding: 10px 16px;
-  font-size: 17px;
+  font-size: 16px;
 }
 .btn-lg-icon {
-  font-size: 20px;
+  font-size: 22px;
 }
 .btn-block {
   width: 100%;
@@ -1764,10 +1764,10 @@ textarea {
 .form-lg .select {
   padding: 11px 10px;
   height: 46px;
-  font-size: 17px;
+  font-size: 16px;
 }
 .form-lg label {
-  font-size: 17px;
+  font-size: 16px;
 }
 .tabs-horizon {
   height: 44px;
@@ -1775,7 +1775,7 @@ textarea {
 }
 .tabs-horizon .tabs-item {
   display: inline-block;
-  font-size: 17px;
+  font-size: 16px;
   height: 44px;
   line-height: 44px;
   text-align: center;
@@ -1977,13 +1977,13 @@ textarea {
   font-size: 14px !important;
 }
 .font-lg {
-  font-size: 20px !important;
+  font-size: 22px !important;
 }
 .font-sm {
   font-size: 12px !important;
 }
 .font-md {
-  font-size: 17px !important;
+  font-size: 16px !important;
 }
 .color-primary {
   color: #f63333;
@@ -2008,10 +2008,6 @@ textarea {
 }
 .bg-comfort {
   background: #66CC33;
-}
-.bg-primary-gradient {
-  background: -webkit-linear-gradient(top left, bottom right, #fff, #333);
-  background: linear-gradient(top left, bottom right, #fff, #333);
 }
 .statistics {
   padding: 0.8em 0;
@@ -2183,7 +2179,7 @@ textarea {
   background: #fff;
 }
 .dialog-layout .dialog .dialog-content {
-  font-size: 17px;
+  font-size: 16px;
   padding: 14px;
 }
 .dialog-layout .dialog .dialog-content p {
@@ -2201,7 +2197,7 @@ textarea {
 .dialog-layout .dialog .dialog-buttons .button {
   background: none;
   border: 0;
-  font-size: 17px;
+  font-size: 16px;
   padding: 10px 16px;
 }
 .dialog-layout .dialog .dialog-buttons .button-ok {
@@ -2235,7 +2231,7 @@ textarea {
           align-items: center;
 }
 .card .card-header .card-title {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: normal;
   padding: 0.6em 14px;
   text-align: left;
@@ -2395,7 +2391,7 @@ textarea {
       -ms-flex: 1;
           flex: 1;
   color: #fff;
-  font-size: 17px;
+  font-size: 16px;
   text-align: left;
   padding-left: 1.1em;
 }
@@ -2417,7 +2413,7 @@ textarea {
 .user-info2 .user-name {
   text-align: center;
   color: #fff;
-  font-size: 17px;
+  font-size: 16px;
 }
 .user-info2 .user-phone {
   text-align: center;
@@ -2459,7 +2455,7 @@ textarea {
   font-size: 12px;
 }
 .user-count .user-count-item .user-count-number {
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1em;
   display: block;
 }
@@ -2548,7 +2544,7 @@ textarea {
   height: 44px;
   text-align: center;
   position: relative;
-  font-size: 17.85px;
+  font-size: 16.8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2584,7 +2580,7 @@ textarea {
   height: 44px;
   line-height: 44px;
   padding: 0 14px;
-  font-size: 18.7px;
+  font-size: 17.6px;
 }
 .header .header-dock a:hover,
 .header .header-dock button:hover {
@@ -2592,7 +2588,7 @@ textarea {
 }
 .header .header-dock a i,
 .header .header-dock button i {
-  font-size: 20px;
+  font-size: 22px;
 }
 .header .header-dock .tip {
   content: ' ';
@@ -2664,13 +2660,12 @@ textarea {
   text-align: center;
   width: 2em;
   line-height: 1.2em;
-  font-size: 26px;
+  font-size: 28.6px;
   display: block;
 }
 .menu-horizon-item .menu-pic img {
   width: 1.6em;
   height: 1.6em;
-  border-radius: .8em;
 }
 .menu-horizon-item .menu-title {
   text-align: center;
@@ -2713,14 +2708,13 @@ textarea {
   width: 2em;
   height: 1.2em;
   line-height: 1.2em;
-  font-size: 24px;
+  font-size: 26.4px;
   display: block;
   color: #999;
 }
 .menu-horizon-sm .menu-pic img {
   width: 30px;
   height: 30px;
-  border-radius: .8em;
 }
 .menu-horizon-sm .menu-title {
   padding: 1px 0;
@@ -2734,19 +2728,19 @@ textarea {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  border-right: 1px #d4d4d4 solid;
+  border-right: 1px #eee solid;
 }
 .menu-horizon-circle .menu-horizon-item .menu-pic {
   width: 1.6em;
   height: 1.6em;
   border-radius: 0.8em;
   line-height: 1.6em;
-  font-size: 28px;
+  font-size: 30.8px;
   display: block;
 }
 .menu-horizon-circle .menu-horizon-item .menu-pic i {
   color: #fff;
-  font-size: 28px;
+  font-size: 30.8px;
 }
 .menu-current .menu-pic {
   color: #f63333 !important;
@@ -2763,7 +2757,7 @@ textarea {
   line-height: 1em;
 }
 .menu-card .menu-icon i {
-  font-size: 30px;
+  font-size: 33px;
   line-height: 1em;
 }
 .menu-card .menu-icon img {
@@ -2773,7 +2767,7 @@ textarea {
   vertical-align: bottom;
 }
 .menu-card .menu-icon-title {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: normal;
 }
 .menu-card .menu-icon-note {
@@ -2812,7 +2806,7 @@ textarea {
 }
 .list .up-fresh p i,
 .list .down-fresh p i {
-  font-size: 28px;
+  font-size: 30.8px;
   display: block;
   line-height: 1em;
 }
@@ -2877,11 +2871,11 @@ textarea {
   padding-right: 14px;
   padding-left: 5.6px;
   color: #f63333;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1em;
 }
 .menu-vertical-item .menu-icon i {
-  font-size: 20px;
+  font-size: 22px;
 }
 .menu-vertical-item .menu-icon img {
   width: 30px;
@@ -2891,7 +2885,7 @@ textarea {
   text-align: center;
   padding-right: 14px;
   padding-left: 5.6px;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1em;
 }
 .menu-vertical-item .menu-body {
@@ -2900,7 +2894,7 @@ textarea {
           flex: 1;
   padding: 11.2px 0;
   text-align: left;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.1em;
 }
 .menu-vertical-item .menu-dock {
@@ -2960,7 +2954,7 @@ textarea {
   display: inline-block;
   border: 0;
   background: 0;
-  font-size: 20px;
+  font-size: 22px;
   margin: 0 5px;
   color: #ddd;
   padding: 0;
@@ -2975,7 +2969,7 @@ textarea {
 .stars .score {
   line-height: 25px;
   float: left;
-  font-size: 17px;
+  font-size: 16px;
 }
 .stars-sm {
   height: 20px;
@@ -3110,7 +3104,7 @@ textarea {
           transform: translate(-50%, -50%);
 }
 .toast i {
-  font-size: 40px;
+  font-size: 44px;
   line-height: 1em;
   display: block;
 }
@@ -3291,7 +3285,7 @@ textarea {
   font-size: 60px;
 }
 .result-box .result-title {
-  font-size: 20px;
+  font-size: 22px;
 }
 .result-box .result-content {
   padding-top: 0.2em;
@@ -3308,7 +3302,7 @@ textarea {
   padding-right: 0;
   height: 27px;
   text-align: center;
-  font-size: 17px;
+  font-size: 16px;
 }
 .number button {
   cursor: pointer;
@@ -3377,12 +3371,12 @@ textarea {
   color: #fff;
   border: 2px #fff solid;
   text-align: center;
-  font-size: 20px;
+  font-size: 22px;
   background: #f63333;
 }
 .shopping-bar .btn {
   border-radius: 0 !important;
-  font-size: 18.7px;
+  font-size: 17.6px;
   padding: 0.8em 1em;
 }
 .paycode {
@@ -3401,4 +3395,52 @@ textarea {
 }
 .paycode .paycode-content .paycode-body img {
   width: 50%;
+}
+.selector .selector-title {
+  text-align: center;
+  padding: 0.5em 0;
+}
+.selector .selector-list {
+  overflow-y: auto;
+}
+.selector .selector-list .selected {
+  color: #f63333;
+  font-weight: bold;
+}
+.selector .selector-list li {
+  padding: 0.2em 0;
+  line-height: 1.5em;
+  font-size: 16px;
+}
+.selector-check .selector-list {
+  text-align: left;
+}
+.selector-check .selector-list li {
+  position: relative;
+  padding-left: 42px;
+}
+.selector-check .selector-list li:after,
+.selector-check .selector-list .selected:after {
+  content: '\e6d7';
+  color: #f63333;
+  text-align: left;
+  position: absolute;
+  left: 0.4em;
+  top: 50%;
+  font-family: iconfont;
+  font-size: 22px;
+  height: 1em;
+  line-height: 1em;
+  margin-top: -0.5em;
+}
+.selector-check .selector-list .selected:after {
+  content: '\e730';
+}
+.selector-underline .selector-list li {
+  border-bottom: 1px #eee solid;
+}
+.selector-lg .selector-list li {
+  padding-top: 1em ;
+  padding-bottom: 1em;
+  border-bottom: 1px #eee solid;
 }

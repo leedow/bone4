@@ -2009,10 +2009,6 @@ textarea {
 .bg-comfort {
   background: #66CC33;
 }
-.bg-primary-gradient {
-  background: -webkit-linear-gradient(top left, bottom right, #fff, #333);
-  background: linear-gradient(top left, bottom right, #fff, #333);
-}
 .statistics {
   padding: 0.8em 0;
   width: 100%;
@@ -2670,7 +2666,6 @@ textarea {
 .menu-horizon-item .menu-pic img {
   width: 1.6em;
   height: 1.6em;
-  border-radius: .8em;
 }
 .menu-horizon-item .menu-title {
   text-align: center;
@@ -2720,7 +2715,6 @@ textarea {
 .menu-horizon-sm .menu-pic img {
   width: 30px;
   height: 30px;
-  border-radius: .8em;
 }
 .menu-horizon-sm .menu-title {
   padding: 1px 0;
@@ -2734,7 +2728,7 @@ textarea {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  border-right: 1px #d4d4d4 solid;
+  border-right: 1px #eee solid;
 }
 .menu-horizon-circle .menu-horizon-item .menu-pic {
   width: 1.6em;
@@ -3401,4 +3395,53 @@ textarea {
 }
 .paycode .paycode-content .paycode-body img {
   width: 50%;
+}
+.selector .selector-title {
+  text-align: center;
+  padding: 0.5em 0;
+}
+.selector .selector-list {
+  overflow-y: auto;
+}
+.selector .selector-list .selected {
+  color: #3492e6;
+  font-weight: bold;
+}
+.selector .selector-list li {
+  padding: 0.2em 0;
+  line-height: 1.5em;
+  font-size: 17px;
+}
+.selector-check .selector-list {
+  text-align: left;
+}
+.selector-check .selector-list li {
+  position: relative;
+  padding-left: 42px;
+}
+.selector-check .selector-list li:after,
+.selector-check .selector-list .selected:after {
+  content: '\e6d7';
+  color: #d4d4d4;
+  text-align: left;
+  position: absolute;
+  left: 0.4em;
+  top: 50%;
+  font-family: iconfont;
+  font-size: 22px;
+  height: 1em;
+  line-height: 1em;
+  margin-top: -0.5em;
+}
+.selector-check .selector-list .selected:after {
+  color: #3492e6 !important;
+  content: '\e656' !important;
+}
+.selector-underline .selector-list li {
+  border-bottom: 1px #eee solid;
+}
+.selector-lg .selector-list li {
+  padding-top: 1em ;
+  padding-bottom: 1em;
+  border-bottom: 1px #eee solid;
 }
