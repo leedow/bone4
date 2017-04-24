@@ -1,6 +1,7 @@
 @import './header';
 @import './flex-box';
 @import './drawer';
+@import './r';
 
 .@{prefix}{
   &selector{
@@ -11,7 +12,7 @@
 
     .selector-list{
       overflow-y: auto;
-      //max-height: @r*200px;
+      // max-height: @r*200px;
 
       .selected{
           color: @color-primary;
@@ -34,11 +35,12 @@
       li{
         position: relative;
         padding-left: 3*@padding-horizon;
-
+        font-weight: normal !important;
       }
 
 
       li:after, .selected:after{
+
         content: @font-unchecked;
   			color: @line-color;
         text-align: left;
@@ -62,6 +64,7 @@
   &selector-underline{
     .selector-list{
       li{
+        .rbb;
         border-bottom: 1px @line-color-light solid;
       }
     }
@@ -72,7 +75,6 @@
       li{
         padding-top: 1em ;
         padding-bottom: 1em;
-        border-bottom: 1px @line-color-light solid;
       }
     }
   }

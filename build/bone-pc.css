@@ -1850,10 +1850,6 @@ textarea {
 .bg-comfort {
   background: #66CC33;
 }
-.bg-primary-gradient {
-  background: -webkit-linear-gradient(top left, bottom right, #fff, #333);
-  background: linear-gradient(top left, bottom right, #fff, #333);
-}
 .ad-container {
   width: 100%;
   height: 100%;

@@ -49,7 +49,7 @@ gulp.task('css', function(){
 			.pipe(gulp.dest('./build'))
 			.pipe(reload({stream: true}));
 
-			/*
+
 		gulp.src('./style/bone-pc.less')
 			.pipe(less())
 			.on('error', function(err) {
@@ -59,7 +59,7 @@ gulp.task('css', function(){
 			//.pipe(rev())
 			.pipe(autoprefixer())
 			//.pipe(minifyCSS())
-			.pipe(gulp.dest('./build'))*/
+			.pipe(gulp.dest('./build'))
 
 		gulp.src('./style/bone-mobile.less')
 			.pipe(less())
@@ -85,7 +85,7 @@ gulp.task('css', function(){
 			.pipe(gulp.dest('./build'))
 
 
-			/*
+
 		gulp.src('./style/bone-mobile-x2.less')
 			.pipe(less())
 			.on('error', function(err) {
@@ -95,7 +95,7 @@ gulp.task('css', function(){
 			//.pipe(rev())
 			.pipe(autoprefixer())
 			//.pipe(minifyCSS())
-			.pipe(gulp.dest('./build'))*/
+			.pipe(gulp.dest('./build'))
 
 
 
@@ -110,7 +110,7 @@ gulp.task('css', function(){
 				//.pipe(minifyCSS())
 				.pipe(gulp.dest('./build'))
 
-				/*
+
 			gulp.src('./style/bone-all-darkblue.less')
 				.pipe(less())
 				.on('error', function(err) {
@@ -120,7 +120,7 @@ gulp.task('css', function(){
 				//.pipe(rev())
 				.pipe(autoprefixer())
 				//.pipe(minifyCSS())
-				.pipe(gulp.dest('./build'))*/
+				.pipe(gulp.dest('./build'))
 	});
 });
 
