@@ -57,9 +57,9 @@ textarea {
 .timeline .timeline-item {
   position: relative;
   text-align: left;
-  padding-left: 20px;
-  line-height: 20px;
-  padding-bottom: 10px;
+  padding-left: 40px;
+  line-height: 40px;
+  padding-bottom: 20px;
 }
 .timeline .timeline-item:last-child {
   padding-bottom: 0;
@@ -86,26 +86,102 @@ textarea {
   position: absolute;
   left: 0;
   top: 0;
-  width: 12px;
-  height: 12px;
-  border: 2px #3492e6 solid;
+  width: 24px;
+  height: 24px;
+  border: 4px #3492e6 solid;
   background: #fff;
-  border-radius: 6px;
+  border-radius: 12px;
 }
 .timeline .timeline-item:before {
   content: ' ';
-  width: 2px;
+  width: 4px;
   background: #e0e0e0;
   height: 100%;
   position: absolute;
-  left: 5px;
+  left: 10px;
   top: 0;
 }
 .timeline .timeline-item-highlight:after {
-  border: 2px #FF6633 solid;
+  border: 4px #FF6633 solid;
 }
 .timeline .timeline-item-comfort:after {
-  border: 2px #66CC33 solid;
+  border: 4px #66CC33 solid;
+}
+.steps {
+  border-top: 8px #eee solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.steps .steps-item-circle:before {
+  content: ' ';
+  position: absolute;
+  left: 50%;
+  top: -16px;
+  margin-left: -12px;
+  width: 24px;
+  height: 24px;
+  border: 4px #eee solid;
+  background: #eee;
+  border-radius: 12px;
+}
+.steps .steps-item-circle:first-child:before {
+  left: 0;
+}
+.steps .steps-item-circle:last-child:before {
+  left: auto;
+  right: 0 !important;
+}
+.steps .steps-item {
+  position: relative;
+  text-align: center;
+  border-top: 8px #eee solid;
+  margin-top: -8px;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+.steps .steps-item .steps-item-title {
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  top: 0;
+}
+.steps .steps-item .steps-item-title {
+  padding-top: 0.5em;
+}
+.steps .steps-item:first-child {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.steps .steps-item:first-child .steps-item-title {
+  left: 0;
+}
+.steps .steps-item:first-child .steps-item-icon {
+  left: 0;
+}
+.steps .steps-item:last-child {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.steps .steps-item:last-child .steps-item-title {
+  left: auto;
+  right: 0;
+  margin-right: -100px;
+}
+.steps .steps-item:last-child .steps-item-icon {
+  left: auto;
+  right: 0 !important;
+}
+.steps .steps-item-done {
+  border-top-color: #66CC33 !important;
+}
+.steps .steps-item-done:before {
+  border-color: #66CC33 !important;
+  background: #66CC33;
 }
 .sidebar-menu {
   background: #3492e6;

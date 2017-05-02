@@ -6,9 +6,9 @@
 		.timeline-item{
 			position: relative;
 			text-align: left;
-			padding-left: 20px;
-			line-height: 20px;
-			padding-bottom:10px;
+			padding-left: @r*20px;
+			line-height: @r*20px;
+			padding-bottom:@r*10px;
 
 			&:last-child{
 				padding-bottom: 0;
@@ -40,33 +40,33 @@
 					position: absolute;
 					left:0;
 					top: 0;
-					width: 12px;
-					height: 12px;
-					border:2px @color-primary solid;
+					width: @r*12px;
+					height: @r*12px;
+					border:@r*2px @color-primary solid;
 					background: #fff;
-					border-radius: 6px;
+					border-radius: @r*6px;
 			}
 
 			&:before{
 				content: ' ';
-				width: 2px;
+				width: @r*2px;
 				background: @line-color;
 				height: 100%;
 				position: absolute;
-				left:5px;
+				left:@r*5px;
 				top:0;
 			}
 		}
 
 		.timeline-item-highlight{
 			&:after{
-				border:2px @color-highlight solid;
+				border:@r*2px @color-highlight solid;
 			}
 		}
 
 		.timeline-item-comfort{
 			&:after{
-				border:2px @color-comfort solid;
+				border:@r*2px @color-comfort solid;
 			}
 		}
 	}
