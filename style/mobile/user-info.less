@@ -9,11 +9,31 @@
     align-items: center;
     padding: @padding-vertical @padding-horizon;
     .user-avatar{
+      line-height: @r*60px;
+      height: @r*60px;
+      width: @r*60px;
+      text-align: center;
+      border-radius:  @r*30px;
 
        img{
          width: @r*60px;
          height:@r*60px;
-         border-radius: 30px;
+         border-radius: @r*30px;
+         vertical-align: bottom;
+       }
+    }
+
+    .user-avatar-sm{
+      line-height: @r*44px;
+      height: @r*44px;
+      width: @r*44px;
+      text-align: center;
+      border-radius:  @r*22px;
+
+       img{
+         width: @r*44px;
+         height:@r*44px;
+         border-radius: @r*22px;
          vertical-align: bottom;
        }
     }
@@ -34,7 +54,7 @@
 
   &user-info2{
     position: relative;
-     
+
     padding-bottom: @r*40px;
     .user-avatar{
 

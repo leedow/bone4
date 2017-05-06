@@ -2456,10 +2456,30 @@ textarea {
           align-items: center;
   padding: 28px 28px;
 }
+.user-info .user-avatar {
+  line-height: 120px;
+  height: 120px;
+  width: 120px;
+  text-align: center;
+  border-radius: 60px;
+}
 .user-info .user-avatar img {
   width: 120px;
   height: 120px;
-  border-radius: 30px;
+  border-radius: 60px;
+  vertical-align: bottom;
+}
+.user-info .user-avatar-sm {
+  line-height: 88px;
+  height: 88px;
+  width: 88px;
+  text-align: center;
+  border-radius: 44px;
+}
+.user-info .user-avatar-sm img {
+  width: 88px;
+  height: 88px;
+  border-radius: 44px;
   vertical-align: bottom;
 }
 .user-info .user-name {
@@ -3035,10 +3055,6 @@ textarea {
   color: #ddd;
   padding: 0;
 }
-.stars .star:hover,
-.stars .star-check:hover {
-  color: #FF6633;
-}
 .stars .star-check {
   color: #FF6633;
 }
@@ -3055,6 +3071,34 @@ textarea {
 .stars-sm .star-check {
   margin-right: 10px;
   font-size: 28px;
+}
+.stars-sm {
+  height: 40px;
+  line-height: 40px;
+}
+.stars-sm .star,
+.stars-sm .star-check {
+  margin-right: 10px;
+  font-size: 28px;
+}
+.stars-circle {
+  height: 20px;
+  line-height: 20px;
+}
+.stars-circle .star,
+.stars-circle .star-check {
+  display: inline-block;
+  border: 0;
+  background: 0;
+  margin: 0 6px;
+  background: #ddd;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+}
+.stars-circle .star-check {
+  background: #3492e6;
 }
 .drawer {
   position: fixed;
@@ -3559,4 +3603,49 @@ textarea {
 .selector-lg .selector-list li {
   padding-top: 1em ;
   padding-bottom: 1em;
+}
+.tip-box {
+  position: relative;
+  background: #fff;
+  color: #444;
+  padding: 8px 18px;
+  line-height: 1.5em;
+  border-radius: 4px;
+}
+.tip-box:before {
+  position: absolute;
+  content: " ";
+  width: 0px;
+  height: 0px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #fff;
+}
+.tip-comfort {
+  background: #66CC33;
+}
+.tip-comfort:before {
+  border-color: #66CC33;
+}
+.tip-left:before {
+  left: 100%;
+  top: 24px;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+.tip-top:before {
+  right: 24px;
+  bottom: -5px;
+}
+.tip-bottom:before {
+  left: 24px;
+  top: -5px;
+}
+.tip-right:before {
+  right: 100%;
+  top: 24px;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
 }
