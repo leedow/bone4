@@ -34,10 +34,14 @@
 
   })
 
+  switcher('iframe', window.location.href.split('#')[1], 'child-')
+
   function switcher(type, rel , mode){
     $('.' + mode + 'switch').removeClass('menu-item-current');
     $('.' + mode + 'switcher').removeClass('menu-item-current');
     var path = BASE_URL + 'demos/' + rel + '.html'
+
+    window.location.href = window.location.href.split('#')[0] + '#' + rel
      $.ajax({
        url: path,
        data: {

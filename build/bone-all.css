@@ -1335,7 +1335,7 @@ textarea {
   font-size: 22px !important;
 }
 .f-md {
-  font-size: 17px !important;
+  font-size: 18px !important;
 }
 .f-sm {
   font-size: 12px !important;
@@ -1354,7 +1354,7 @@ textarea {
   outline: none;
 }
 .label-lg {
-  font-size: 17px;
+  font-size: 18px;
 }
 .form-control {
   width: 100%;
@@ -1398,7 +1398,7 @@ textarea {
 .select-lg {
   padding: 11px 10px;
   height: 46px;
-  font-size: 17px;
+  font-size: 18px;
 }
 .input-sm,
 .select-sm {
@@ -1629,11 +1629,11 @@ textarea {
   padding: 5px 10px;
 }
 .btn-sm-icon {
-  font-size: 17px;
+  font-size: 18px;
 }
 .btn-lg {
-  padding: 11px 16px;
-  font-size: 17px;
+  padding: 13px 16px;
+  font-size: 18px;
 }
 .btn-lg-icon {
   font-size: 22px;
@@ -1840,10 +1840,10 @@ textarea {
 .form-lg .select {
   padding: 11px 10px;
   height: 46px;
-  font-size: 17px;
+  font-size: 18px;
 }
 .form-lg label {
-  font-size: 17px;
+  font-size: 18px;
 }
 .tabs-horizon {
   height: 44px;
@@ -1851,7 +1851,7 @@ textarea {
 }
 .tabs-horizon .tabs-item {
   display: inline-block;
-  font-size: 17px;
+  font-size: 18px;
   height: 44px;
   line-height: 44px;
   text-align: center;
@@ -2059,7 +2059,7 @@ textarea {
   font-size: 12px !important;
 }
 .font-md {
-  font-size: 17px !important;
+  font-size: 18px !important;
 }
 .color-primary {
   color: #3492e6;
@@ -2151,10 +2151,11 @@ textarea {
   border-radius: 0 !important;
 }
 .form-item-blank {
+  padding-left: 14px;
   position: relative;
+  background: #fff;
 }
 .form-item-blank label {
-  padding-left: 14px;
   font-weight: normal !important;
   position: absolute;
   left: 0;
@@ -2174,6 +2175,12 @@ textarea {
   border-radius: 0 !important;
   box-shadow: none !important;
 }
+.form-item-blank .form-item:last-child .input,
+.form-item-blank .select,
+.form-item-blank .textarea {
+  border-bottom: 0;
+  background-image: none;
+}
 .form-head {
   text-align: left;
 }
@@ -2192,13 +2199,20 @@ textarea {
   border-radius: 0 !important;
 }
 .form-blank {
+  padding-left: 14px;
   position: relative;
+  background: #fff;
 }
 .form-blank .form-item {
   position: relative;
 }
+.form-blank .form-item:last-child .input,
+.form-blank .select,
+.form-blank .textarea {
+  border-bottom: 0 !important;
+  background-image: none !important;
+}
 .form-blank label {
-  padding-left: 14px;
   font-weight: normal !important;
   position: absolute;
   left: 0;
@@ -2217,6 +2231,12 @@ textarea {
   border-right: 0 !important;
   border-radius: 0 !important;
   box-shadow: none !important;
+}
+.form-blank .form-item:last-child .input,
+.form-blank .select,
+.form-blank .textarea {
+  border-bottom: 0;
+  background-image: none;
 }
 .form-code {
   position: relative;
@@ -2255,7 +2275,7 @@ textarea {
   background: #fff;
 }
 .dialog-layout .dialog .dialog-content {
-  font-size: 17px;
+  font-size: 18px;
   padding: 14px;
 }
 .dialog-layout .dialog .dialog-content p {
@@ -2273,8 +2293,8 @@ textarea {
 .dialog-layout .dialog .dialog-buttons .button {
   background: none;
   border: 0;
-  font-size: 17px;
-  padding: 11px 16px;
+  font-size: 18px;
+  padding: 13px 16px;
 }
 .dialog-layout .dialog .dialog-buttons .button-ok {
   -webkit-box-flex: 1;
@@ -2307,7 +2327,7 @@ textarea {
           align-items: center;
 }
 .card .card-header .card-title {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: normal;
   padding: 0.6em 14px;
   text-align: left;
@@ -2487,7 +2507,7 @@ textarea {
       -ms-flex: 1;
           flex: 1;
   color: #fff;
-  font-size: 17px;
+  font-size: 18px;
   text-align: left;
   padding-left: 1.1em;
 }
@@ -2509,7 +2529,7 @@ textarea {
 .user-info2 .user-name {
   text-align: center;
   color: #fff;
-  font-size: 17px;
+  font-size: 18px;
 }
 .user-info2 .user-phone {
   text-align: center;
@@ -2574,7 +2594,7 @@ textarea {
   position: fixed;
 }
 .layout-main {
-  padding-bottom: 52.8px;
+  padding-bottom: 58.8px;
 }
 .layout-main-fixed {
   position: fixed;
@@ -2584,19 +2604,19 @@ textarea {
 }
 .layout-main-fixed,
 .layout-main-absolute {
-  top: 44px;
+  top: 49px;
   left: 0;
   right: 0;
-  bottom: 52.8px;
+  bottom: 58.8px;
 }
 .layout-has-top {
-  padding-top: 44px;
+  padding-top: 49px;
 }
 .layout-has-header-tabs {
-  padding-top: 88px;
+  padding-top: 98px;
 }
 .layout-has-bottom {
-  padding-top: 58px;
+  padding-top: 63px;
 }
 .layout-opacity,
 .layout-none {
@@ -2637,10 +2657,10 @@ textarea {
 }
 .header {
   width: 100%;
-  height: 44px;
+  height: 49px;
   text-align: center;
   position: relative;
-  font-size: 17.85px;
+  font-size: 18.9px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2652,8 +2672,8 @@ textarea {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  height: 44px;
-  line-height: 44px;
+  height: 49px;
+  line-height: 49px;
 }
 .header .header-body-left {
   -webkit-box-flex: 1;
@@ -2663,20 +2683,20 @@ textarea {
   padding-left: 14px;
 }
 .header .header-dock {
-  height: 44px;
-  line-height: 44px;
+  height: 49px;
+  line-height: 49px;
 }
 .header .header-dock a,
 .header .header-dock button {
   background: none;
   border: 0;
-  min-width: 44px;
+  min-width: 49px;
   color: #ffffff;
   display: inline-block;
-  height: 44px;
-  line-height: 44px;
+  height: 49px;
+  line-height: 49px;
   padding: 0 14px;
-  font-size: 18.7px;
+  font-size: 19.8px;
 }
 .header .header-dock a:hover,
 .header .header-dock button:hover {
@@ -2863,7 +2883,7 @@ textarea {
   vertical-align: bottom;
 }
 .menu-card .menu-icon-title {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: normal;
 }
 .menu-card .menu-icon-note {
@@ -2876,14 +2896,19 @@ textarea {
   color: #777777;
 }
 .list {
-  position: relative;
   -webkit-transition: -webkit-transform 0.4s ease;
   transition: -webkit-transform 0.4s ease;
   transition: transform 0.4s ease;
   transition: transform 0.4s ease, -webkit-transform 0.4s ease;
 }
+.list,
+.list-hack {
+  position: relative;
+}
 .list .up-fresh,
-.list .down-fresh {
+.list-hack .up-fresh,
+.list .down-fresh,
+.list-hack .down-fresh {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2897,36 +2922,47 @@ textarea {
   overflow: hidden;
 }
 .list .up-fresh p,
-.list .down-fresh p {
+.list-hack .up-fresh p,
+.list .down-fresh p,
+.list-hack .down-fresh p {
   color: #999;
 }
 .list .up-fresh p i,
-.list .down-fresh p i {
+.list-hack .up-fresh p i,
+.list .down-fresh p i,
+.list-hack .down-fresh p i {
   font-size: 30.8px;
   display: block;
   line-height: 1em;
 }
 .list .up-fresh p span,
-.list .down-fresh p span {
+.list-hack .up-fresh p span,
+.list .down-fresh p span,
+.list-hack .down-fresh p span {
   font-size: 12px;
 }
-.list .up-fresh {
+.list .up-fresh,
+.list-hack .up-fresh {
   left: 0;
   right: 0;
   bottom: -58px;
 }
-.list .down-fresh {
+.list .down-fresh,
+.list-hack .down-fresh {
   left: 0;
   right: 0;
   top: -58px;
 }
-.list .list-item {
+.list .list-item,
+.list-hack .list-item {
   position: relative;
 }
-.list .list-item-arrow {
+.list .list-item-arrow,
+.list-hack .list-item-arrow {
   position: relative;
 }
-.list .list-item-arrow:before {
+.list .list-item-arrow:before,
+.list-hack .list-item-arrow:before {
   content: '\e660';
   font-family: iconfont;
   height: 20px;
@@ -2957,7 +2993,7 @@ textarea {
   cursor: pointer;
   background: none;
   border: 0;
-  min-height: 48.4px;
+  min-height: 53.9px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2981,7 +3017,7 @@ textarea {
   text-align: center;
   padding-right: 14px;
   padding-left: 5.6px;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1em;
 }
 .menu-vertical-item .menu-body {
@@ -2990,7 +3026,7 @@ textarea {
           flex: 1;
   padding: 11.2px 0;
   text-align: left;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.1em;
 }
 .menu-vertical-item .menu-dock {
@@ -3061,7 +3097,7 @@ textarea {
 .stars .score {
   line-height: 25px;
   float: left;
-  font-size: 17px;
+  font-size: 18px;
 }
 .stars-sm {
   height: 20px;
@@ -3121,7 +3157,7 @@ textarea {
   background: #fff;
 }
 .drawer-top-header {
-  top: 44px;
+  top: 49px;
   left: 0;
   right: 0;
   z-index: 998;
@@ -3422,7 +3458,7 @@ textarea {
   padding-right: 0;
   height: 27px;
   text-align: center;
-  font-size: 17px;
+  font-size: 18px;
 }
 .number button {
   cursor: pointer;
@@ -3496,7 +3532,7 @@ textarea {
 }
 .shopping-bar .btn {
   border-radius: 0 !important;
-  font-size: 18.7px;
+  font-size: 19.8px;
   padding: 0.8em 1em;
 }
 .paycode {
@@ -3516,6 +3552,24 @@ textarea {
 .paycode .paycode-content .paycode-body img {
   width: 50%;
 }
+.br {
+  border-right: 1px #eee solid;
+}
+.bl {
+  border-left: 1px #eee solid;
+}
+.bt {
+  border-top: 1px #eee solid;
+}
+.bb {
+  border-bottom: 1px #eee solid;
+}
+.ba {
+  border-top: 1px #eee solid;
+  border-bottom: 1px #eee solid;
+  border-left: 1px #eee solid;
+  border-right: 1px #eee solid;
+}
 .rbb {
   border-bottom: 0px !important;
   background-repeat: repeat-x;
@@ -3524,14 +3578,26 @@ textarea {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .ba {
+    /*
+    background-image:linear-gradient(180deg, red, red 50%, transparent 50%),
+    linear-gradient(270deg, red, red 50%, transparent 50%),
+    linear-gradient(0deg, red, red 50%, transparent 50%),
+    linear-gradient(90deg, red, red 50%, transparent 50%);
+    background-size: 100% 1px,1px 100% ,100% 1px, 1px 100%;
+    background-repeat: no-repeat;
+    background-position: top, right top,  bottom, left top;*/
+  }
   .rbt,
-  .bor-top {
+  .bor-top,
+  .bt {
     border-top: 0px !important;
     background-repeat: repeat-x;
     background-size: 100% 1px;
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
   }
   .rbb,
+  .bb,
   .input-underline,
   .select-underline,
   .textarea-underline,
@@ -3564,7 +3630,7 @@ textarea {
 .selector .selector-list li {
   padding: 0.2em 0;
   line-height: 1.5em;
-  font-size: 17px;
+  font-size: 18px;
 }
 .selector-check .selector-list {
   text-align: left;
@@ -3648,4 +3714,52 @@ textarea {
   border-top-color: transparent;
   border-bottom-color: transparent;
   border-left-color: transparent;
+}
+.keyboard {
+  background: #fff;
+}
+.keyboard .board-btn {
+  width: 33.33333%;
+  text-align: center;
+  float: left;
+}
+.keyboard .board-btn button {
+  font-size: 24px;
+  border: 0;
+  background: none;
+  height: 55px;
+  line-height: 55px;
+  width: 100%;
+}
+.keyboard .board-btn .del {
+  background: #f2f2f2;
+  font-size: 18px;
+}
+.keyboard .board-btn .none {
+  background: #f2f2f2;
+}
+.paypassword {
+  background: #fff;
+}
+.paypassword .pay-item {
+  width: 16.66666666%;
+  height: 50px;
+  line-height: 50px;
+  float: left;
+  font-size: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.paypassword .pay-item .pay-input {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: #444;
 }

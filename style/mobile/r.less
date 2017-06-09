@@ -1,3 +1,28 @@
+@line-color-light: #eee;
+.br{
+    border-right: 1px @line-color-light solid;
+}
+
+.bl{
+    border-left: 1px @line-color-light solid;
+}
+
+.bt{
+  border-top: 1px @line-color-light solid;
+}
+
+.bb{
+    border-bottom: 1px @line-color-light solid;
+}
+
+.ba{
+    border-top: 1px @line-color-light solid;
+    border-bottom: 1px @line-color-light solid;
+    border-left: 1px @line-color-light solid;
+    border-right: 1px @line-color-light solid;
+
+}
+
 
 .rbb{
   border-bottom: 0px !important;
@@ -9,14 +34,35 @@
 
 @media screen and (-webkit-min-device-pixel-ratio:2){
 
-  .rbt, .bor-top{
+  .ba{
+    //border: 0px !important;
+    //box-shadow: 0 0 1px @line-color-light;
+    /*
+    background-image:linear-gradient(180deg, red, red 50%, transparent 50%),
+    linear-gradient(270deg, red, red 50%, transparent 50%),
+    linear-gradient(0deg, red, red 50%, transparent 50%),
+    linear-gradient(90deg, red, red 50%, transparent 50%);
+    background-size: 100% 1px,1px 100% ,100% 1px, 1px 100%;
+    background-repeat: no-repeat;
+    background-position: top, right top,  bottom, left top;*/
+  }
+
+  .br{
+
+  }
+
+  .bl{
+
+  }
+
+  .rbt, .bor-top, .bt{
     border-top: 0px !important;
     background-repeat: repeat-x;
     background-size: 100% 1px;
     background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.5,transparent),color-stop(0.5,#e0e0e0),to(#e0e0e0));
   }
 
-  .rbb,.input-underline,.select-underline,.textarea-underline,.list-box .list-item,.list-box, .bor-bottom, .form-blank .form-item,.card-header,.form-blank .input, .form-blank .select, .form-blank .textarea{
+  .rbb,.bb,.input-underline,.select-underline,.textarea-underline,.list-box .list-item,.list-box, .bor-bottom, .form-blank .form-item,.card-header,.form-blank .input, .form-blank .select, .form-blank .textarea{
     border-bottom: 0px !important;
     background-repeat: repeat-x;
     background-size: 100% 1px;

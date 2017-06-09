@@ -15,9 +15,11 @@
 }
 
 .form-item-blank{
+  padding-left: @padding-horizon;
   position: relative;
+  background: #fff;
   label{
-    padding-left: @padding-horizon;
+    //padding-left: @padding-horizon;
     font-weight: normal !important;
     position: absolute;
     left:0;
@@ -34,6 +36,11 @@
     border-right: 0 !important;
     border-radius: 0 !important;
     box-shadow: none !important;
+  }
+
+  .form-item:last-child .input, .select, .textarea{
+    border-bottom:0;
+    background-image: none;
   }
 }
 
@@ -53,6 +60,13 @@
          position: relative;
 
        }
+
+       .form-item:last-child .input, .select, .textarea{
+         border-bottom:0 !important;
+         background-image: none !important;
+       }
+
+
 
        .form-item-blank;
     }

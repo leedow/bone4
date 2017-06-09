@@ -2151,10 +2151,11 @@ textarea {
   border-radius: 0 !important;
 }
 .form-item-blank {
+  padding-left: 14px;
   position: relative;
+  background: #fff;
 }
 .form-item-blank label {
-  padding-left: 14px;
   font-weight: normal !important;
   position: absolute;
   left: 0;
@@ -2174,6 +2175,12 @@ textarea {
   border-radius: 0 !important;
   box-shadow: none !important;
 }
+.form-item-blank .form-item:last-child .input,
+.form-item-blank .select,
+.form-item-blank .textarea {
+  border-bottom: 0;
+  background-image: none;
+}
 .form-head {
   text-align: left;
 }
@@ -2192,13 +2199,20 @@ textarea {
   border-radius: 0 !important;
 }
 .form-blank {
+  padding-left: 14px;
   position: relative;
+  background: #fff;
 }
 .form-blank .form-item {
   position: relative;
 }
+.form-blank .form-item:last-child .input,
+.form-blank .select,
+.form-blank .textarea {
+  border-bottom: 0 !important;
+  background-image: none !important;
+}
 .form-blank label {
-  padding-left: 14px;
   font-weight: normal !important;
   position: absolute;
   left: 0;
@@ -2217,6 +2231,12 @@ textarea {
   border-right: 0 !important;
   border-radius: 0 !important;
   box-shadow: none !important;
+}
+.form-blank .form-item:last-child .input,
+.form-blank .select,
+.form-blank .textarea {
+  border-bottom: 0;
+  background-image: none;
 }
 .form-code {
   position: relative;
@@ -2876,14 +2896,19 @@ textarea {
   color: #777777;
 }
 .list {
-  position: relative;
   -webkit-transition: -webkit-transform 0.4s ease;
   transition: -webkit-transform 0.4s ease;
   transition: transform 0.4s ease;
   transition: transform 0.4s ease, -webkit-transform 0.4s ease;
 }
+.list,
+.list-hack {
+  position: relative;
+}
 .list .up-fresh,
-.list .down-fresh {
+.list-hack .up-fresh,
+.list .down-fresh,
+.list-hack .down-fresh {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2897,36 +2922,47 @@ textarea {
   overflow: hidden;
 }
 .list .up-fresh p,
-.list .down-fresh p {
+.list-hack .up-fresh p,
+.list .down-fresh p,
+.list-hack .down-fresh p {
   color: #999;
 }
 .list .up-fresh p i,
-.list .down-fresh p i {
+.list-hack .up-fresh p i,
+.list .down-fresh p i,
+.list-hack .down-fresh p i {
   font-size: 30.8px;
   display: block;
   line-height: 1em;
 }
 .list .up-fresh p span,
-.list .down-fresh p span {
+.list-hack .up-fresh p span,
+.list .down-fresh p span,
+.list-hack .down-fresh p span {
   font-size: 12px;
 }
-.list .up-fresh {
+.list .up-fresh,
+.list-hack .up-fresh {
   left: 0;
   right: 0;
   bottom: -58px;
 }
-.list .down-fresh {
+.list .down-fresh,
+.list-hack .down-fresh {
   left: 0;
   right: 0;
   top: -58px;
 }
-.list .list-item {
+.list .list-item,
+.list-hack .list-item {
   position: relative;
 }
-.list .list-item-arrow {
+.list .list-item-arrow,
+.list-hack .list-item-arrow {
   position: relative;
 }
-.list .list-item-arrow:before {
+.list .list-item-arrow:before,
+.list-hack .list-item-arrow:before {
   content: '\e775';
   font-family: iconfont;
   height: 20px;
@@ -3516,6 +3552,24 @@ textarea {
 .paycode .paycode-content .paycode-body img {
   width: 50%;
 }
+.br {
+  border-right: 1px #eee solid;
+}
+.bl {
+  border-left: 1px #eee solid;
+}
+.bt {
+  border-top: 1px #eee solid;
+}
+.bb {
+  border-bottom: 1px #eee solid;
+}
+.ba {
+  border-top: 1px #eee solid;
+  border-bottom: 1px #eee solid;
+  border-left: 1px #eee solid;
+  border-right: 1px #eee solid;
+}
 .rbb {
   border-bottom: 0px !important;
   background-repeat: repeat-x;
@@ -3524,14 +3578,26 @@ textarea {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .ba {
+    /*
+    background-image:linear-gradient(180deg, red, red 50%, transparent 50%),
+    linear-gradient(270deg, red, red 50%, transparent 50%),
+    linear-gradient(0deg, red, red 50%, transparent 50%),
+    linear-gradient(90deg, red, red 50%, transparent 50%);
+    background-size: 100% 1px,1px 100% ,100% 1px, 1px 100%;
+    background-repeat: no-repeat;
+    background-position: top, right top,  bottom, left top;*/
+  }
   .rbt,
-  .bor-top {
+  .bor-top,
+  .bt {
     border-top: 0px !important;
     background-repeat: repeat-x;
     background-size: 100% 1px;
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
   }
   .rbb,
+  .bb,
   .input-underline,
   .select-underline,
   .textarea-underline,
@@ -3648,4 +3714,52 @@ textarea {
   border-top-color: transparent;
   border-bottom-color: transparent;
   border-left-color: transparent;
+}
+.keyboard {
+  background: #fff;
+}
+.keyboard .board-btn {
+  width: 33.33333%;
+  text-align: center;
+  float: left;
+}
+.keyboard .board-btn button {
+  font-size: 24px;
+  border: 0;
+  background: none;
+  height: 55px;
+  line-height: 55px;
+  width: 100%;
+}
+.keyboard .board-btn .del {
+  background: #f2f2f2;
+  font-size: 16px;
+}
+.keyboard .board-btn .none {
+  background: #f2f2f2;
+}
+.paypassword {
+  background: #fff;
+}
+.paypassword .pay-item {
+  width: 16.66666666%;
+  height: 50px;
+  line-height: 50px;
+  float: left;
+  font-size: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.paypassword .pay-item .pay-input {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: #444;
 }

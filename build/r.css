@@ -1,3 +1,21 @@
+.br {
+  border-right: 1px #eee solid;
+}
+.bl {
+  border-left: 1px #eee solid;
+}
+.bt {
+  border-top: 1px #eee solid;
+}
+.bb {
+  border-bottom: 1px #eee solid;
+}
+.ba {
+  border-top: 1px #eee solid;
+  border-bottom: 1px #eee solid;
+  border-left: 1px #eee solid;
+  border-right: 1px #eee solid;
+}
 .rbb {
   border-bottom: 0px !important;
   background-repeat: repeat-x;
@@ -6,14 +24,26 @@
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .ba {
+    /*
+    background-image:linear-gradient(180deg, red, red 50%, transparent 50%),
+    linear-gradient(270deg, red, red 50%, transparent 50%),
+    linear-gradient(0deg, red, red 50%, transparent 50%),
+    linear-gradient(90deg, red, red 50%, transparent 50%);
+    background-size: 100% 1px,1px 100% ,100% 1px, 1px 100%;
+    background-repeat: no-repeat;
+    background-position: top, right top,  bottom, left top;*/
+  }
   .rbt,
-  .bor-top {
+  .bor-top,
+  .bt {
     border-top: 0px !important;
     background-repeat: repeat-x;
     background-size: 100% 1px;
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
   }
   .rbb,
+  .bb,
   .input-underline,
   .select-underline,
   .textarea-underline,
