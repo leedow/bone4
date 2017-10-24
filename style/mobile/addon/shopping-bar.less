@@ -1,20 +1,30 @@
 @import '../flex-box.less';
 
 .shopping-bar{
-  padding-left: @r*70px;
+  padding-left: @r*74px;
+  background: #fff;
 
   .shopping-info{
-    padding-top:@r*4px;
+    padding-top:@r*2px;
+  }
+
+  .bar-price{
+    padding-top: 5px;
+    line-height: @r*18px;
+  }
+
+  .bar-total{
+    line-height: @r*14px;
   }
 
   .icon{
     position: absolute;
     left: @r*10px;
     bottom: @r*5px;
-    width: @r*50px;
-    height: @r*50px;
-    border-radius: @r*25px;
-    line-height: @r*50px;
+    width: @r*56px;
+    height: @r*56px;
+    border-radius: @r*28px;
+    line-height: @r*56px;
     color: #fff;
     border: @r*2px #fff solid;
     text-align: center;
@@ -24,8 +34,8 @@
 
   .btn{
     border-radius: 0 !important;
-    font-size: 1.1*@font-size-md;
+    font-size: @font-size-md;
     padding: 0.8em 1em;
   }
-  
+
 }

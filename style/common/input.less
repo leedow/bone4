@@ -72,13 +72,13 @@ input[readonly]{
 		height: @input-height-tiny;
 	}
 
-
+	/*
 	&has-icon{
 		position: relative;
 		&>i{
 			color: @font-color-light;
 			position: absolute;
-			right: 0.4em;
+			right: @padding-horizon;
 			top:50%;
 			font-family: @font-family-icon;
 			font-size: @font-size-lg;
@@ -86,13 +86,13 @@ input[readonly]{
       line-height: 1em;
       margin-top: -0.5em;
 		}
-	}
+	}*/
 
 	&be-wrong, &be-pass, &be-loading{
 		position: relative;
 		&:after{
 			position: absolute;
-			right: 0.4em;
+			right: @padding-horizon;
 			top:50%;
 			font-family: @font-family-icon;
 			font-size: @font-size-lg;
@@ -155,8 +155,9 @@ input[readonly]{
 	&has-icon{
 		position: relative;
 		i{
+			color: @font-color-light;
 			position: absolute;
-			right: 0.4em;
+			right: @padding-horizon;
 			top:50%;
 			font-family: @font-family-icon;
 			font-size: @font-size-lg;

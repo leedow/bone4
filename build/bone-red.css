@@ -2610,7 +2610,7 @@ textarea {
   position: fixed;
 }
 .layout-main {
-  padding-bottom: 52.8px;
+  padding-bottom: 58.8px;
 }
 .layout-main-fixed {
   position: fixed;
@@ -2620,19 +2620,19 @@ textarea {
 }
 .layout-main-fixed,
 .layout-main-absolute {
-  top: 44px;
+  top: 49px;
   left: 0;
   right: 0;
-  bottom: 52.8px;
+  bottom: 58.8px;
 }
 .layout-has-top {
-  padding-top: 44px;
+  padding-top: 49px;
 }
 .layout-has-header-tabs {
-  padding-top: 88px;
+  padding-top: 98px;
 }
 .layout-has-bottom {
-  padding-top: 58px;
+  padding-top: 63px;
 }
 .layout-opacity,
 .layout-none {
@@ -2673,7 +2673,7 @@ textarea {
 }
 .header {
   width: 100%;
-  height: 44px;
+  height: 49px;
   text-align: center;
   position: relative;
   font-size: 18.9px;
@@ -2688,8 +2688,8 @@ textarea {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  height: 44px;
-  line-height: 44px;
+  height: 49px;
+  line-height: 49px;
 }
 .header .header-body-left {
   -webkit-box-flex: 1;
@@ -2699,18 +2699,18 @@ textarea {
   padding-left: 14px;
 }
 .header .header-dock {
-  height: 44px;
-  line-height: 44px;
+  height: 49px;
+  line-height: 49px;
 }
 .header .header-dock a,
 .header .header-dock button {
   background: none;
   border: 0;
-  min-width: 44px;
+  min-width: 49px;
   color: #ffffff;
   display: inline-block;
-  height: 44px;
-  line-height: 44px;
+  height: 49px;
+  line-height: 49px;
   padding: 0 14px;
   font-size: 19.8px;
 }
@@ -3008,7 +3008,7 @@ textarea {
   cursor: pointer;
   background: none;
   border: 0;
-  min-height: 48.4px;
+  min-height: 53.9px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -3172,7 +3172,7 @@ textarea {
   background: #fff;
 }
 .drawer-top-header {
-  top: 44px;
+  top: 49px;
   left: 0;
   right: 0;
   z-index: 998;
@@ -3530,19 +3530,27 @@ textarea {
   color: #999;
 }
 .shopping-bar {
-  padding-left: 70px;
+  padding-left: 74px;
+  background: #fff;
 }
 .shopping-bar .shopping-info {
-  padding-top: 4px;
+  padding-top: 2px;
+}
+.shopping-bar .bar-price {
+  padding-top: 5px;
+  line-height: 18px;
+}
+.shopping-bar .bar-total {
+  line-height: 14px;
 }
 .shopping-bar .icon {
   position: absolute;
   left: 10px;
   bottom: 5px;
-  width: 50px;
-  height: 50px;
-  border-radius: 25px;
-  line-height: 50px;
+  width: 56px;
+  height: 56px;
+  border-radius: 28px;
+  line-height: 56px;
   color: #fff;
   border: 2px #fff solid;
   text-align: center;
@@ -3551,7 +3559,7 @@ textarea {
 }
 .shopping-bar .btn {
   border-radius: 0 !important;
-  font-size: 19.8px;
+  font-size: 18px;
   padding: 0.8em 1em;
 }
 .paycode {
@@ -3782,6 +3790,45 @@ textarea {
   border-radius: 5px;
   background: #444;
 }
+.product .product-img {
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.product .product-img .product-flag {
+  background: #f63333;
+  color: #fff;
+  padding: 2px 6px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 12px;
+}
+.product .product-title {
+  font-weight: normal;
+}
+.product .product-content {
+  font-size: 12px;
+  color: #999;
+}
+.product .product-tip {
+  background: #f63333;
+  color: #fff;
+  font-size: 12px;
+  padding: 1px 3px;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+.product .product-price {
+  font-size: 15px;
+}
+.product .price-unit {
+  font-size: 12px;
+  color: #999;
+}
+.product-single .product-img {
+  width: 80px;
+}
 .ad-container {
   width: 100%;
   height: 100%;
@@ -3808,7 +3855,7 @@ textarea {
 .ad-layout-header {
   width: 100%;
   padding-left: 144px;
-  height: 60px;
+  height: 50px;
   background: #fff;
   color: #fff;
 }
@@ -3833,7 +3880,7 @@ textarea {
   position: absolute;
   right: 0;
   left: 144px;
-  top: 60px;
+  top: 50px;
   bottom: 0;
   overflow-y: auto;
 }

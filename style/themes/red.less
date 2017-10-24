@@ -1,29 +1,5 @@
-//config
-@prefix: 					;
-@ratio:          1;
-@r:              @ratio;
-
-
-//font
-@font-family: 				Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;
-@font-family-icon:			iconfont;
-@font-size: 				  @ratio*14px;
-@font-size-sm: 				 @ratio*12px;
-@font-size-md:				 @ratio*16px;
-@font-size-lg:				 @ratio*22px;
-@font-color: 				 #565a5c;
-@font-color-light:			#999;
-@line-height: 				1.5;
-@radius:					  @ratio*2px;
-
-//padding
-@padding-vertical:		@font-size;
-@padding-horizon:			@font-size;
-@margin-vertical:			@font-size;
-@margin-horizon:			@font-size;
-
 //color
-@color-primary: 			#f63333;//#6699FF;
+@color-primary: 			#f63333; //#6699FF;
 @color-secondary:			#f2f2f2;
 @color-light:			    #f9f9f9;
 @color-highlight: 			#f63333;
@@ -33,100 +9,10 @@
 @line-color: 				    #d4d4d4;
 @line-color-light: 			#eee;
 
-//link color
-@link-color:				@font-color;
-@link-color-active:			@color-primary;
-@link-color-hover:			@color-primary;
-
-
-//global header for mobile
-@header-height:				 @ratio*60px;
-@header-background: 		@color-primary;
-@header-color:				#fff;
-@header-color-hover:		darken(@color-primary, 10%);
-
-@header-background-light:	#fff;
-@header-color-light:		#444;
-@header-color-hover-light:	darken(@color-primary, 10%);
-
-//global sidebar menu
-@sidebar-width: 			 @ratio*200px;
-@sidebar-background:	@color-primary;
-@sidebar-tab-color:			lighten(@sidebar-background, 50%);
-@sidebar-tab-color-flag:	lighten(@sidebar-background, 38%);
-@sidebar-mini-width: 		 @ratio*64px;//侧栏缩放时宽度
-@sidebar-item-height:  @ratio*50px;//侧栏单个菜单高度
-
-//hover tip
-@tip-padding: 				 @ratio*1px  @ratio*4px;
-@tip-background: 			#444;
-@tip-color: 				#fff;
-@tip-height: 				 @ratio*20px;
-@tip-offset: 				 @ratio*15px;
-
-//input
-@input-padding:				 @ratio*9px  @ratio*10px;//@btn-padding;
-@input-padding-lg:			 @ratio*11px  @ratio*10px;//@btn-padding-lg;
-@input-padding-sm: 			 @ratio*6px  @ratio*10px;
-@input-padding-tiny: 		 @ratio*3px  @ratio*8px;
-@input-shadow-color:		lighten(@color-primary, 15%);
-@input-shadow-color-wrong:	lighten(@color-highlight, 15%);
-@input-shadow-color-pass:	lighten(@color-comfort, 15%);
-
-@input-height:				 @ratio*39px;
-@input-height-lg:			 @ratio*46px;
-@input-height-sm: 			 @ratio*33px;
-@input-height-tiny: 		 @ratio*27px;
-
-
-
-//buttons
-@btn-padding-tiny:		 @ratio*2px  @ratio*6px;
-@btn-padding-sm:			 @ratio*5px  @ratio*10px;
-@btn-padding:				   @ratio*8px  @ratio*12px;
-@btn-padding-lg:			 @ratio*10px  @ratio*16px;
-
-@btn-fontsize-sm:			@font-size;
-@btn-fontsize:				@font-size;
-@btn-fontsize-lg:			@font-size-md;
-
-@btn-background:			@color-secondary;
-@btn-background-primary:	@color-primary;
-@btn-background-warm:		@color-highlight;
-@btn-background-comfort: 	@color-comfort;
-
-
-@btn-color:					@font-color;
-@btn-color-primary:			#fff;
-@btn-color-warm:			#fff;
-@btn-color-comfort: 		#fff;
-
-@btn-color-light:			#fff;//深色背景按钮线条色
-
-
-//tabs
-@tabs-horizon-height: 		 @ratio*44px;
-
-//global header for mobile
-@header-height:				 @ratio*44px;
-
-//dialog
-@dialog-width-pc:        @ratio*300px;
-@dialog-width :       80%;
-
-//switch
-@switch-width-tag:   @r*60px;
-@switch-width:       @r*50px;
-@switch-height:      @r*30px;
-
-
-//admin grid
-@ad-header-height:			60px;
-@ad-sidebar-width:			144px;
-@ad-sidebar-background:		#34495E;
-
 //font settings
-@font-input-wrong: '\e72a';
-@font-input-pass: '\e730';
-@font-list-arrow: '\e660';
+@font-input-wrong: '\e6e4';
+@font-input-pass: '\e656';
 @font-unchecked: '\e6d7';
+@font-list-arrow: '\e660';
+
+@import 'common.less';

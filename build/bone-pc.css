@@ -132,7 +132,7 @@ textarea {
   color: #ced1db !important;
 }
 .sidebar-menu .menu-item {
-  height: 50px;
+  min-height: 50px;
   line-height: 50px;
   position: relative;
   text-align: left;
@@ -140,6 +140,12 @@ textarea {
   font-size: 16px;
   color: #fff;
   cursor: pointer;
+}
+.sidebar-menu .menu-item .tip {
+  line-height: 1em;
+  margin-top: -10px;
+  padding-bottom: 15px;
+  font-size: 13px;
 }
 .sidebar-menu .menu-item-current {
   position: relative;
@@ -169,8 +175,14 @@ textarea {
   color: #b6becc;
 }
 .sidebar-menu-sm .menu-item {
-  height: 35px;
+  min-height: 35px;
   line-height: 35px;
+}
+.sidebar-menu-sm .menu-item .tip {
+  line-height: 1em;
+  margin-top: -5px;
+  padding-bottom: 10px;
+  font-size: 13px;
 }
 .sidebar-menu-sm .menu-item-icon {
   padding-left: 35px !important;
@@ -1407,6 +1419,23 @@ textarea {
 .label-lg {
   font-size: 17px;
 }
+. {
+  /*
+	&has-icon{
+		position: relative;
+		&>i{
+			color: @font-color-light;
+			position: absolute;
+			right: @padding-horizon;
+			top:50%;
+			font-family: @font-family-icon;
+			font-size: @font-size-lg;
+			height: 1em;
+      line-height: 1em;
+      margin-top: -0.5em;
+		}
+	}*/
+}
 .form-control {
   width: 100%;
 }
@@ -1461,20 +1490,6 @@ textarea {
   padding: 3px 8px;
   height: 27px;
 }
-.has-icon {
-  position: relative;
-}
-.has-icon > i {
-  color: #999;
-  position: absolute;
-  right: 0.4em;
-  top: 50%;
-  font-family: iconfont;
-  font-size: 20px;
-  height: 1em;
-  line-height: 1em;
-  margin-top: -0.5em;
-}
 .be-wrong,
 .be-pass,
 .be-loading {
@@ -1484,7 +1499,7 @@ textarea {
 .be-pass:after,
 .be-loading:after {
   position: absolute;
-  right: 0.4em;
+  right: 14px;
   top: 50%;
   font-family: iconfont;
   font-size: 20px;
@@ -1551,8 +1566,9 @@ textarea {
   position: relative;
 }
 .has-icon i {
+  color: #999;
   position: absolute;
-  right: 0.4em;
+  right: 14px;
   top: 50%;
   font-family: iconfont;
   font-size: 20px;

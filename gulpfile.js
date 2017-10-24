@@ -10,117 +10,40 @@ var rev				= require('gulp-rev');
 var browserSync = require('browser-sync').create();
 var reload      = browserSync.reload;
 
+
+function build(src) {
+	gulp.src(src)
+		.pipe(less())
+		.on('error', function(err) {
+			gutil.log('Less Error!', err.message);
+			this.end();
+		})
+		//.pipe(rev())
+		.pipe(autoprefixer())
+		//.pipe(minifyCSS())
+		.pipe(gulp.dest('./build'))
+		.pipe(reload({stream: true}));
+}
+
+var source = [
+	// default light blue
+	'./style/bone.less',
+	'./style/bone-page.less',
+	// dark blue
+	'./style/bone-darkblue.less',
+	// red
+	'./style/bone-red.less',
+	// yellow
+	'./style/bone-yellow.less',
+	// r
+	'./style/mobile/r.less'
+]
+
 gulp.task('css', function(){
 	watch('./style/**/*.less', function(){
-		gulp.src('./style/bone-all.less')
-			.pipe(less())
-			.on('error', function(err) {
-				gutil.log('Less Error!', err.message);
-				this.end();
-			})
-			//.pipe(rev())
-			.pipe(autoprefixer())
-			//.pipe(minifyCSS())
-			.pipe(gulp.dest('./build'))
-			.pipe(reload({stream: true}));
-
-
-		gulp.src('./style/bone-page-mobile.less')
-			.pipe(less())
-			.on('error', function(err) {
-				gutil.log('Less Error!', err.message);
-				this.end();
-			})
-			//.pipe(rev())
-			.pipe(autoprefixer())
-			//.pipe(minifyCSS())
-			.pipe(gulp.dest('./build'))
-			.pipe(reload({stream: true}));
-
-		gulp.src('./style/bone-page-mobile-x2.less')
-			.pipe(less())
-			.on('error', function(err) {
-				gutil.log('Less Error!', err.message);
-				this.end();
-			})
-			//.pipe(rev())
-			.pipe(autoprefixer())
-			//.pipe(minifyCSS())
-			.pipe(gulp.dest('./build'))
-			.pipe(reload({stream: true}));
-
-
-		gulp.src('./style/bone-pc.less')
-			.pipe(less())
-			.on('error', function(err) {
-				gutil.log('Less Error!', err.message);
-				this.end();
-			})
-			//.pipe(rev())
-			.pipe(autoprefixer())
-			//.pipe(minifyCSS())
-			.pipe(gulp.dest('./build'))
-
-		gulp.src('./style/bone-mobile.less')
-			.pipe(less())
-			.on('error', function(err) {
-				gutil.log('Less Error!', err.message);
-				this.end();
-			})
-			//.pipe(rev())
-			.pipe(autoprefixer())
-			//.pipe(minifyCSS())
-			.pipe(gulp.dest('./build'))
-
-
-		gulp.src('./style/bone-mobile-red.less')
-			.pipe(less())
-			.on('error', function(err) {
-				gutil.log('Less Error!', err.message);
-				this.end();
-			})
-			//.pipe(rev())
-			.pipe(autoprefixer())
-			//.pipe(minifyCSS())
-			.pipe(gulp.dest('./build'))
-
-
-
-		gulp.src('./style/bone-mobile-x2.less')
-			.pipe(less())
-			.on('error', function(err) {
-				gutil.log('Less Error!', err.message);
-				this.end();
-			})
-			//.pipe(rev())
-			.pipe(autoprefixer())
-			//.pipe(minifyCSS())
-			.pipe(gulp.dest('./build'))
-
-
-
-			gulp.src('./style/mobile/r.less')
-				.pipe(less())
-				.on('error', function(err) {
-					gutil.log('Less Error!', err.message);
-					this.end();
-				})
-				//.pipe(rev())
-				.pipe(autoprefixer())
-				//.pipe(minifyCSS())
-				.pipe(gulp.dest('./build'))
-
-
-			gulp.src('./style/bone-all-darkblue.less')
-				.pipe(less())
-				.on('error', function(err) {
-					gutil.log('Less Error!', err.message);
-					this.end();
-				})
-				//.pipe(rev())
-				.pipe(autoprefixer())
-				//.pipe(minifyCSS())
-				.pipe(gulp.dest('./build'))
+		source.forEach(item => {
+			build(item)
+		})
 	});
 });
 
@@ -128,7 +51,7 @@ gulp.task('html', function(){
 	gulp.watch("demos/**/*.html").on('change', reload);
 })
 
-// 静态服务器
+// dev server
 gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
