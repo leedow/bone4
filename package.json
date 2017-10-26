@@ -1,6 +1,6 @@
 {
   "name": "bone4-ui",
-  "version": "0.0.4",
+  "version": "0.0.7",
   "description": "UI Framework for mobile web app",
   "main": "style/bone-all.less",
   "scripts": {

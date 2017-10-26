@@ -43,7 +43,7 @@ a {
   transition: all ease-in-out 0.4s !important;
 }
 a:hover {
-  color: #FFD200;
+  color: #FF6633;
   outline: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -88,7 +88,7 @@ textarea {
   top: 0;
   width: 12px;
   height: 12px;
-  border: 2px #FFD200 solid;
+  border: 2px #FF6633 solid;
   background: #fff;
   border-radius: 6px;
 }
@@ -184,7 +184,7 @@ textarea {
   background: #66CC33;
 }
 .sidebar-menu {
-  background: #FFD200;
+  background: #FF6633;
   -webkit-transition: width ease-in-out 0.4s !important;
   transition: width ease-in-out 0.4s !important;
 }
@@ -225,7 +225,7 @@ textarea {
 }
 .sidebar-menu .menu-item-current {
   position: relative;
-  background: #ffdb33;
+  background: #ff8c66;
   color: #ffffff;
 }
 .sidebar-menu .menu-item-current:after {
@@ -242,7 +242,7 @@ textarea {
   border-right-color: #fff;
 }
 .sidebar-menu .menu-item-current i {
-  color: #FFD200;
+  color: #FF6633;
 }
 .sidebar-menu a {
   height: 100%;
@@ -299,7 +299,7 @@ textarea {
   display: none;
 }
 .sidebar-menu-white .menu-item-current i {
-  color: #FFD200;
+  color: #FF6633;
 }
 .sidebar-menu-light {
   background: none;
@@ -311,15 +311,15 @@ textarea {
   color: #999 !important;
 }
 .sidebar-menu-light .menu-item-current {
-  border-left: 2px #FFD200 solid;
+  border-left: 2px #FF6633 solid;
   background: #fff;
-  color: #FFD200 !important;
+  color: #FF6633 !important;
 }
 .sidebar-menu-light .menu-item-current:after {
   display: none;
 }
 .sidebar-menu-light .menu-item-current i {
-  color: #FFD200 !important;
+  color: #FF6633 !important;
 }
 .sidebar-menu-curl {
   width: 50px !important;
@@ -1403,12 +1403,12 @@ textarea {
 .input:focus,
 .select:focus {
   outline: none;
-  border: 1px #FFD200 solid;
+  border: 1px #FF6633 solid;
 }
 .textarea:hover,
 .input:hover,
 .select:hover {
-  border: 1px #FFD200 solid;
+  border: 1px #FF6633 solid;
 }
 .readonly {
   background: #f9f9f9;
@@ -1560,11 +1560,11 @@ textarea {
 }
 .btn-primary {
   color: #fff;
-  background: #FFD200;
-  border: 1px #FFD200 solid;
+  background: #FF6633;
+  border: 1px #FF6633 solid;
 }
 .btn-primary:hover {
-  background: #c7a400;
+  background: #fa3e00;
   color: #fff;
 }
 .btn-warm {
@@ -1595,12 +1595,12 @@ textarea {
   color: #565a5c;
 }
 .btn-primary-blank {
-  color: #FFD200;
-  border: 1px #FFD200 solid;
+  color: #FF6633;
+  border: 1px #FF6633 solid;
   background: none;
 }
 .btn-primary-blank:hover {
-  background: #FFD200;
+  background: #FF6633;
   color: #fff;
 }
 .btn-warm-blank {
@@ -1635,7 +1635,7 @@ textarea {
 .btn-icon-primary {
   border: 0;
   background: none;
-  color: #FFD200;
+  color: #FF6633;
   font-size: 26.4px;
 }
 .btn-tiny {
@@ -1880,22 +1880,22 @@ textarea {
   cursor: pointer;
 }
 .tabs-horizon .tabs-item-current {
-  border-bottom: 4px #FFD200 solid;
-  color: #FFD200 !important;
+  border-bottom: 4px #FF6633 solid;
+  color: #FF6633 !important;
 }
 .tabs-horizon-dark {
-  background: #FFD200 !important;
+  background: #FF6633 !important;
 }
 .tabs-horizon-dark .tabs-item {
   color: #fff;
 }
 .tabs-horizon-dark .tabs-item-current {
-  border-bottom: 4px #ffe466 solid;
+  border-bottom: 4px #ffb399 solid;
   color: #fff !important;
 }
 .tabs-group {
   display: inline-block;
-  border: 1px #FFD200 solid;
+  border: 1px #FF6633 solid;
   border-radius: 2px;
 }
 .tabs-group .tabs-item {
@@ -1904,7 +1904,7 @@ textarea {
   border-radius: 0 !important;
 }
 .tabs-group .tabs-item-current {
-  background: #FFD200;
+  background: #FF6633;
   color: #fff;
 }
 .tabs-group-dark {
@@ -2054,7 +2054,7 @@ textarea {
   }
 }
 .font-primary {
-  color: #FFD200;
+  color: #FF6633;
 }
 .font-light {
   color: #999;
@@ -2078,10 +2078,10 @@ textarea {
   font-size: 18px !important;
 }
 .color-primary {
-  color: #FFD200;
+  color: #FF6633;
 }
 .color-primary-light {
-  color: #ffe466;
+  color: #ffb399;
 }
 .color-highlight {
   color: #F70000;
@@ -2093,7 +2093,7 @@ textarea {
   color: #999;
 }
 .bg-primary {
-  background: #FFD200;
+  background: #FF6633;
 }
 .bg-highlight {
   background: #F70000;
@@ -2263,7 +2263,7 @@ textarea {
   top: 0;
 }
 .form-code .form-code-btn button {
-  color: #FFD200;
+  color: #FF6633;
   background: none;
   border: 0;
 }
@@ -2316,7 +2316,7 @@ textarea {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  color: #FFD200;
+  color: #FF6633;
 }
 .dialog-layout .dialog .dialog-buttons .button-no {
   -webkit-box-flex: 1;
@@ -2383,7 +2383,7 @@ textarea {
   border-bottom: 1px #eee solid;
 }
 .card-primary {
-  border-left: 4px #FFD200 solid;
+  border-left: 4px #FF6633 solid;
 }
 .card-highlight {
   border-left: 4px #F70000 solid;
@@ -2479,7 +2479,7 @@ textarea {
   color: #444;
 }
 .user-box {
-  background: #FFD200;
+  background: #FF6633;
 }
 .user-info {
   display: -webkit-box;
@@ -2716,7 +2716,7 @@ textarea {
 }
 .header .header-dock a:hover,
 .header .header-dock button:hover {
-  background: #e6bd00;
+  background: #ff5319;
 }
 .header .header-dock a i,
 .header .header-dock button i {
@@ -2733,7 +2733,7 @@ textarea {
   background: #F70000;
 }
 .header {
-  background: #FFD200;
+  background: #FF6633;
   color: #fff;
 }
 .header-light {
@@ -2748,7 +2748,7 @@ textarea {
 .header-light .header-dock a:hover,
 .header-light .header-dock button:hover {
   background: none;
-  color: #FFD200;
+  color: #FF6633;
 }
 .header-opacity {
   background: none;
@@ -2875,10 +2875,10 @@ textarea {
   font-size: 30.8px;
 }
 .menu-current .menu-pic {
-  color: #FFD200 !important;
+  color: #FF6633 !important;
 }
 .menu-current .menu-title {
-  color: #FFD200 !important;
+  color: #FF6633 !important;
 }
 .menu-card {
   text-align: left;
@@ -3017,7 +3017,7 @@ textarea {
   text-align: center;
   padding-right: 14px;
   padding-left: 5.6px;
-  color: #FFD200;
+  color: #FF6633;
   font-size: 22px;
   line-height: 1em;
 }
@@ -3149,7 +3149,7 @@ textarea {
   border-radius: 5px;
 }
 .stars-circle .star-check {
-  background: #FFD200;
+  background: #FF6633;
 }
 .drawer {
   position: fixed;
@@ -3341,8 +3341,8 @@ textarea {
   padding-right: 1px;
 }
 .switch-on {
-  background: #FFD200;
-  border: 1px #FFD200 solid;
+  background: #FF6633;
+  border: 1px #FF6633 solid;
 }
 .switch-on .off {
   display: none;
@@ -3482,13 +3482,13 @@ textarea {
 .number button {
   cursor: pointer;
   line-height: 27px;
-  color: #FFD200;
+  color: #FF6633;
 }
 .number button i {
   line-height: 27px;
 }
 .number .number-btn-active {
-  color: #FFD200;
+  color: #FF6633;
 }
 .number .number-btn-hidden,
 .number .number-input-hidden {
@@ -3519,7 +3519,7 @@ textarea {
   line-height: 2em;
 }
 .calendar .active {
-  background: #FFD200;
+  background: #FF6633;
   color: #fff;
 }
 .calendar .unactive {
@@ -3555,7 +3555,7 @@ textarea {
   border: 2px #fff solid;
   text-align: center;
   font-size: 22px;
-  background: #FFD200;
+  background: #FF6633;
 }
 .shopping-bar .btn {
   border-radius: 0 !important;
@@ -3651,7 +3651,7 @@ textarea {
   overflow-y: auto;
 }
 .selector .selector-list .selected {
-  color: #FFD200;
+  color: #FF6633;
   font-weight: bold;
 }
 .selector .selector-list li {
@@ -3682,7 +3682,7 @@ textarea {
   margin-top: -0.5em;
 }
 .selector-check .selector-list .selected:after {
-  color: #FFD200 !important;
+  color: #FF6633 !important;
   content: '\e656' !important;
 }
 .selector-underline .selector-list li {
@@ -3796,7 +3796,7 @@ textarea {
   position: relative;
 }
 .product .product-img .product-flag {
-  background: #FFD200;
+  background: #FF6633;
   color: #fff;
   padding: 2px 6px;
   position: absolute;
@@ -3812,7 +3812,7 @@ textarea {
   color: #999;
 }
 .product .product-tip {
-  background: #FFD200;
+  background: #FF6633;
   color: #fff;
   font-size: 12px;
   padding: 1px 3px;
@@ -3867,7 +3867,7 @@ textarea {
 .ad-layout-sidebar {
   width: 144px;
   color: #fff;
-  background: #FFD200;
+  background: #FF6633;
 }
 .ad-sidebar-fixed {
   position: absolute;
