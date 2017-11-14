@@ -1,16 +1,21 @@
-.br {
+.br,
+.border-right {
   border-right: 1px #eee solid;
 }
-.bl {
+.bl,
+.border-left {
   border-left: 1px #eee solid;
 }
-.bt {
+.bt,
+.border-top {
   border-top: 1px #eee solid;
 }
-.bb {
+.bb,
+.border-bottom {
   border-bottom: 1px #eee solid;
 }
-.ba {
+.ba,
+.border-all {
   border-top: 1px #eee solid;
   border-bottom: 1px #eee solid;
   border-left: 1px #eee solid;
@@ -24,15 +29,76 @@
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  .ba {
-    /*
-    background-image:linear-gradient(180deg, red, red 50%, transparent 50%),
-    linear-gradient(270deg, red, red 50%, transparent 50%),
-    linear-gradient(0deg, red, red 50%, transparent 50%),
-    linear-gradient(90deg, red, red 50%, transparent 50%);
-    background-size: 100% 1px,1px 100% ,100% 1px, 1px 100%;
-    background-repeat: no-repeat;
-    background-position: top, right top,  bottom, left top;*/
+  .border-top,
+  .border-bottom,
+  .border-left,
+  .border-right {
+    border-top: 0 !important;
+  }
+  .border-top {
+    position: relative;
+  }
+  .border-top:before {
+    content: " ";
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    height: 1px;
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+    border-top: 1px solid #d9d9d9;
+    -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5);
+  }
+  .border-left {
+    position: relative;
+  }
+  .border-left:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    -webkit-transform-origin: 100% 0;
+            transform-origin: 100% 0;
+    border-left: 1px solid #d9d9d9;
+    -webkit-transform: scaleX(0.5);
+            transform: scaleX(0.5);
+  }
+  .border-right {
+    position: relative;
+    border-right: 0px !important;
+  }
+  .border-right:after {
+    content: " ";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    -webkit-transform-origin: 100% 0;
+            transform-origin: 100% 0;
+    border-right: 1px solid #d9d9d9;
+    -webkit-transform: scaleX(0.5);
+            transform: scaleX(0.5);
+  }
+  .border-bottom {
+    position: relative;
+  }
+  .border-bottom:after {
+    content: " ";
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+    border-top: 1px solid #d9d9d9;
+    -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5);
   }
   .rbt,
   .bor-top,

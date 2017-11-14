@@ -1,28 +1,26 @@
 @line-color-light: #eee;
-.br{
+.br, .border-right{
     border-right: 1px @line-color-light solid;
 }
 
-.bl{
+.bl, .border-left{
     border-left: 1px @line-color-light solid;
 }
 
-.bt{
+.bt, .border-top{
   border-top: 1px @line-color-light solid;
 }
 
-.bb{
+.bb, .border-bottom{
     border-bottom: 1px @line-color-light solid;
 }
 
-.ba{
+.ba, .border-all{
     border-top: 1px @line-color-light solid;
     border-bottom: 1px @line-color-light solid;
     border-left: 1px @line-color-light solid;
     border-right: 1px @line-color-light solid;
-
 }
-
 
 .rbb{
   border-bottom: 0px !important;
@@ -34,17 +32,70 @@
 
 @media screen and (-webkit-min-device-pixel-ratio:2){
 
-  .ba{
-    //border: 0px !important;
-    //box-shadow: 0 0 1px @line-color-light;
-    /*
-    background-image:linear-gradient(180deg, red, red 50%, transparent 50%),
-    linear-gradient(270deg, red, red 50%, transparent 50%),
-    linear-gradient(0deg, red, red 50%, transparent 50%),
-    linear-gradient(90deg, red, red 50%, transparent 50%);
-    background-size: 100% 1px,1px 100% ,100% 1px, 1px 100%;
-    background-repeat: no-repeat;
-    background-position: top, right top,  bottom, left top;*/
+  .border-top, .border-bottom, .border-left, .border-right{
+    border: 0 !important;
+    box-sizing: border-box;
+  }
+
+  .border-top{
+    position: relative;
+    &:before{
+      content: " ";
+      position: absolute;
+      right:0;
+      left:0;
+      top:0;
+      height:1px;
+      transform-origin: 0 0;
+      border-top:1px solid @line-color;
+      transform: scaleY(0.5);
+    }
+  }
+
+  .border-left{
+    position: relative;
+    &:after{
+      content: " ";
+      position: absolute;
+      left:0;
+      top:0;
+      bottom:0;
+      width:1px;
+      transform-origin: 100% 0;
+      border-left:1px solid @line-color;
+      transform: scaleX(0.5);
+    }
+  }
+
+  .border-right{
+    position: relative;
+    border-right:0px !important;
+    &:after{
+      content: " ";
+      position: absolute;
+      right:0;
+      top:0;
+      bottom:0;
+      width:1px;
+      transform-origin: 100% 0;
+      border-right:1px solid @line-color;
+      transform: scaleX(0.5);
+    }
+  }
+
+  .border-bottom{
+    position: relative;
+    &:before{
+      content: " ";
+      position: absolute;
+      right:0;
+      left:0;
+      bottom:0;
+      height:1px;
+      transform-origin: 0 100%;
+      border-bottom:1px solid @line-color;
+      transform: scaleY(0.5);
+    }
   }
 
   .br{

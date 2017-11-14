@@ -21,7 +21,6 @@
   .product-title{
     font-weight: normal;
     line-height: 1.2em;
-    height: 22px;
     font-size: 15px !important;
     padding-bottom: 0.2em;
     width: 100%;
@@ -33,7 +32,8 @@
   }
 
   .product-info{
-    min-height: 26px;
+    min-height: 80px;
+
   }
 
   .product-tip{
@@ -60,5 +60,23 @@
 .product-single{
   .product-img{
     width: 80px;
+  }
+  .product-title{
+
+    min-height: 26px;
+
+  }
+
+  .product-info{
+    min-height: 80px;
+    position:relative;
+    padding-bottom: 30px;
+
+    .product-dock{
+      position: absolute;
+      left:0;
+      bottom:0;
+      right:0;
+    }
   }
 }

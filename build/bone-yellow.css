@@ -1097,16 +1097,16 @@ textarea {
   }
 }
 .p1111 {
-  padding: 7px 7px;
+  padding: 5px 7px;
 }
 .p0111 {
-  padding: 0 7px 7px 7px;
+  padding: 0 7px 5px 7px;
 }
 .p1000 {
-  padding-top: 7px !important;
+  padding-top: 5px !important;
 }
 .p0010 {
-  padding-bottom: 7px !important;
+  padding-bottom: 5px !important;
 }
 .p0100 {
   padding-right: 7px !important;
@@ -1115,31 +1115,31 @@ textarea {
   padding-left: 7px !important;
 }
 .p1010 {
-  padding: 7px 0;
+  padding: 5px 0;
 }
 .p0101 {
   padding: 0 7px;
 }
 .p1101 {
-  padding: 7px 7px 0 7px;
+  padding: 5px 7px 0 5px;
 }
 .p1001 {
-  padding: 7px 0 0 7px;
+  padding: 5px 0 0 5px;
 }
 .p0110 {
-  padding: 0 7px 7px 0;
+  padding: 0 7px 5px 0;
 }
 .p2222 {
-  padding: 14px 14px;
+  padding: 10px 14px;
 }
 .p0222 {
-  padding: 0 14px 14px 14px;
+  padding: 0 14px 10px 14px;
 }
 .p2000 {
-  padding-top: 14px !important;
+  padding-top: 10px !important;
 }
 .p0020 {
-  padding-bottom: 14px !important;
+  padding-bottom: 10px !important;
 }
 .p0200 {
   padding-right: 14px !important;
@@ -1148,7 +1148,7 @@ textarea {
   padding-left: 14px !important;
 }
 .p2020 {
-  padding: 14px 0;
+  padding: 10px 0;
 }
 .p0202 {
   padding: 0 14px;
@@ -1157,19 +1157,19 @@ textarea {
   padding: 0 14px;
 }
 .p2202 {
-  padding: 14px 14px 0 14px;
+  padding: 10px 14px 0 10px;
 }
 .p2002 {
-  padding: 14px 0 0 14px;
+  padding: 10px 0 0 10px;
 }
 .p0220 {
-  padding: 0 14px 14px 0;
+  padding: 0 14px 10px 0;
 }
 .p3000 {
-  padding-top: 28px !important;
+  padding-top: 20px !important;
 }
 .p0030 {
-  padding-bottom: 28px !important;
+  padding-bottom: 20px !important;
 }
 .p0300 {
   padding-right: 28px !important;
@@ -1178,19 +1178,19 @@ textarea {
   padding-left: 28px !important;
 }
 .p3333 {
-  padding: 28px 28px;
+  padding: 20px 28px;
 }
 .m1111 {
-  margin: 7px 7px;
+  margin: 5px 7px;
 }
 .m0111 {
-  margin: 0 7px 7px 7px;
+  margin: 0 7px 5px 7px;
 }
 .m1000 {
-  margin-top: 7px;
+  margin-top: 5px;
 }
 .m0010 {
-  margin-bottom: 7px;
+  margin-bottom: 5px;
 }
 .m0100 {
   margin-right: 7px;
@@ -1199,31 +1199,31 @@ textarea {
   margin-left: 7px;
 }
 .m1010 {
-  margin: 7px 0;
+  margin: 5px 0;
 }
 .m0101 {
   margin: 0 7px;
 }
 .m1101 {
-  margin: 7px 7px 0 7px;
+  margin: 5px 7px 0 5px;
 }
 .m1001 {
-  margin: 7px 0 0 7px;
+  margin: 5px 0 0 5px;
 }
 .m0110 {
-  margin: 0 7px 7px 0;
+  margin: 0 7px 5px 0;
 }
 .m2222 {
-  margin: 14px 14px;
+  margin: 10px 14px;
 }
 .m0222 {
-  margin: 0 14px 14px 14px;
+  margin: 0 14px 10px 14px;
 }
 .m2000 {
-  margin-top: 14px;
+  margin-top: 10px;
 }
 .m0020 {
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 .m0200 {
   margin-right: 14px;
@@ -1232,25 +1232,25 @@ textarea {
   margin-left: 14px;
 }
 .m2020 {
-  margin: 14px 0;
+  margin: 10px 0;
 }
 .m0202 {
   margin: 0 14px;
 }
 .m2202 {
-  margin: 14px 14px 0 14px;
+  margin: 10px 14px 0 10px;
 }
 .m2002 {
-  margin: 14px 0 0 14px;
+  margin: 10px 0 0 10px;
 }
 .m0220 {
-  margin: 0 14px 14px 0;
+  margin: 0 14px 10px 0;
 }
 .m3000 {
-  margin-top: 28px;
+  margin-top: 20px;
 }
 .m0030 {
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 .m0300 {
   margin-right: 28px;
@@ -1259,7 +1259,7 @@ textarea {
   margin-left: 28px;
 }
 .m3333 {
-  margin: 28px 28px;
+  margin: 20px 28px;
 }
 .notice {
   padding: 0.5em 1em;
@@ -1347,7 +1347,7 @@ textarea {
   font-size: 22px !important;
 }
 .f-md {
-  font-size: 18px !important;
+  font-size: 16px !important;
 }
 .f-sm {
   font-size: 12px !important;
@@ -1366,7 +1366,7 @@ textarea {
   outline: none;
 }
 .label-lg {
-  font-size: 18px;
+  font-size: 16px;
 }
 . {
   /*
@@ -1427,7 +1427,7 @@ textarea {
 .select-lg {
   padding: 11px 10px;
   height: 46px;
-  font-size: 18px;
+  font-size: 16px;
 }
 .input-sm,
 .select-sm {
@@ -1645,11 +1645,11 @@ textarea {
   padding: 5px 10px;
 }
 .btn-sm-icon {
-  font-size: 18px;
+  font-size: 16px;
 }
 .btn-lg {
   padding: 13px 16px;
-  font-size: 18px;
+  font-size: 16px;
 }
 .btn-lg-icon {
   font-size: 22px;
@@ -1664,7 +1664,7 @@ textarea {
   border-collapse: collapse;
 }
 .table th {
-  padding: 8.4px 14px;
+  padding: 8.4px 10px;
   font-size: 14px;
   line-height: 1.6em;
   white-space: nowrap;
@@ -1672,7 +1672,7 @@ textarea {
   font-weight: normal;
 }
 .table td {
-  padding: 8.4px 14px;
+  padding: 8.4px 10px;
   line-height: 1.6em;
 }
 .table-underline th,
@@ -1724,7 +1724,7 @@ textarea {
   border: 1px #eee solid;
 }
 .markdown table th {
-  padding: 8.4px 14px;
+  padding: 8.4px 10px;
   font-size: 14px;
   line-height: 1.6em;
   white-space: nowrap;
@@ -1732,7 +1732,7 @@ textarea {
   font-weight: normal;
 }
 .markdown table td {
-  padding: 8.4px 14px;
+  padding: 8.4px 10px;
   line-height: 1.6em;
 }
 .markdown table th {
@@ -1856,10 +1856,10 @@ textarea {
 .form-lg .select {
   padding: 11px 10px;
   height: 46px;
-  font-size: 18px;
+  font-size: 16px;
 }
 .form-lg label {
-  font-size: 18px;
+  font-size: 16px;
 }
 .tabs-horizon {
   height: 44px;
@@ -1867,7 +1867,7 @@ textarea {
 }
 .tabs-horizon .tabs-item {
   display: inline-block;
-  font-size: 18px;
+  font-size: 16px;
   height: 44px;
   line-height: 44px;
   text-align: center;
@@ -2075,7 +2075,7 @@ textarea {
   font-size: 12px !important;
 }
 .font-md {
-  font-size: 18px !important;
+  font-size: 16px !important;
 }
 .color-primary {
   color: #ff5616;
@@ -2108,7 +2108,7 @@ textarea {
 .statistics .statistics-item {
   display: inline-block;
   line-height: 1.2em !important;
-  padding: 0 14px;
+  padding: 0 10px;
   border-right: 1px #eee solid;
 }
 .statistics .statistics-item .statistics-title {
@@ -2143,7 +2143,7 @@ textarea {
   padding: 0;
 }
 .statistics-full .statistics-item {
-  padding: 0.8em 14px;
+  padding: 0.8em 10px;
 }
 .tabs-horizon-flex {
   display: -webkit-box;
@@ -2291,8 +2291,8 @@ textarea {
   background: #fff;
 }
 .dialog-layout .dialog .dialog-content {
-  font-size: 18px;
-  padding: 14px;
+  font-size: 16px;
+  padding: 10px;
 }
 .dialog-layout .dialog .dialog-content p {
   color: #999;
@@ -2309,7 +2309,7 @@ textarea {
 .dialog-layout .dialog .dialog-buttons .button {
   background: none;
   border: 0;
-  font-size: 18px;
+  font-size: 16px;
   padding: 13px 16px;
 }
 .dialog-layout .dialog .dialog-buttons .button-ok {
@@ -2343,20 +2343,20 @@ textarea {
           align-items: center;
 }
 .card .card-header .card-title {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
-  padding: 0.6em 14px;
+  padding: 0.6em 10px;
   text-align: left;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 .card .card-header .card-addon {
-  padding-right: 14px;
+  padding-right: 10px;
   color: #999;
 }
 .card .card-content {
-  padding: 0.5em 14px;
+  padding: 0.5em 10px;
   text-align: left;
 }
 .card .card-footer {
@@ -2370,7 +2370,7 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0.5em 14px;
+  padding: 0.5em 10px;
   text-align: left;
 }
 .card .card-footer .card-footer-left {
@@ -2490,7 +2490,7 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 14px 14px;
+  padding: 10px 14px;
 }
 .user-info .user-avatar {
   line-height: 60px;
@@ -2523,7 +2523,7 @@ textarea {
       -ms-flex: 1;
           flex: 1;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   text-align: left;
   padding-left: 1.1em;
 }
@@ -2545,7 +2545,7 @@ textarea {
 .user-info2 .user-name {
   text-align: center;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
 }
 .user-info2 .user-phone {
   text-align: center;
@@ -2632,7 +2632,7 @@ textarea {
   padding-top: 98px;
 }
 .layout-has-bottom {
-  padding-top: 63px;
+  padding-top: 59px;
 }
 .layout-opacity,
 .layout-none {
@@ -2676,7 +2676,7 @@ textarea {
   height: 49px;
   text-align: center;
   position: relative;
-  font-size: 18.9px;
+  font-size: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2712,7 +2712,7 @@ textarea {
   height: 49px;
   line-height: 49px;
   padding: 0 14px;
-  font-size: 19.8px;
+  font-size: 17.6px;
 }
 .header .header-dock a:hover,
 .header .header-dock button:hover {
@@ -2898,7 +2898,7 @@ textarea {
   vertical-align: bottom;
 }
 .menu-card .menu-icon-title {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
 }
 .menu-card .menu-icon-note {
@@ -2906,7 +2906,7 @@ textarea {
   line-height: 1.2em;
 }
 .list-title {
-  padding: 7px 14px;
+  padding: 5px 14px;
   text-align: left;
   color: #888d90;
 }
@@ -3032,16 +3032,16 @@ textarea {
   text-align: center;
   padding-right: 14px;
   padding-left: 5.6px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1em;
 }
 .menu-vertical-item .menu-body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 11.2px 0;
+  padding: 8px 0;
   text-align: left;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.1em;
 }
 .menu-vertical-item .menu-dock {
@@ -3112,7 +3112,7 @@ textarea {
 .stars .score {
   line-height: 25px;
   float: left;
-  font-size: 18px;
+  font-size: 16px;
 }
 .stars-sm {
   height: 20px;
@@ -3270,7 +3270,7 @@ textarea {
   top: 50%;
   left: 50%;
   background: rgba(0, 0, 0, 0.7);
-  padding: 7px 14px;
+  padding: 5px 14px;
   border-radius: 6px;
   color: #fff;
   text-align: center;
@@ -3483,7 +3483,7 @@ textarea {
   padding-right: 0;
   height: 27px;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
 }
 .number button {
   cursor: pointer;
@@ -3565,7 +3565,7 @@ textarea {
 }
 .shopping-bar .btn {
   border-radius: 0 !important;
-  font-size: 18px;
+  font-size: 16px;
   padding: 0.8em 1em;
 }
 .paycode {
@@ -3585,19 +3585,24 @@ textarea {
 .paycode .paycode-content .paycode-body img {
   width: 50%;
 }
-.br {
+.br,
+.border-right {
   border-right: 1px #eee solid;
 }
-.bl {
+.bl,
+.border-left {
   border-left: 1px #eee solid;
 }
-.bt {
+.bt,
+.border-top {
   border-top: 1px #eee solid;
 }
-.bb {
+.bb,
+.border-bottom {
   border-bottom: 1px #eee solid;
 }
-.ba {
+.ba,
+.border-all {
   border-top: 1px #eee solid;
   border-bottom: 1px #eee solid;
   border-left: 1px #eee solid;
@@ -3611,15 +3616,77 @@ textarea {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  .ba {
-    /*
-    background-image:linear-gradient(180deg, red, red 50%, transparent 50%),
-    linear-gradient(270deg, red, red 50%, transparent 50%),
-    linear-gradient(0deg, red, red 50%, transparent 50%),
-    linear-gradient(90deg, red, red 50%, transparent 50%);
-    background-size: 100% 1px,1px 100% ,100% 1px, 1px 100%;
-    background-repeat: no-repeat;
-    background-position: top, right top,  bottom, left top;*/
+  .border-top,
+  .border-bottom,
+  .border-left,
+  .border-right {
+    border: 0 !important;
+    box-sizing: border-box;
+  }
+  .border-top {
+    position: relative;
+  }
+  .border-top:before {
+    content: " ";
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    height: 1px;
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    border-top: 1px solid #d4d4d4;
+    -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5);
+  }
+  .border-left {
+    position: relative;
+  }
+  .border-left:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    -webkit-transform-origin: 100% 0;
+            transform-origin: 100% 0;
+    border-left: 1px solid #d4d4d4;
+    -webkit-transform: scaleX(0.5);
+            transform: scaleX(0.5);
+  }
+  .border-right {
+    position: relative;
+    border-right: 0px !important;
+  }
+  .border-right:after {
+    content: " ";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    -webkit-transform-origin: 100% 0;
+            transform-origin: 100% 0;
+    border-right: 1px solid #d4d4d4;
+    -webkit-transform: scaleX(0.5);
+            transform: scaleX(0.5);
+  }
+  .border-bottom {
+    position: relative;
+  }
+  .border-bottom:before {
+    content: " ";
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+    border-bottom: 1px solid #d4d4d4;
+    -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5);
   }
   .rbt,
   .bor-top,
@@ -3661,25 +3728,27 @@ textarea {
   font-weight: bold;
 }
 .selector .selector-list li {
-  padding: 0.2em 0;
   line-height: 1.5em;
-  font-size: 18px;
+  font-size: 16px;
 }
-.selector-check .selector-list {
+.selector-check .selector-list,
+.selector-check-right .selector-list {
   text-align: left;
 }
-.selector-check .selector-list li {
+.selector-check .selector-list li,
+.selector-check-right .selector-list li {
   position: relative;
   padding-left: 42px;
   font-weight: normal !important;
 }
 .selector-check .selector-list li:after,
-.selector-check .selector-list .selected:after {
+.selector-check-right .selector-list li:after,
+.selector-check .selector-list .selected:after,
+.selector-check-right .selector-list .selected:after {
   content: '\e6d7';
   color: #d4d4d4;
   text-align: left;
   position: absolute;
-  left: 0.4em;
   top: 50%;
   font-family: iconfont;
   font-size: 22px;
@@ -3687,9 +3756,50 @@ textarea {
   line-height: 1em;
   margin-top: -0.5em;
 }
-.selector-check .selector-list .selected:after {
+.selector-check .selector-list .selected:after,
+.selector-check-right .selector-list .selected:after {
   color: #ff5616 !important;
   content: '\e656' !important;
+}
+.selector-check .selector-list li:after,
+.selector-check .selector-list .selected:after {
+  left: 0.4em;
+}
+.selector-check-right .selector-list li {
+  padding-left: 0;
+}
+.selector-check-right .selector-list li:after,
+.selector-check-right .selector-list .selected:after {
+  right: 7px;
+}
+.selector-box .selector-title {
+  text-align: center;
+  padding: 0.5em 0;
+}
+.selector-box .selector-list {
+  overflow-y: auto;
+}
+.selector-box .selector-list .selected {
+  color: #ff5616;
+  font-weight: normal;
+  border: 1px #ff5616 solid;
+  position: relative;
+}
+.selector-box .selector-list .selected:after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: '';
+}
+.selector-box .selector-list li {
+  padding: 0 0.5em;
+  line-height: 2em;
+  border-radius: 4px;
+  font-size: 16px;
+  float: left;
+  border: 1px #d4d4d4 solid;
+  margin-right: 1em;
+  font-size: 14px;
 }
 .selector-underline .selector-list li {
   border-bottom: 0px !important;
@@ -3700,8 +3810,8 @@ textarea {
   border-bottom: 1px #eee solid;
 }
 .selector-lg .selector-list li {
-  padding-top: 0.8em ;
-  padding-bottom: 0.8em;
+  padding-top: 0.7em ;
+  padding-bottom: 0.7em;
 }
 .tip-box {
   position: relative;
@@ -3766,7 +3876,7 @@ textarea {
 }
 .keyboard .board-btn .del {
   background: #f7f7f7;
-  font-size: 18px;
+  font-size: 16px;
 }
 .keyboard .board-btn .none {
   background: #f7f7f7;
@@ -3813,7 +3923,6 @@ textarea {
 .product .product-title {
   font-weight: normal;
   line-height: 1.2em;
-  height: 22px;
   font-size: 15px !important;
   padding-bottom: 0.2em;
   width: 100%;
@@ -3823,7 +3932,7 @@ textarea {
   color: #999;
 }
 .product .product-info {
-  min-height: 26px;
+  min-height: 80px;
 }
 .product .product-tip {
   background: #ff5616;
@@ -3842,6 +3951,20 @@ textarea {
 }
 .product-single .product-img {
   width: 80px;
+}
+.product-single .product-title {
+  min-height: 26px;
+}
+.product-single .product-info {
+  min-height: 80px;
+  position: relative;
+  padding-bottom: 30px;
+}
+.product-single .product-info .product-dock {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 .ad-container {
   width: 100%;
@@ -3897,4 +4020,9 @@ textarea {
   top: 50px;
   bottom: 0;
   overflow-y: auto;
+}
+.grid .grid-item {
+  width: 33.33333%;
+  float: left;
+  border: 0px !important;
 }

@@ -35,6 +35,8 @@ var source = [
 	'./style/bone-red.less',
 	// yellow
 	'./style/bone-yellow.less',
+	// light green
+	'./style/bone-lightgreen.less',
 	// r
 	'./style/mobile/r.less'
 ]
@@ -53,11 +55,11 @@ gulp.task('html', function(){
 
 // dev server
 gulp.task('browser-sync', function() {
-    browserSync.init({
-        server: {
-            baseDir: "./"
-        }
-    });
+  browserSync.init({
+    server: {
+        baseDir: "./"
+    }
+  });
 });
 
 gulp.task('default', function(){
