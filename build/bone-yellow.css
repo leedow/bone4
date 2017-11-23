@@ -3538,6 +3538,7 @@ textarea {
 .shopping-bar {
   padding-left: 74px;
   background: #fff;
+  height: 50px;
 }
 .shopping-bar .shopping-info {
   padding-top: 2px;
@@ -3566,7 +3567,9 @@ textarea {
 .shopping-bar .btn {
   border-radius: 0 !important;
   font-size: 16px;
-  padding: 0.8em 1em;
+  padding: 0 1.4em;
+  height: 50px;
+  line-height: 50px;
 }
 .paycode {
   width: 80%;
@@ -3635,7 +3638,7 @@ textarea {
     height: 1px;
     -webkit-transform-origin: 0 0;
             transform-origin: 0 0;
-    border-top: 1px solid #d4d4d4;
+    border-top: 1px solid #eee;
     -webkit-transform: scaleY(0.5);
             transform: scaleY(0.5);
   }
@@ -3651,7 +3654,7 @@ textarea {
     width: 1px;
     -webkit-transform-origin: 100% 0;
             transform-origin: 100% 0;
-    border-left: 1px solid #d4d4d4;
+    border-left: 1px solid #eee;
     -webkit-transform: scaleX(0.5);
             transform: scaleX(0.5);
   }
@@ -3668,7 +3671,7 @@ textarea {
     width: 1px;
     -webkit-transform-origin: 100% 0;
             transform-origin: 100% 0;
-    border-right: 1px solid #d4d4d4;
+    border-right: 1px solid #eee;
     -webkit-transform: scaleX(0.5);
             transform: scaleX(0.5);
   }
@@ -3684,7 +3687,7 @@ textarea {
     height: 1px;
     -webkit-transform-origin: 0 100%;
             transform-origin: 0 100%;
-    border-bottom: 1px solid #d4d4d4;
+    border-bottom: 1px solid #eee;
     -webkit-transform: scaleY(0.5);
             transform: scaleY(0.5);
   }
